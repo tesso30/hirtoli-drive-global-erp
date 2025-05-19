@@ -8,7 +8,7 @@ const Unauthorized = () => {
   const { t } = useLanguage();
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <div className="flex items-center justify-center py-12">
       <div className="text-center px-4">
         <h1 className="text-4xl font-bold mb-4 text-red-600">Unauthorized Access</h1>
         <p className="text-xl text-gray-600 mb-8">

@@ -12,6 +12,8 @@ import { Label } from '../components/ui/label';
 import { RadioGroup, RadioGroupItem } from '../components/ui/radio-group';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../components/ui/select';
 
+type BranchType = 'addis-ababa' | 'adama' | 'bahir-dar';
+
 const Register = () => {
   const { t } = useLanguage();
   const { branch, setBranch } = useBranch();
@@ -25,7 +27,7 @@ const Register = () => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [role, setRole] = useState<Role>('student');
-  const [selectedBranch, setSelectedBranch] = useState(branch);
+  const [selectedBranch, setSelectedBranch] = useState<BranchType>(branch as BranchType);
   const [isLoading, setIsLoading] = useState(false);
 
   const handleRegister = async (e: React.FormEvent) => {
@@ -62,7 +64,7 @@ const Register = () => {
         branch: selectedBranch,
       });
       
-      setBranch(selectedBranch as any);
+      setBranch(selectedBranch);
       
       toast({
         title: 'Success',
