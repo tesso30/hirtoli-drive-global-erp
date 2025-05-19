@@ -171,7 +171,7 @@ const Register = () => {
               <Label htmlFor="branch">{t('branch.select')}</Label>
               <Select 
                 value={selectedBranch} 
-                onValueChange={(value) => setSelectedBranch(value)}
+                onValueChange={(value: string) => setSelectedBranch(value as BranchType)}
               >
                 <SelectTrigger>
                   <SelectValue placeholder={t('branch.select')} />
