@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useAuth } from '../contexts/AuthContext';
@@ -6,6 +5,9 @@ import { Button } from '../components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs';
 import { Calendar, Book, Settings, Map, Clock, DollarSign } from 'lucide-react';
+import { Input } from '../components/ui/input';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../components/ui/select';
+import { Label } from '../components/ui/label';
 
 const StudentDashboard = () => {
   const { t } = useLanguage();
@@ -259,10 +261,3 @@ const StudentDashboard = () => {
 };
 
 export default StudentDashboard;
-
-// Missing components
-const Label = ({ htmlFor, children }: { htmlFor?: string; children: React.ReactNode }) => (
-  <label htmlFor={htmlFor} className="block text-sm font-medium text-gray-700 mb-1">
-    {children}
-  </label>
-);

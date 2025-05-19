@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -64,7 +63,8 @@ const Register = () => {
         branch: selectedBranch,
       });
       
-      setBranch(selectedBranch);
+      // Fixed type issue here - explicitly cast to BranchType
+      setBranch(selectedBranch as BranchType);
       
       toast({
         title: 'Success',
