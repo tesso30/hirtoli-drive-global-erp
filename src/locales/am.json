@@ -1,0 +1,80 @@
+
+{
+  "app.title": "ሂርቶሊ የመንጃ ፍቃድ ትምህርት ቤት",
+  "app.tagline": "ሙያዊ የመንጃ ስልጠና",
+  
+  "nav.home": "መነሻ",
+  "nav.about": "ስለ እኛ",
+  "nav.services": "አገልግሎቶች",
+  "nav.contact": "ያግኙን",
+  "nav.login": "ግባ",
+  "nav.register": "ይመዝገቡ",
+  
+  "lang.english": "እንግሊዝኛ",
+  "lang.amharic": "አማርኛ",
+  "lang.oromo": "አፋን ኦሮሞ",
+  
+  "branch.title": "ቅርንጫፎቻችን",
+  "branch.select": "ቅርንጫፍ ይምረጡ",
+  "branch.addisAbaba": "አዲስ አበባ",
+  "branch.adama": "አዳማ",
+  "branch.bahirDar": "ባህር ዳር",
+  
+  "home.hero.title": "በራስ መተማመን ለመንዳት ይማሩ",
+  "home.hero.subtitle": "ብዙ ዓመታት ልምድ ያላቸው ሙያዊ የመንጃ አስተማሪዎች",
+  "home.hero.cta": "መማር ይጀምሩ",
+  
+  "home.features.title": "ለምን ሂርቶሊን መምረጥ አለብዎት",
+  "home.features.quality.title": "ጥራት ያለው ስልጠና",
+  "home.features.quality.desc": "በሙያተኞች የሚሰጡ ሁሉን አቀፍ ኮርሶች",
+  "home.features.flexible.title": "ተለዋዋጭ መርሃግብር",
+  "home.features.flexible.desc": "ለጊዜዎ ሊስማሙ የሚችሉ የስልጠና ጊዜያትን ይምረጡ",
+  "home.features.vehicles.title": "ዘመናዊ ተሽከርካሪዎች",
+  "home.features.vehicles.desc": "በጥሩ ሁኔታ የተጠበቁ እና ወቅታዊ ተሽከርካሪዎች ላይ ይማሩ",
+  
+  "home.courses.title": "የእኛ ኮርሶች",
+  "home.courses.beginner.title": "የጀማሪ ኮርስ",
+  "home.courses.beginner.desc": "ምንም ቀዳሚ የመንጃ ልምድ ለሌላቸው",
+  "home.courses.advanced.title": "የላቀ ኮርስ",
+  "home.courses.advanced.desc": "ያለዎትን የመንጃ ችሎታ ያሻሽሉ",
+  "home.courses.commercial.title": "የንግድ ፍቃድ",
+  "home.courses.commercial.desc": "ለንግድ መንጃ ፍቃዶች ስልጠና",
+  
+  "footer.rights": "መብቱ በህግ የተጠበቀ ነው",
+  "footer.privacy": "የግላዊነት ፖሊሲ",
+  "footer.terms": "የአገልግሎት ውሎች",
+  
+  "login.title": "ወደ አካውንትዎ ይግቡ",
+  "login.email": "ኢሜይል",
+  "login.password": "የይለፍ ቃል",
+  "login.submit": "ግባ",
+  "login.forgot": "የይለፍ ቃል ረሳዎት?",
+  "login.noAccount": "አካውንት የለዎትም?",
+  "login.register": "አሁን ይመዝገቡ",
+  
+  "register.title": "አካውንት ይፍጠሩ",
+  "register.name": "ሙሉ ስም",
+  "register.email": "ኢሜይል",
+  "register.phone": "ስልክ ቁጥር",
+  "register.password": "የይለፍ ቃል",
+  "register.confirmPassword": "የይለፍ ቃል ያረጋግጡ",
+  "register.role": "እኔ ነኝ",
+  "register.role.student": "ተማሪ",
+  "register.role.instructor": "አስተማሪ",
+  "register.submit": "ይመዝገቡ",
+  "register.hasAccount": "አካውንት አለዎት?",
+  "register.login": "ይግቡ",
+  
+  "dashboard.welcome": "እንኳን ደህና መጡ",
+  "dashboard.student": "የተማሪ ዳሽቦርድ",
+  "dashboard.instructor": "የአስተማሪ ዳሽቦርድ",
+  "dashboard.admin": "የአስተዳዳሪ ዳሽቦርድ",
+  
+  "dashboard.overview": "አጠቃላይ እይታ",
+  "dashboard.courses": "ኮርሶች",
+  "dashboard.schedule": "መርሃግብር",
+  "dashboard.payments": "ክፍያዎች",
+  "dashboard.performance": "አፈጻጸም",
+  "dashboard.settings": "ቅንብሮች",
+  "dashboard.logout": "ውጣ"
+}

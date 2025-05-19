@@ -1,0 +1,80 @@
+
+{
+  "app.title": "Mana Barnoota Konkolaachisummaa Hirtoli",
+  "app.tagline": "Leenjii Konkolaachisummaa Ogummaa",
+  
+  "nav.home": "Seensa",
+  "nav.about": "Waa'ee Keenya",
+  "nav.services": "Tajaajila",
+  "nav.contact": "Nu Quunnamaa",
+  "nav.login": "Seeni",
+  "nav.register": "Galmaa'i",
+  
+  "lang.english": "Afaan Ingilizii",
+  "lang.amharic": "Afaan Amaaraa",
+  "lang.oromo": "Afaan Oromoo",
+  
+  "branch.title": "Dameelee Keenya",
+  "branch.select": "Damee Filadhu",
+  "branch.addisAbaba": "Finfinnee",
+  "branch.adama": "Adaamaa",
+  "branch.bahirDar": "Baahir Daar",
+  
+  "home.hero.title": "Ofitti Amanamummaan Konkolaachisuu Baradhu",
+  "home.hero.subtitle": "Barsiistoota konkolaachisummaa ogummaa waggaa hedduu muuxannoo qaban",
+  "home.hero.cta": "Baruu Jalqabi",
+  
+  "home.features.title": "Maaliif Hirtoli Filattu",
+  "home.features.quality.title": "Leenjii Qulqullina Qabu",
+  "home.features.quality.desc": "Koorsiiwwan guutuu ogeeyyii mirkaneeffaman barsiifaman",
+  "home.features.flexible.title": "Sagantaa Mijataa",
+  "home.features.flexible.desc": "Yeroo leenjii sagantaa keessaniif mijatu filadhaa",
+  "home.features.vehicles.title": "Konkolaatota Ammayyaa",
+  "home.features.vehicles.desc": "Konkolaatota sirriitti qabaman, ammayya'an irratti baradhaa",
+  
+  "home.courses.title": "Koorsiiwwan Keenya",
+  "home.courses.beginner.title": "Koorsii Jalqabaa",
+  "home.courses.beginner.desc": "Warra muuxannoo konkolaachisummaa kanaan dura hin qabneef",
+  "home.courses.advanced.title": "Koorsii Sadarkaa Olaanaa",
+  "home.courses.advanced.desc": "Dandeettii konkolaachisummaa keessan fooya'aa",
+  "home.courses.commercial.title": "Hayyama Daldalaa",
+  "home.courses.commercial.desc": "Leenjii hayyama konkolaachisummaa daldalaa",
+  
+  "footer.rights": "Mirgi Hunda Seeraan Kan Eegame",
+  "footer.privacy": "Imaammata Iccitii",
+  "footer.terms": "Haala Tajaajilaa",
+  
+  "login.title": "Herrega Keessanitti Seenaa",
+  "login.email": "Imeelii",
+  "login.password": "Jecha Iccitii",
+  "login.submit": "Seeni",
+  "login.forgot": "Jecha Iccitii Dagattanii?",
+  "login.noAccount": "Herrega hin qabduu?",
+  "login.register": "Amma Galmaa'i",
+  
+  "register.title": "Herrega Uumaa",
+  "register.name": "Maqaa Guutuu",
+  "register.email": "Imeelii",
+  "register.phone": "Lakkoofsa Bilbilaa",
+  "register.password": "Jecha Iccitii",
+  "register.confirmPassword": "Jecha Iccitii Mirkaneessi",
+  "register.role": "Ani",
+  "register.role.student": "Barataa",
+  "register.role.instructor": "Barsiisaa",
+  "register.submit": "Galmaa'i",
+  "register.hasAccount": "Duraan herrega qabduu?",
+  "register.login": "Seeni",
+  
+  "dashboard.welcome": "Baga Nagaan Dhuftan",
+  "dashboard.student": "Daashboordii Barataa",
+  "dashboard.instructor": "Daashboordii Barsiisaa",
+  "dashboard.admin": "Daashboordii Bulchitoota",
+  
+  "dashboard.overview": "Ilaalcha Waliigalaa",
+  "dashboard.courses": "Koorsiiwwan",
+  "dashboard.schedule": "Sagantaa",
+  "dashboard.payments": "Kaffaltii",
+  "dashboard.performance": "Raawwii",
+  "dashboard.settings": "Qindeessituuwwan",
+  "dashboard.logout": "Ba'i"
+}

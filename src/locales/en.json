@@ -1,0 +1,80 @@
+
+{
+  "app.title": "Hirtoli Driving School",
+  "app.tagline": "Professional Driver Training",
+  
+  "nav.home": "Home",
+  "nav.about": "About Us",
+  "nav.services": "Services",
+  "nav.contact": "Contact",
+  "nav.login": "Login",
+  "nav.register": "Register",
+  
+  "lang.english": "English",
+  "lang.amharic": "Amharic",
+  "lang.oromo": "Afan Oromo",
+  
+  "branch.title": "Our Branches",
+  "branch.select": "Select Branch",
+  "branch.addisAbaba": "Addis Ababa",
+  "branch.adama": "Adama",
+  "branch.bahirDar": "Bahir Dar",
+  
+  "home.hero.title": "Learn to Drive with Confidence",
+  "home.hero.subtitle": "Professional driving instructors with years of experience",
+  "home.hero.cta": "Start Learning",
+  
+  "home.features.title": "Why Choose Hirtoli",
+  "home.features.quality.title": "Quality Training",
+  "home.features.quality.desc": "Comprehensive courses taught by certified professionals",
+  "home.features.flexible.title": "Flexible Schedule",
+  "home.features.flexible.desc": "Choose training times that work for your schedule",
+  "home.features.vehicles.title": "Modern Vehicles",
+  "home.features.vehicles.desc": "Learn on well-maintained, up-to-date vehicles",
+  
+  "home.courses.title": "Our Courses",
+  "home.courses.beginner.title": "Beginner Course",
+  "home.courses.beginner.desc": "For those with no prior driving experience",
+  "home.courses.advanced.title": "Advanced Course",
+  "home.courses.advanced.desc": "Enhance your existing driving skills",
+  "home.courses.commercial.title": "Commercial License",
+  "home.courses.commercial.desc": "Training for commercial driving licenses",
+  
+  "footer.rights": "All Rights Reserved",
+  "footer.privacy": "Privacy Policy",
+  "footer.terms": "Terms of Service",
+  
+  "login.title": "Login to Your Account",
+  "login.email": "Email",
+  "login.password": "Password",
+  "login.submit": "Login",
+  "login.forgot": "Forgot Password?",
+  "login.noAccount": "Don't have an account?",
+  "login.register": "Register now",
+  
+  "register.title": "Create an Account",
+  "register.name": "Full Name",
+  "register.email": "Email",
+  "register.phone": "Phone Number",
+  "register.password": "Password",
+  "register.confirmPassword": "Confirm Password",
+  "register.role": "I am a",
+  "register.role.student": "Student",
+  "register.role.instructor": "Instructor",
+  "register.submit": "Register",
+  "register.hasAccount": "Already have an account?",
+  "register.login": "Login",
+  
+  "dashboard.welcome": "Welcome",
+  "dashboard.student": "Student Dashboard",
+  "dashboard.instructor": "Instructor Dashboard",
+  "dashboard.admin": "Admin Dashboard",
+  
+  "dashboard.overview": "Overview",
+  "dashboard.courses": "Courses",
+  "dashboard.schedule": "Schedule",
+  "dashboard.payments": "Payments",
+  "dashboard.performance": "Performance",
+  "dashboard.settings": "Settings",
+  "dashboard.logout": "Logout"
+}
