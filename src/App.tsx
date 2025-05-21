@@ -19,6 +19,7 @@ import Register from "./pages/Register";
 import StudentDashboard from "./pages/StudentDashboard";
 import InstructorDashboard from "./pages/InstructorDashboard";
 import AdminDashboard from "./pages/AdminDashboard";
+import ErpSystem from "./pages/ErpSystem";
 import NotFound from "./pages/NotFound";
 import Unauthorized from "./pages/Unauthorized";
 import ProtectedRoute from "./components/ProtectedRoute";
@@ -41,6 +42,11 @@ const App = () => (
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/register" element={<Register />} />
+                <Route path="/erp" element={
+                  <ProtectedRoute allowedRoles={['admin', 'instructor']}>
+                    <ErpSystem />
+                  </ProtectedRoute>
+                } />
                 <Route 
                   path="/student-dashboard" 
                   element={

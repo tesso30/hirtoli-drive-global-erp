@@ -9,6 +9,7 @@
   "nav.contact": "Contact",
   "nav.login": "Login",
   "nav.register": "Register",
+  "nav.erp": "ERP System",
   
   "lang.english": "English",
   "lang.amharic": "Amharic",
@@ -120,5 +121,70 @@
   "dashboard.payments": "Payments",
   "dashboard.performance": "Performance",
   "dashboard.settings": "Settings",
-  "dashboard.logout": "Logout"
+  "dashboard.logout": "Logout",
+  
+  "erp.title": "Enterprise Resource Planning",
+  "erp.description": "Comprehensive management system for Hirtoli Driving School",
+  
+  "erp.menu.dashboard": "ERP Dashboard",
+  "erp.menu.hr": "Human Resources",
+  "erp.menu.finance": "Finance",
+  "erp.menu.inventory": "Vehicle Fleet",
+  "erp.menu.students": "Student Management",
+  "erp.menu.scheduling": "Scheduling",
+  "erp.menu.reports": "Reports & Analytics",
+  "erp.menu.settings": "System Settings",
+  
+  "erp.dashboard.totalStudents": "Total Students",
+  "erp.dashboard.activeInstructors": "Active Instructors",
+  "erp.dashboard.vehicleFleet": "Vehicle Fleet",
+  "erp.dashboard.monthlyRevenue": "Monthly Revenue",
+  "erp.dashboard.upcomingClasses": "Upcoming Classes",
+  "erp.dashboard.recentEnrollments": "Recent Enrollments",
+  "erp.dashboard.branchPerformance": "Branch Performance",
+  
+  "erp.hr.employees": "Employees",
+  "erp.hr.positions": "Positions",
+  "erp.hr.salary": "Salary Management",
+  "erp.hr.attendance": "Attendance",
+  "erp.hr.leave": "Leave Management",
+  "erp.hr.recruitment": "Recruitment",
+  
+  "erp.finance.transactions": "Transactions",
+  "erp.finance.invoices": "Invoices",
+  "erp.finance.expenses": "Expenses",
+  "erp.finance.payroll": "Payroll",
+  "erp.finance.banking": "Banking",
+  "erp.finance.reports": "Financial Reports",
+  
+  "erp.inventory.vehicles": "Vehicles",
+  "erp.inventory.maintenance": "Maintenance Schedule",
+  "erp.inventory.fuel": "Fuel Tracking",
+  "erp.inventory.insurance": "Insurance",
+  "erp.inventory.inspection": "Vehicle Inspection",
+  
+  "erp.students.enrollment": "Enrollment",
+  "erp.students.attendance": "Attendance",
+  "erp.students.progress": "Progress Tracking",
+  "erp.students.certification": "Certification",
+  "erp.students.feedback": "Student Feedback",
+  
+  "erp.scheduling.calendar": "Calendar",
+  "erp.scheduling.instructors": "Instructor Allocation",
+  "erp.scheduling.vehicles": "Vehicle Allocation",
+  "erp.scheduling.classes": "Class Management",
+  "erp.scheduling.examinations": "Examinations",
+  
+  "erp.reports.students": "Student Analytics",
+  "erp.reports.financial": "Financial Analytics",
+  "erp.reports.operational": "Operational Analytics",
+  "erp.reports.performance": "Performance Analytics",
+  "erp.reports.custom": "Custom Reports",
+  
+  "erp.settings.general": "General Settings",
+  "erp.settings.users": "User Management",
+  "erp.settings.roles": "Role & Permissions",
+  "erp.settings.branches": "Branch Management",
+  "erp.settings.backup": "Backup & Restore",
+  "erp.settings.api": "API Integration"
 }
