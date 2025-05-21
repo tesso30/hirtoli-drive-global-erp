@@ -40,6 +40,35 @@
   "home.courses.commercial.title": "Commercial License",
   "home.courses.commercial.desc": "Training for commercial driving licenses",
   
+  "home.testimonials.title": "What Our Students Say",
+  "home.testimonials.subtitle": "Hear from our graduates about their experience",
+  
+  "home.stats.students": "Students Trained",
+  "home.stats.experience": "Years Experience",
+  "home.stats.passRate": "Pass Rate",
+  
+  "home.cta.title": "Ready to Start Your Driving Journey?",
+  "home.cta.text": "Join thousands of successful graduates who have learned to drive with confidence",
+  "home.cta.register": "Register Now",
+  "home.cta.contact": "Contact Us",
+  
+  "about.history.title": "Our History",
+  "about.history.text": "Established in 2010 with a mission to provide quality driver education",
+  
+  "about.mission.title": "Our Mission",
+  "about.mission.text": "To train safe, responsible, and confident drivers through comprehensive education",
+  
+  "about.values.title": "Our Values",
+  "about.values.safety": "Safety First",
+  "about.values.quality": "Quality Education",
+  "about.values.inclusivity": "Inclusivity",
+  
+  "about.team.title": "Meet Our Team",
+  
+  "services.features.title": "What All Our Courses Include",
+  "services.courses.title": "Our Training Programs",
+  "services.guide.title": "How to Choose the Right Course",
+  
   "footer.rights": "All Rights Reserved",
   "footer.privacy": "Privacy Policy",
   "footer.terms": "Terms of Service",
@@ -64,6 +93,21 @@
   "register.submit": "Register",
   "register.hasAccount": "Already have an account?",
   "register.login": "Login",
+  
+  "register.basicInfo": "Basic Information",
+  "register.additionalInfo": "Additional Details",
+  "register.dateOfBirth": "Date of Birth",
+  "register.gender": "Gender",
+  "register.address": "Address",
+  "register.emergency.name": "Emergency Contact Name",
+  "register.emergency.phone": "Emergency Contact Number",
+  "register.course": "Preferred Course",
+  "register.schedule": "Preferred Schedule",
+  "register.experience": "Prior Experience",
+  "register.yearsExperience": "Years of Experience",
+  "register.special": "Special Requirements",
+  "register.terms": "I agree to the Terms and Conditions and Privacy Policy",
+  "register.marketing": "I would like to receive updates and offers",
   
   "dashboard.welcome": "Welcome",
   "dashboard.student": "Student Dashboard",
