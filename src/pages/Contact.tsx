@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useBranch } from '../contexts/BranchContext';
@@ -12,6 +11,7 @@ import { Label } from '../components/ui/label';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '../components/ui/accordion';
 import { MapPin, Phone, Mail, Clock, MessageSquare, Users, Calendar, HelpCircle } from 'lucide-react';
+import LiveChat from '../components/contact/LiveChat';
 
 const Contact = () => {
   const { t } = useLanguage();
@@ -93,6 +93,30 @@ const Contact = () => {
 
   const currentBranchInfo = branchInfo[branch as keyof typeof branchInfo];
 
+  const contactMethods = [
+    {
+      icon: <Phone className="w-6 h-6" />,
+      title: "Phone Support",
+      description: "Call us during business hours",
+      value: currentBranchInfo.phone,
+      action: `tel:${currentBranchInfo.phone}`,
+    },
+    {
+      icon: <MessageSquare className="w-6 h-6" />,
+      title: "WhatsApp",
+      description: "Quick messages and inquiries",
+      value: currentBranchInfo.whatsapp,
+      action: `https://wa.me/${currentBranchInfo.whatsapp.replace(/\+|\s/g, '')}`,
+    },
+    {
+      icon: <Mail className="w-6 h-6" />,
+      title: "Email",
+      description: "Detailed inquiries and documentation",
+      value: currentBranchInfo.email,
+      action: `mailto:${currentBranchInfo.email}`,
+    },
+  ];
+
   const faqs = [
     {
       question: "How long does it take to complete the driving course?",
@@ -118,30 +142,6 @@ const Contact = () => {
       question: "Do you offer refresher courses?",
       answer: "Absolutely! We have specialized refresher courses for those who haven't driven for a while or want to improve their skills."
     }
-  ];
-
-  const contactMethods = [
-    {
-      icon: <Phone className="w-6 h-6" />,
-      title: "Phone Support",
-      description: "Call us during business hours",
-      value: currentBranchInfo.phone,
-      action: `tel:${currentBranchInfo.phone}`,
-    },
-    {
-      icon: <MessageSquare className="w-6 h-6" />,
-      title: "WhatsApp",
-      description: "Quick messages and inquiries",
-      value: currentBranchInfo.whatsapp,
-      action: `https://wa.me/${currentBranchInfo.whatsapp.replace(/\+|\s/g, '')}`,
-    },
-    {
-      icon: <Mail className="w-6 h-6" />,
-      title: "Email",
-      description: "Detailed inquiries and documentation",
-      value: currentBranchInfo.email,
-      action: `mailto:${currentBranchInfo.email}`,
-    },
   ];
 
   return (
@@ -526,6 +526,9 @@ const Contact = () => {
           </Tabs>
         </div>
       </section>
+
+      {/* Live Chat Component */}
+      <LiveChat />
     </div>
   );
 };

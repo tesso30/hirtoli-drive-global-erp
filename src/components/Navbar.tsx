@@ -50,6 +50,9 @@ const Navbar = () => {
             <Link to="/services" className="text-gray-700 hover:text-hirtoli-green transition">
               {t('nav.services')}
             </Link>
+            <Link to="/blog" className="text-gray-700 hover:text-hirtoli-green transition">
+              Blog
+            </Link>
             <Link to="/contact" className="text-gray-700 hover:text-hirtoli-green transition">
               {t('nav.contact')}
             </Link>
@@ -173,6 +176,13 @@ const Navbar = () => {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 {t('nav.services')}
+              </Link>
+              <Link 
+                to="/blog" 
+                className="text-gray-700 hover:text-hirtoli-green transition px-4 py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Blog
               </Link>
               <Link 
                 to="/contact" 
