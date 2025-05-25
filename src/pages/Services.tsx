@@ -28,16 +28,16 @@ const Services = () => {
       <section className="bg-gray-50 py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">
-            Services at {branch === 'addis-ababa' ? 'Addis Ababa' : branch === 'adama' ? 'Adama' : 'Bahir Dar'} Branch
+            Services at {branch === 'chiro' ? 'Chiro' : 'Harar'} Branch
           </h2>
           
-          {branch === 'addis-ababa' && (
+          {branch === 'chiro' && (
             <div className="max-w-3xl mx-auto">
               <p className="mb-6">
-                Our Addis Ababa branch offers all services with additional premium options:
+                Our Chiro branch offers comprehensive driving courses with additional premium options:
               </p>
               <div className="bg-white p-6 rounded-lg shadow-sm mb-8">
-                <h3 className="text-xl font-semibold mb-4">Premium Services Available Only at Addis Ababa</h3>
+                <h3 className="text-xl font-semibold mb-4">Premium Services Available at Chiro</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start">
                     <div className="bg-hirtoli-red bg-opacity-10 p-2 rounded-full mr-4 mt-1">
@@ -62,8 +62,8 @@ const Services = () => {
                       <Users className="w-5 h-5 text-hirtoli-black" />
                     </div>
                     <div>
-                      <h4 className="font-medium">Expat and Diplomatic Services</h4>
-                      <p className="text-gray-600">Special courses for diplomatic staff and expatriates with instruction in English and international driving convention training.</p>
+                      <h4 className="font-medium">Commercial Vehicle Training</h4>
+                      <p className="text-gray-600">Specialized training for commercial vehicles and professional drivers.</p>
                     </div>
                   </li>
                   <li className="flex items-start">
@@ -79,7 +79,7 @@ const Services = () => {
               </div>
               <div className="bg-white p-6 rounded-lg shadow-sm mb-8">
                 <h3 className="text-xl font-semibold mb-4">Advanced Facilities</h3>
-                <p className="mb-4">Our Addis Ababa branch features:</p>
+                <p className="mb-4">Our Chiro branch features:</p>
                 <ul className="list-disc pl-6 space-y-2">
                   <li>State-of-the-art driving simulators for controlled practice scenarios</li>
                   <li>Modern multimedia classrooms with interactive learning tools</li>
@@ -90,72 +90,13 @@ const Services = () => {
             </div>
           )}
           
-          {branch === 'adama' && (
+          {branch === 'harar' && (
             <div className="max-w-3xl mx-auto">
               <p className="mb-6">
-                Our Adama branch specializes in:
+                Our Harar branch specializes in:
               </p>
               <div className="bg-white p-6 rounded-lg shadow-sm mb-8">
-                <h3 className="text-xl font-semibold mb-4">Specialized Services in Adama</h3>
-                <ul className="space-y-4">
-                  <li className="flex items-start">
-                    <div className="bg-hirtoli-red bg-opacity-10 p-2 rounded-full mr-4 mt-1">
-                      <Car className="w-5 h-5 text-hirtoli-red" />
-                    </div>
-                    <div>
-                      <h4 className="font-medium">Commercial Truck and Bus Training</h4>
-                      <p className="text-gray-600">Specialized training for heavy commercial vehicles with dedicated practice areas.</p>
-                    </div>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="bg-hirtoli-green bg-opacity-10 p-2 rounded-full mr-4 mt-1">
-                      <Car className="w-5 h-5 text-hirtoli-green" />
-                    </div>
-                    <div>
-                      <h4 className="font-medium">Agricultural Vehicle Operation</h4>
-                      <p className="text-gray-600">Training for tractors, harvesters, and other agricultural equipment for farm workers.</p>
-                    </div>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="bg-hirtoli-black bg-opacity-10 p-2 rounded-full mr-4 mt-1">
-                      <Clock className="w-5 h-5 text-hirtoli-black" />
-                    </div>
-                    <div>
-                      <h4 className="font-medium">Intensive Weekend Courses</h4>
-                      <p className="text-gray-600">Accelerated weekend-only programs designed for students and busy professionals.</p>
-                    </div>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="bg-hirtoli-red bg-opacity-10 p-2 rounded-full mr-4 mt-1">
-                      <Users className="w-5 h-5 text-hirtoli-red" />
-                    </div>
-                    <div>
-                      <h4 className="font-medium">Afan Oromo Language Instruction</h4>
-                      <p className="text-gray-600">All courses available with specialized terminology and instruction in Afan Oromo.</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-sm mb-8">
-                <h3 className="text-xl font-semibold mb-4">Rural Driving Training</h3>
-                <p className="mb-4">Our Adama branch offers specialized rural and off-road driving training:</p>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>Unpaved road handling techniques</li>
-                  <li>Weather condition management specific to rural areas</li>
-                  <li>Farm-to-market route navigation</li>
-                  <li>Vehicle maintenance for rural conditions</li>
-                </ul>
-              </div>
-            </div>
-          )}
-          
-          {branch === 'bahir-dar' && (
-            <div className="max-w-3xl mx-auto">
-              <p className="mb-6">
-                Our Bahir Dar branch offers:
-              </p>
-              <div className="bg-white p-6 rounded-lg shadow-sm mb-8">
-                <h3 className="text-xl font-semibold mb-4">Specialized Services in Bahir Dar</h3>
+                <h3 className="text-xl font-semibold mb-4">Specialized Services in Harar</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start">
                     <div className="bg-hirtoli-red bg-opacity-10 p-2 rounded-full mr-4 mt-1">
@@ -171,8 +112,8 @@ const Services = () => {
                       <Shield className="w-5 h-5 text-hirtoli-green" />
                     </div>
                     <div>
-                      <h4 className="font-medium">Boat Safety and Operation</h4>
-                      <p className="text-gray-600">Introduction to boat handling and water safety for Lake Tana tour operators.</p>
+                      <h4 className="font-medium">Cultural Heritage Tours</h4>
+                      <p className="text-gray-600">Training for drivers serving the historic Harar region and cultural sites.</p>
                     </div>
                   </li>
                   <li className="flex items-start">
@@ -180,8 +121,8 @@ const Services = () => {
                       <Car className="w-5 h-5 text-hirtoli-black" />
                     </div>
                     <div>
-                      <h4 className="font-medium">Scenic Route Training</h4>
-                      <p className="text-gray-600">Training on the unique driving challenges of scenic routes around Lake Tana and Blue Nile Falls.</p>
+                      <h4 className="font-medium">Regional Route Training</h4>
+                      <p className="text-gray-600">Training on the unique driving challenges of the Harar region and surrounding areas.</p>
                     </div>
                   </li>
                   <li className="flex items-start">
@@ -189,20 +130,20 @@ const Services = () => {
                       <Users className="w-5 h-5 text-hirtoli-red" />
                     </div>
                     <div>
-                      <h4 className="font-medium">Amharic Language Instruction</h4>
-                      <p className="text-gray-600">All courses available with specialized terminology and instruction in Amharic.</p>
+                      <h4 className="font-medium">Multi-Language Instruction</h4>
+                      <p className="text-gray-600">Courses available in Amharic, Oromo, and Harari languages.</p>
                     </div>
                   </li>
                 </ul>
               </div>
               <div className="bg-white p-6 rounded-lg shadow-sm mb-8">
-                <h3 className="text-xl font-semibold mb-4">Tourism Transportation Focus</h3>
-                <p className="mb-4">Our Bahir Dar branch specializes in tourism transportation:</p>
+                <h3 className="text-xl font-semibold mb-4">Regional Specialization</h3>
+                <p className="mb-4">Our Harar branch specializes in:</p>
                 <ul className="list-disc pl-6 space-y-2">
-                  <li>Customer service training for tourism drivers</li>
-                  <li>Historical site route knowledge and navigation</li>
-                  <li>Safe driving during peak tourist seasons</li>
-                  <li>Emergency response training for remote locations</li>
+                  <li>Historical city navigation and narrow street handling</li>
+                  <li>Tourist service excellence training</li>
+                  <li>Regional climate and terrain adaptation</li>
+                  <li>Cross-cultural communication for drivers</li>
                 </ul>
               </div>
             </div>
