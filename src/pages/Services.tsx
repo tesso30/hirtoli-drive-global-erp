@@ -1,8 +1,10 @@
+
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
 import { useBranch } from '../contexts/BranchContext';
 import { Button } from '../components/ui/button';
+import { GraduationCap, Clock, Users, Car, Shield } from 'lucide-react';
 import ServiceHero from '../components/services/ServiceHero';
 import PricingTable from '../components/services/PricingTable';
 import CourseComparison from '../components/services/CourseComparison';
