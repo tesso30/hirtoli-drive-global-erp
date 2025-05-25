@@ -17,7 +17,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/41e35a55-854e-4382-855f-00cd01714172.png" 
                 alt="Hirtoli Driving School" 
-                className="h-10 w-10"
+                className="h-10 w-10 rounded-full"
               />
               <span className="text-xl font-bold text-hirtoli-red">{t('app.title')}</span>
             </div>
@@ -55,7 +55,7 @@ const Footer = () => {
           <div className="col-span-1">
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <address className="not-italic text-gray-300 space-y-2">
-              <p>Addis Ababa, Ethiopia</p>
+              <p>Chiro & Harar, Ethiopia</p>
               <p>Email: info@hirtoli.com</p>
               <p>Tel: +251 911 123 456</p>
             </address>
@@ -65,9 +65,8 @@ const Footer = () => {
           <div className="col-span-1">
             <h3 className="text-lg font-semibold mb-4">{t('branch.title')}</h3>
             <ul className="text-gray-300 space-y-2">
-              <li>{t('branch.addisAbaba')}</li>
-              <li>{t('branch.adama')}</li>
-              <li>{t('branch.bahirDar')}</li>
+              <li>Chiro Branch</li>
+              <li>Harar Branch</li>
             </ul>
           </div>
         </div>

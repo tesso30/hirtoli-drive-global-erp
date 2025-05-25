@@ -59,35 +59,25 @@ const Contact = () => {
   };
 
   const branchInfo = {
-    'addis-ababa': {
-      address: 'Bole Road, Next to Millennium Hall, Addis Ababa',
+    'chiro': {
+      address: 'Chiro, Oromia Region, Ethiopia',
       phone: '+251 911 123 456',
-      email: 'addis@hirtoli.com',
+      email: 'chiro@hirtoli.com',
       whatsapp: '+251 911 123 456',
-      manager: 'Bekele Teferi',
-      mapUrl: 'https://maps.google.com/?q=8.9806,38.7578',
-      facilities: ['15 Training Vehicles', '8 Classrooms', 'Simulation Center', 'Cafeteria'],
-      specialties: ['All License Types', 'Advanced Driving', 'Defensive Driving'],
+      manager: 'Ahmed Hassan',
+      mapUrl: 'https://maps.app.goo.gl/cB4ErmznYy7H7bAx8',
+      facilities: ['12 Training Vehicles', '6 Classrooms', 'Practice Area', 'Student Lounge'],
+      specialties: ['Basic Driving Courses', 'Commercial Licenses', 'Motorcycle Training'],
     },
-    'adama': {
-      address: 'Main Street, Near Adama University, Adama',
+    'harar': {
+      address: 'Harar, Harari Region, Ethiopia',
       phone: '+251 922 123 456',
-      email: 'adama@hirtoli.com',
+      email: 'harar@hirtoli.com',
       whatsapp: '+251 922 123 456',
-      manager: 'Meron Alemu',
-      mapUrl: 'https://maps.google.com/?q=8.5373,39.2700',
-      facilities: ['12 Training Vehicles', '5 Classrooms', 'Rural Training Course'],
-      specialties: ['Commercial Licenses', 'Agricultural Vehicles', 'Heavy Machinery'],
-    },
-    'bahir-dar': {
-      address: 'Lake Tana Road, Near Kuriftu Resort, Bahir Dar',
-      phone: '+251 933 123 456',
-      email: 'bahirdar@hirtoli.com',
-      whatsapp: '+251 933 123 456',
-      manager: 'Tariku Desta',
-      mapUrl: 'https://maps.google.com/?q=11.5742,37.3614',
-      facilities: ['10 Training Vehicles', '4 Classrooms', 'Tourism Training Center'],
-      specialties: ['Tourism Transport', 'Boat Safety', 'Mountain Driving'],
+      manager: 'Fatima Abdullahi',
+      mapUrl: 'https://maps.app.goo.gl/jiD7jU2kgVmnXfA87',
+      facilities: ['10 Training Vehicles', '4 Classrooms', 'Driving Simulator', 'Testing Center'],
+      specialties: ['Tourism Transport', 'City Driving', 'Highway Training'],
     }
   };
 
@@ -259,9 +249,8 @@ const Contact = () => {
                               <SelectValue placeholder="Select branch" />
                             </SelectTrigger>
                             <SelectContent>
-                              <SelectItem value="addis-ababa">{t('branch.addisAbaba')}</SelectItem>
-                              <SelectItem value="adama">{t('branch.adama')}</SelectItem>
-                              <SelectItem value="bahir-dar">{t('branch.bahirDar')}</SelectItem>
+                              <SelectItem value="chiro">Chiro</SelectItem>
+                              <SelectItem value="harar">Harar</SelectItem>
                             </SelectContent>
                           </Select>
                         </div>
@@ -308,7 +297,7 @@ const Contact = () => {
                     <CardHeader className="px-0 pt-0">
                       <CardTitle className="flex items-center">
                         <MapPin className="mr-2 text-hirtoli-red" />
-                        {currentBranchInfo.address.split(',')[0]} Branch
+                        {branch === 'chiro' ? 'Chiro' : 'Harar'} Branch
                       </CardTitle>
                     </CardHeader>
                     <CardContent className="px-0">
@@ -371,13 +360,13 @@ const Contact = () => {
             </TabsContent>
 
             <TabsContent value="locations" className="mt-8">
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 {Object.entries(branchInfo).map(([key, info]) => (
                   <Card key={key} className="overflow-hidden">
                     <CardHeader>
                       <CardTitle className="flex items-center">
                         <MapPin className="mr-2 text-hirtoli-red" />
-                        {key === 'addis-ababa' ? 'Addis Ababa' : key === 'adama' ? 'Adama' : 'Bahir Dar'}
+                        {key === 'chiro' ? 'Chiro' : 'Harar'}
                       </CardTitle>
                     </CardHeader>
                     <CardContent>

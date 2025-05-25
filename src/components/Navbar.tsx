@@ -34,7 +34,7 @@ const Navbar = () => {
             <img 
               src="/lovable-uploads/41e35a55-854e-4382-855f-00cd01714172.png" 
               alt="Hirtoli Driving School" 
-              className="h-10 w-10"
+              className="h-10 w-10 rounded-full"
             />
             <span className="text-xl font-bold text-hirtoli-red">{t('app.title')}</span>
           </Link>
@@ -94,19 +94,14 @@ const Navbar = () => {
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end">
-                <DropdownMenuItem onClick={() => setBranch('addis-ababa')}>
-                  <span className={branch === 'addis-ababa' ? 'font-bold' : ''}>
-                    {t('branch.addisAbaba')}
+                <DropdownMenuItem onClick={() => setBranch('chiro')}>
+                  <span className={branch === 'chiro' ? 'font-bold' : ''}>
+                    Chiro
                   </span>
                 </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setBranch('adama')}>
-                  <span className={branch === 'adama' ? 'font-bold' : ''}>
-                    {t('branch.adama')}
-                  </span>
-                </DropdownMenuItem>
-                <DropdownMenuItem onClick={() => setBranch('bahir-dar')}>
-                  <span className={branch === 'bahir-dar' ? 'font-bold' : ''}>
-                    {t('branch.bahirDar')}
+                <DropdownMenuItem onClick={() => setBranch('harar')}>
+                  <span className={branch === 'harar' ? 'font-bold' : ''}>
+                    Harar
                   </span>
                 </DropdownMenuItem>
               </DropdownMenuContent>

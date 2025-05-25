@@ -2,7 +2,7 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
 // Define available branches
-export type Branch = 'addis-ababa' | 'adama' | 'bahir-dar';
+export type Branch = 'chiro' | 'harar';
 
 // Branch context type
 type BranchContextType = {
@@ -12,7 +12,7 @@ type BranchContextType = {
 
 // Create context with default values
 const BranchContext = createContext<BranchContextType>({
-  branch: 'addis-ababa',
+  branch: 'chiro',
   setBranch: () => {},
 });
 
@@ -23,15 +23,15 @@ type BranchProviderProps = {
 
 // Branch provider component
 export const BranchProvider: React.FC<BranchProviderProps> = ({ children }) => {
-  // Try to get branch from localStorage, default to 'addis-ababa'
+  // Try to get branch from localStorage, default to 'chiro'
   const [branch, setBranch] = useState<Branch>(() => {
     if (typeof window !== 'undefined') {
       const savedBranch = localStorage.getItem('hirtoli-branch') as Branch;
-      if (savedBranch && ['addis-ababa', 'adama', 'bahir-dar'].includes(savedBranch)) {
+      if (savedBranch && ['chiro', 'harar'].includes(savedBranch)) {
         return savedBranch;
       }
     }
-    return 'addis-ababa';
+    return 'chiro';
   });
 
   // Update localStorage when branch changes
