@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { UserCheck, Calendar, Award, Users, MapPin, Phone, Car, Clock, Shield, Star, Zap, Heart } from 'lucide-react';
 
@@ -8,7 +7,9 @@ const StatsSection: React.FC = () => {
       value: "15,000+",
       label: "Students Trained",
       icon: <UserCheck className="w-8 h-8 text-hirtoli-green" />,
-      description: "Successful graduates since 2010"
+      description: "Successful graduates since 2010",
+      gradient: "from-green-500/10 to-emerald-500/10",
+      hoverGradient: "group-hover:from-green-500/20 group-hover:to-emerald-500/20"
     },
     {
       value: "13+",
@@ -79,26 +80,43 @@ const StatsSection: React.FC = () => {
   ];
 
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">Our Track Record Speaks</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+    <section className="py-24 bg-gradient-to-br from-gray-50 via-white to-gray-100 relative overflow-hidden">
+      {/* Background pattern */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(0,166,81,0.15)_1px,transparent_0)] bg-[length:40px_40px]"></div>
+      
+      <div className="container mx-auto px-4 relative z-10">
+        <div className="text-center mb-20">
+          <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-hirtoli-black via-gray-700 to-hirtoli-black bg-clip-text text-transparent">
+            Our Track Record Speaks
+          </h2>
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
             Over a decade of excellence in driving education with measurable results 
             that demonstrate our commitment to student success and road safety.
           </p>
+          <div className="w-24 h-1 bg-gradient-to-r from-hirtoli-red to-hirtoli-green mx-auto mt-6 rounded-full"></div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
             <div 
               key={index} 
-              className="p-6 rounded-xl border border-gray-100 shadow-sm animate-fade-in flex flex-col items-center text-center hover:shadow-lg transition-all duration-300 hover:border-hirtoli-green bg-gradient-to-br from-white to-gray-50"
-              style={{ animationDelay: `${index * 0.05}s` }}
+              className={`p-8 rounded-2xl border border-gray-200 shadow-lg animate-fade-in flex flex-col items-center text-center hover:shadow-2xl transition-all duration-500 hover:border-hirtoli-green bg-gradient-to-br from-white to-gray-50 hover:-translate-y-2 group relative overflow-hidden`}
+              style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="mb-4 p-3 rounded-full bg-gray-50">{stat.icon}</div>
-              <div className="text-3xl font-bold mb-2 text-gray-800">{stat.value}</div>
-              <div className="text-gray-800 font-semibold mb-2">{stat.label}</div>
-              <div className="text-sm text-gray-600 leading-relaxed">{stat.description}</div>
+              {/* Animated background overlay */}
+              <div className="absolute inset-0 bg-gradient-to-br from-hirtoli-green/0 to-hirtoli-red/0 group-hover:from-hirtoli-green/5 group-hover:to-hirtoli-red/5 transition-all duration-500"></div>
+              
+              <div className="relative z-10 mb-6 p-4 rounded-full bg-gradient-to-br from-gray-50 to-white shadow-inner group-hover:scale-110 transition-transform duration-300">
+                {stat.icon}
+              </div>
+              <div className="relative z-10 text-4xl font-bold mb-3 text-gray-800 group-hover:text-hirtoli-green transition-colors duration-300">
+                {stat.value}
+              </div>
+              <div className="relative z-10 text-gray-800 font-semibold mb-3 text-lg">{stat.label}</div>
+              <div className="relative z-10 text-sm text-gray-600 leading-relaxed">{stat.description}</div>
+              
+              {/* Hover indicator */}
+              <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-hirtoli-green to-hirtoli-red transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
             </div>
           ))}
         </div>
