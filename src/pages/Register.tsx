@@ -1,148 +1,153 @@
-
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useLanguage } from '../contexts/LanguageContext';
 import { useAuth } from '../contexts/AuthContext';
-import { useToast } from '../hooks/use-toast';
-import { Button } from '../components/ui/button';
-import { Input } from '../components/ui/input';
-import { Label } from '../components/ui/label';
-import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../components/ui/select';
+import { useToast } from "@/hooks/use-toast"
+import { Button } from "@/components/ui/button"
+import { Input } from "@/components/ui/input"
+import { Label } from "@/components/ui/label"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 
 const Register = () => {
-  const { t } = useLanguage();
   const { register } = useAuth();
-  const { toast } = useToast();
   const navigate = useNavigate();
+  const { toast } = useToast()
 
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     password: '',
     confirmPassword: '',
+    phone: '',
     branch: 'chiro',
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value
+    }));
+  };
+
+  const handleSelectChange = (name: string, value: string) => {
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-
-    if (formData.password !== formData.confirmPassword) {
-      toast({
-        title: "Passwords do not match.",
-        description: "Please make sure your password and confirm password fields match.",
-        variant: "destructive",
-      });
-      return;
-    }
-
+    
     try {
       await register({
         name: formData.name,
         email: formData.email,
         password: formData.password,
-        branch: formData.branch
+        phone: formData.phone,
+        role: 'student' as const,
+        branch: formData.branch,
       });
+      
       toast({
         title: "Registration Successful",
-        description: "You have successfully registered. Redirecting...",
+        description: "Welcome to Hirtoli Driving School!",
       });
-      navigate('/');
-    } catch (error: any) {
+      
+      navigate('/student-dashboard');
+    } catch (error) {
       toast({
         title: "Registration Failed",
-        description: error.message || "An error occurred during registration.",
+        description: "Please check your information and try again.",
         variant: "destructive",
       });
     }
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
+    <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <Card className="w-full max-w-md p-8 space-y-4">
         <CardHeader className="space-y-1">
-          <CardTitle className="text-2xl font-bold text-center">{t('register.title')}</CardTitle>
+          <CardTitle className="text-2xl font-bold text-center">Create an Account</CardTitle>
         </CardHeader>
-        <CardContent>
+        <CardContent className="grid gap-4">
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="space-y-2">
-              <Label htmlFor="name">{t('register.name')}</Label>
+              <Label htmlFor="name">Full Name</Label>
               <Input
                 id="name"
                 name="name"
-                placeholder={t('register.namePlaceholder')}
-                type="text"
+                placeholder="Enter your full name"
                 value={formData.name}
                 onChange={handleChange}
                 required
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="email">{t('register.email')}</Label>
+              <Label htmlFor="email">Email</Label>
               <Input
+                type="email"
                 id="email"
                 name="email"
-                placeholder={t('register.emailPlaceholder')}
-                type="email"
+                placeholder="Enter your email"
                 value={formData.email}
                 onChange={handleChange}
                 required
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="password">{t('register.password')}</Label>
+              <Label htmlFor="phone">Phone Number</Label>
               <Input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Enter your phone number"
+                value={formData.phone}
+                onChange={handleChange}
+                required
+              />
+            </div>
+            <div className="space-y-2">
+              <Label htmlFor="password">Password</Label>
+              <Input
+                type="password"
                 id="password"
                 name="password"
-                placeholder={t('register.passwordPlaceholder')}
-                type="password"
+                placeholder="Enter your password"
                 value={formData.password}
                 onChange={handleChange}
                 required
               />
             </div>
             <div className="space-y-2">
-              <Label htmlFor="confirmPassword">{t('register.confirmPassword')}</Label>
+              <Label htmlFor="confirmPassword">Confirm Password</Label>
               <Input
+                type="password"
                 id="confirmPassword"
                 name="confirmPassword"
-                placeholder={t('register.confirmPasswordPlaceholder')}
-                type="password"
+                placeholder="Confirm your password"
                 value={formData.confirmPassword}
                 onChange={handleChange}
                 required
               />
             </div>
-
-          <div className="space-y-2">
-            <Label htmlFor="branch">Preferred Branch</Label>
-            <Select onValueChange={(value) => setFormData(prev => ({ ...prev, branch: value as 'chiro' | 'harar' }))}>
-              <SelectTrigger>
-                <SelectValue placeholder="Select your preferred branch" />
-              </SelectTrigger>
-              <SelectContent>
-                <SelectItem value="chiro">Chiro</SelectItem>
-                <SelectItem value="harar">Harar</SelectItem>
-              </SelectContent>
-            </Select>
-          </div>
-
-            <Button type="submit" className="w-full">
-              {t('register.submit')}
-            </Button>
+            <div className="space-y-2">
+              <Label htmlFor="branch">Select Branch</Label>
+              <Select
+                value={formData.branch}
+                onValueChange={(value) => handleSelectChange('branch', value)}
+              >
+                <SelectTrigger>
+                  <SelectValue placeholder="Select branch" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="chiro">Chiro</SelectItem>
+                  <SelectItem value="harar">Harar</SelectItem>
+                </SelectContent>
+              </Select>
+            </div>
+            <Button type="submit" className="w-full">Register</Button>
           </form>
-          <div className="text-center mt-4">
-            <p>
-              {t('register.alreadyHaveAccount')}{' '}
-              <Button variant="link" onClick={() => navigate('/login')}>
-                {t('register.login')}
-              </Button>
-            </p>
+          <div className="text-sm text-gray-500 text-center">
+            Already have an account? <a href="/login" className="text-hirtoli-green hover:underline">Login</a>
           </div>
         </CardContent>
       </Card>
