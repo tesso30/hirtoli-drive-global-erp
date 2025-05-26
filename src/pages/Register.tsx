@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -41,7 +42,12 @@ const Register = () => {
     }
 
     try {
-      await register(formData.name, formData.email, formData.password, formData.branch);
+      await register({
+        name: formData.name,
+        email: formData.email,
+        password: formData.password,
+        branch: formData.branch
+      });
       toast({
         title: "Registration Successful",
         description: "You have successfully registered. Redirecting...",
