@@ -1,8 +1,10 @@
-
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Target, Heart, Shield, Clock, Award, Users, Car, BookOpen, Headphones } from 'lucide-react';
 
 const WhyChooseUsSection: React.FC = () => {
+  const navigate = useNavigate();
+
   const whyChooseUs = [
     {
       icon: <Target className="w-12 h-12 text-hirtoli-red" />,
@@ -131,7 +133,10 @@ const WhyChooseUsSection: React.FC = () => {
               Start your journey to confident driving today.
             </p>
             <div className="relative z-10 flex flex-wrap gap-6 justify-center">
-              <button className="bg-gradient-to-r from-hirtoli-red to-red-600 text-white px-10 py-4 rounded-full hover:from-red-600 hover:to-hirtoli-red transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 group">
+              <button 
+                className="bg-gradient-to-r from-hirtoli-red to-red-600 text-white px-10 py-4 rounded-full hover:from-red-600 hover:to-hirtoli-red transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 group"
+                onClick={() => navigate('/consultation')}
+              >
                 Book Free Consultation
               </button>
               <button className="border-2 border-hirtoli-green text-hirtoli-green px-10 py-4 rounded-full hover:bg-hirtoli-green hover:text-white transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105">
