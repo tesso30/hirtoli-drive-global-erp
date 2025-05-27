@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { useToast } from '../../hooks/use-toast';
 import { useBranch } from '../../contexts/BranchContext';
@@ -100,7 +99,7 @@ const ContactForm = () => {
     <div>
       <div className="flex items-center gap-3 mb-6">
         <MessageSquare className="w-8 h-8 text-hirtoli-green" aria-hidden="true" />
-        <h2 className="text-2xl font-bold">{t('contact.form.title') || 'Send Us a Message'}</h2>
+        <h2 className="text-2xl font-bold">Send Us a Message</h2>
       </div>
       
       <Card className="p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -115,7 +114,7 @@ const ContactForm = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label htmlFor="name" className="required">
-                  {t('contact.form.name') || 'Full Name'} *
+                  {t('register.name')} *
                 </Label>
                 <Input
                   id="name"
@@ -137,7 +136,7 @@ const ContactForm = () => {
               
               <div className="space-y-2">
                 <Label htmlFor="phone" className="required">
-                  {t('contact.form.phone') || 'Phone Number'} *
+                  {t('register.phone')} *
                 </Label>
                 <Input
                   id="phone"
@@ -161,7 +160,7 @@ const ContactForm = () => {
             
             <div className="space-y-2">
               <Label htmlFor="email" className="required">
-                {t('contact.form.email') || 'Email Address'} *
+                {t('register.email')} *
               </Label>
               <Input
                 id="email"
@@ -193,7 +192,7 @@ const ContactForm = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="space-y-2">
                 <Label htmlFor="inquiryType">
-                  {t('contact.form.inquiry_type') || 'Inquiry Type'}
+                  Inquiry Type
                 </Label>
                 <Select
                   value={form.inquiryType}
@@ -216,7 +215,7 @@ const ContactForm = () => {
               
               <div className="space-y-2">
                 <Label htmlFor="preferredContact">
-                  {t('contact.form.preferred_contact') || 'Preferred Contact Method'}
+                  Preferred Contact Method
                 </Label>
                 <Select
                   value={form.preferredContact}
@@ -237,7 +236,7 @@ const ContactForm = () => {
               <div className="space-y-2">
                 <Label htmlFor="urgency" className="flex items-center gap-2">
                   <Clock className="w-4 h-4" aria-hidden="true" />
-                  {t('contact.form.urgency') || 'Urgency Level'}
+                  Urgency Level
                 </Label>
                 <Select
                   value={form.urgency}
@@ -258,7 +257,7 @@ const ContactForm = () => {
             
             <div className="space-y-2">
               <Label htmlFor="branch">
-                {t('contact.form.branch') || 'Preferred Branch'}
+                Preferred Branch
               </Label>
               <Select
                 value={form.selectedBranch}
@@ -285,7 +284,7 @@ const ContactForm = () => {
             
             <div className="space-y-2">
               <Label htmlFor="subject" className="required">
-                {t('contact.form.subject') || 'Subject'} *
+                Subject *
               </Label>
               <Input
                 id="subject"
@@ -307,7 +306,7 @@ const ContactForm = () => {
             
             <div className="space-y-2">
               <Label htmlFor="message" className="required">
-                {t('contact.form.message') || 'Message'} *
+                Message *
               </Label>
               <Textarea
                 id="message"
@@ -365,7 +364,7 @@ const ContactForm = () => {
             ) : (
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" aria-hidden="true" />
-                <span>{t('contact.form.submit') || 'Send Message'}</span>
+                <span>Send Message</span>
               </div>
             )}
           </Button>

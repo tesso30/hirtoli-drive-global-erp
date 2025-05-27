@@ -48,7 +48,7 @@
   "about.students": "15,000+ Happy Students",
   "about.experience": "13+ Years Excellence",
   "about.safety": "100% Safety Record",
-  "about.branches": "3 Major Locations",
+  "about.branches": "2 Major Locations",
   "about.features.certified": "Internationally Certified",
   "about.features.certified.desc": "ISO 9001:2015 quality management standards",
   "about.features.technology": "Modern Technology",
@@ -107,6 +107,9 @@
   "services.highlights.modern.desc": "Practice with the latest vehicles equipped with modern safety features and technology",
   "services.highlights.certified": "Certified Excellence",
   "services.highlights.certified.desc": "Internationally recognized training standards with continuous quality improvement",
+  
+  "enrollment.title": "Simple Enrollment Process",
+  "enrollment.subtitle": "Getting started is easy! Follow these simple steps to begin your driving education journey with us.",
   
   "stats.pass_rate": "Pass Rate",
   "stats.years": "Years Excellence",

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { UserCheck, Calendar, Award, Users, MapPin, Phone, Car, Clock, Shield, Star, Zap, Heart } from 'lucide-react';
 
@@ -30,10 +31,10 @@ const StatsSection: React.FC = () => {
       description: "Certified and experienced"
     },
     {
-      value: "3",
+      value: "2",
       label: "Branch Locations",
       icon: <MapPin className="w-8 h-8 text-hirtoli-red" />,
-      description: "Across major Ethiopian cities"
+      description: "Chiro and Harar branches"
     },
     {
       value: "24/7",
