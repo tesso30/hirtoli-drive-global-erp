@@ -5,31 +5,24 @@ import { useAuth } from '../contexts/AuthContext';
 import { Button } from '../components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs';
-import { User, Users, Settings, Book, DollarSign } from 'lucide-react';
+import SystemOverview from '../components/dashboard/admin/SystemOverview';
+import { User, Users, Settings, Book, DollarSign, BarChart } from 'lucide-react';
 
 const AdminDashboard = () => {
   const { t } = useLanguage();
   const { user } = useAuth();
 
   // Mock data for demo
-  const stats = {
-    students: 120,
-    instructors: 15,
-    courses: 8,
-    branches: 3,
-    revenue: 450000,
-  };
-
   const recentStudents = [
-    { id: 1, name: 'Alex Johnson', email: 'alex@example.com', course: 'Basic Driving Course', branch: 'Addis Ababa', status: 'Active' },
-    { id: 2, name: 'Sarah Williams', email: 'sarah@example.com', course: 'Commercial License', branch: 'Adama', status: 'Active' },
-    { id: 3, name: 'Michael Brown', email: 'michael@example.com', course: 'Advanced Driving', branch: 'Bahir Dar', status: 'Inactive' },
+    { id: 1, name: 'Alex Johnson', email: 'alex@example.com', course: 'Basic Driving Course', branch: 'Addis Ababa', status: 'Active', enrolled: '2024-01-15' },
+    { id: 2, name: 'Sarah Williams', email: 'sarah@example.com', course: 'Commercial License', branch: 'Adama', status: 'Active', enrolled: '2024-01-14' },
+    { id: 3, name: 'Michael Brown', email: 'michael@example.com', course: 'Advanced Driving', branch: 'Bahir Dar', status: 'Inactive', enrolled: '2024-01-13' },
   ];
 
   const instructors = [
-    { id: 1, name: 'David Smith', email: 'david@example.com', specialization: 'Car Driving', branch: 'Addis Ababa', students: 10 },
-    { id: 2, name: 'Emily Davis', email: 'emily@example.com', specialization: 'Commercial Vehicles', branch: 'Addis Ababa', students: 8 },
-    { id: 3, name: 'Robert Johnson', email: 'robert@example.com', specialization: 'Motorcycle', branch: 'Adama', students: 5 },
+    { id: 1, name: 'David Smith', email: 'david@example.com', specialization: 'Car Driving', branch: 'Addis Ababa', students: 10, rating: 4.8 },
+    { id: 2, name: 'Emily Davis', email: 'emily@example.com', specialization: 'Commercial Vehicles', branch: 'Addis Ababa', students: 8, rating: 4.9 },
+    { id: 3, name: 'Robert Johnson', email: 'robert@example.com', specialization: 'Motorcycle', branch: 'Adama', students: 5, rating: 4.7 },
   ];
 
   return (
@@ -41,55 +34,12 @@ const AdminDashboard = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-2 md:grid-cols-5 gap-4 mb-8">
-        <Card>
-          <CardHeader className="pb-2">
-            <CardTitle className="text-sm font-medium">Total Students</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="text-2xl font-bold">{stats.students}</div>
-          </CardContent>
-        </Card>
-        
-        <Card>
-          <CardHeader className="pb-2">
-            <CardTitle className="text-sm font-medium">Instructors</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="text-2xl font-bold">{stats.instructors}</div>
-          </CardContent>
-        </Card>
-        
-        <Card>
-          <CardHeader className="pb-2">
-            <CardTitle className="text-sm font-medium">Courses</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="text-2xl font-bold">{stats.courses}</div>
-          </CardContent>
-        </Card>
-        
-        <Card>
-          <CardHeader className="pb-2">
-            <CardTitle className="text-sm font-medium">Branches</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="text-2xl font-bold">{stats.branches}</div>
-          </CardContent>
-        </Card>
-        
-        <Card>
-          <CardHeader className="pb-2">
-            <CardTitle className="text-sm font-medium">Revenue (ETB)</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="text-2xl font-bold">{stats.revenue.toLocaleString()}</div>
-          </CardContent>
-        </Card>
-      </div>
-
-      <Tabs defaultValue="students" className="space-y-4">
+      <Tabs defaultValue="overview" className="space-y-4">
         <TabsList>
+          <TabsTrigger value="overview" className="flex items-center gap-2">
+            <BarChart size={16} />
+            Overview
+          </TabsTrigger>
           <TabsTrigger value="students" className="flex items-center gap-2">
             <User size={16} />
             Students
@@ -98,19 +48,20 @@ const AdminDashboard = () => {
             <Users size={16} />
             Instructors
           </TabsTrigger>
-          <TabsTrigger value="courses" className="flex items-center gap-2">
-            <Book size={16} />
-            Courses
-          </TabsTrigger>
-          <TabsTrigger value="reports" className="flex items-center gap-2">
+          <TabsTrigger value="analytics" className="flex items-center gap-2">
             <DollarSign size={16} />
-            Reports
+            Analytics
           </TabsTrigger>
           <TabsTrigger value="settings" className="flex items-center gap-2">
             <Settings size={16} />
             {t('dashboard.settings')}
           </TabsTrigger>
         </TabsList>
+
+        {/* Overview Tab */}
+        <TabsContent value="overview">
+          <SystemOverview />
+        </TabsContent>
 
         {/* Students Tab */}
         <TabsContent value="students">
@@ -120,7 +71,11 @@ const AdminDashboard = () => {
               <CardDescription>View and manage student accounts</CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="flex justify-end mb-4">
+              <div className="flex justify-between items-center mb-4">
+                <div className="flex gap-2">
+                  <Button variant="outline" size="sm">Filter</Button>
+                  <Button variant="outline" size="sm">Export</Button>
+                </div>
                 <Button>Add New Student</Button>
               </div>
               <div className="overflow-x-auto">
@@ -132,13 +87,14 @@ const AdminDashboard = () => {
                       <th className="py-3 text-left">Course</th>
                       <th className="py-3 text-left">Branch</th>
                       <th className="py-3 text-left">Status</th>
+                      <th className="py-3 text-left">Enrolled</th>
                       <th className="py-3 text-right">Actions</th>
                     </tr>
                   </thead>
                   <tbody>
                     {recentStudents.map(student => (
                       <tr key={student.id} className="border-b">
-                        <td className="py-3">{student.name}</td>
+                        <td className="py-3 font-medium">{student.name}</td>
                         <td className="py-3">{student.email}</td>
                         <td className="py-3">{student.course}</td>
                         <td className="py-3">{student.branch}</td>
@@ -153,17 +109,18 @@ const AdminDashboard = () => {
                             {student.status}
                           </span>
                         </td>
+                        <td className="py-3">{student.enrolled}</td>
                         <td className="py-3 text-right">
-                          <Button variant="outline" size="sm" className="mr-2">Edit</Button>
-                          <Button variant="outline" size="sm" className="text-hirtoli-red">Delete</Button>
+                          <div className="flex gap-1 justify-end">
+                            <Button variant="ghost" size="sm">View</Button>
+                            <Button variant="ghost" size="sm">Edit</Button>
+                            <Button variant="ghost" size="sm" className="text-red-600">Delete</Button>
+                          </div>
                         </td>
                       </tr>
                     ))}
                   </tbody>
                 </table>
-              </div>
-              <div className="mt-4 flex justify-center">
-                <Button variant="outline">View All Students</Button>
               </div>
             </CardContent>
           </Card>
@@ -177,7 +134,11 @@ const AdminDashboard = () => {
               <CardDescription>View and manage instructor accounts</CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="flex justify-end mb-4">
+              <div className="flex justify-between items-center mb-4">
+                <div className="flex gap-2">
+                  <Button variant="outline" size="sm">Filter</Button>
+                  <Button variant="outline" size="sm">Export</Button>
+                </div>
                 <Button>Add New Instructor</Button>
               </div>
               <div className="overflow-x-auto">
@@ -189,108 +150,146 @@ const AdminDashboard = () => {
                       <th className="py-3 text-left">Specialization</th>
                       <th className="py-3 text-left">Branch</th>
                       <th className="py-3 text-left">Students</th>
+                      <th className="py-3 text-left">Rating</th>
                       <th className="py-3 text-right">Actions</th>
                     </tr>
                   </thead>
                   <tbody>
                     {instructors.map(instructor => (
                       <tr key={instructor.id} className="border-b">
-                        <td className="py-3">{instructor.name}</td>
+                        <td className="py-3 font-medium">{instructor.name}</td>
                         <td className="py-3">{instructor.email}</td>
                         <td className="py-3">{instructor.specialization}</td>
                         <td className="py-3">{instructor.branch}</td>
                         <td className="py-3">{instructor.students}</td>
+                        <td className="py-3">
+                          <div className="flex items-center gap-1">
+                            <span>{instructor.rating}</span>
+                            <span className="text-yellow-500">★</span>
+                          </div>
+                        </td>
                         <td className="py-3 text-right">
-                          <Button variant="outline" size="sm" className="mr-2">Edit</Button>
-                          <Button variant="outline" size="sm" className="text-hirtoli-red">Delete</Button>
+                          <div className="flex gap-1 justify-end">
+                            <Button variant="ghost" size="sm">View</Button>
+                            <Button variant="ghost" size="sm">Edit</Button>
+                            <Button variant="ghost" size="sm" className="text-red-600">Delete</Button>
+                          </div>
                         </td>
                       </tr>
                     ))}
                   </tbody>
                 </table>
               </div>
-              <div className="mt-4 flex justify-center">
-                <Button variant="outline">View All Instructors</Button>
-              </div>
             </CardContent>
           </Card>
         </TabsContent>
 
-        {/* Courses Tab */}
-        <TabsContent value="courses">
-          <Card>
-            <CardHeader>
-              <CardTitle>Course Management</CardTitle>
-              <CardDescription>Manage course offerings and curriculum</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="text-center py-8">
-                <Book className="mx-auto h-12 w-12 text-gray-400" />
-                <h3 className="mt-2 text-sm font-semibold">Course Management Coming Soon</h3>
-                <p className="mt-1 text-sm text-gray-500">
-                  This feature will be available in the next update.
-                </p>
-              </div>
-            </CardContent>
-          </Card>
-        </TabsContent>
-
-        {/* Reports Tab */}
-        <TabsContent value="reports">
-          <Card>
-            <CardHeader>
-              <CardTitle>Financial Reports</CardTitle>
-              <CardDescription>View revenue and payment statistics</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="text-center py-8">
-                <DollarSign className="mx-auto h-12 w-12 text-gray-400" />
-                <h3 className="mt-2 text-sm font-semibold">Financial Reports Coming Soon</h3>
-                <p className="mt-1 text-sm text-gray-500">
-                  This feature will be available in the next update.
-                </p>
-              </div>
-            </CardContent>
-          </Card>
+        {/* Analytics Tab */}
+        <TabsContent value="analytics">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <Card>
+              <CardHeader>
+                <CardTitle>Revenue Analytics</CardTitle>
+                <CardDescription>Financial performance overview</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div className="flex justify-between items-center">
+                    <span>This Month</span>
+                    <span className="font-bold">1,020,000 ETB</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span>Last Month</span>
+                    <span>940,000 ETB</span>
+                  </div>
+                  <div className="flex justify-between items-center text-green-600">
+                    <span>Growth</span>
+                    <span>+8.5%</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+            
+            <Card>
+              <CardHeader>
+                <CardTitle>Student Analytics</CardTitle>
+                <CardDescription>Enrollment and completion rates</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-4">
+                  <div className="flex justify-between items-center">
+                    <span>New Enrollments</span>
+                    <span className="font-bold">45</span>
+                  </div>
+                  <div className="flex justify-between items-center">
+                    <span>Course Completions</span>
+                    <span>28</span>
+                  </div>
+                  <div className="flex justify-between items-center text-blue-600">
+                    <span>Success Rate</span>
+                    <span>92%</span>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
         </TabsContent>
 
         {/* Settings Tab */}
         <TabsContent value="settings">
-          <Card>
-            <CardHeader>
-              <CardTitle>System Settings</CardTitle>
-              <CardDescription>Configure system-wide settings and preferences</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <div className="space-y-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <Card>
+              <CardHeader>
+                <CardTitle>System Configuration</CardTitle>
+                <CardDescription>General system settings</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
                 <div>
-                  <Label htmlFor="siteName">Site Name</Label>
-                  <Input id="siteName" defaultValue="Hirtoli Driving School" />
+                  <label className="block text-sm font-medium mb-1">School Name</label>
+                  <input 
+                    type="text" 
+                    defaultValue="Hirtoli Driving School" 
+                    className="w-full px-3 py-2 border rounded-md"
+                  />
                 </div>
-                
                 <div>
-                  <Label htmlFor="adminEmail">Admin Email</Label>
-                  <Input id="adminEmail" type="email" defaultValue={user?.email || ''} />
+                  <label className="block text-sm font-medium mb-1">Contact Email</label>
+                  <input 
+                    type="email" 
+                    defaultValue="admin@hirtoli.com" 
+                    className="w-full px-3 py-2 border rounded-md"
+                  />
                 </div>
-                
-                <div>
-                  <Label htmlFor="language">Default Language</Label>
-                  <Select defaultValue="en">
-                    <SelectTrigger>
-                      <SelectValue placeholder="Select language" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="en">{t('lang.english')}</SelectItem>
-                      <SelectItem value="am">{t('lang.amharic')}</SelectItem>
-                      <SelectItem value="om">{t('lang.oromo')}</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </div>
-                
                 <Button>Save Settings</Button>
-              </div>
-            </CardContent>
-          </Card>
+              </CardContent>
+            </Card>
+            
+            <Card>
+              <CardHeader>
+                <CardTitle>Course Configuration</CardTitle>
+                <CardDescription>Manage course settings</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div>
+                  <label className="block text-sm font-medium mb-1">Default Course Duration</label>
+                  <select className="w-full px-3 py-2 border rounded-md">
+                    <option>4 weeks</option>
+                    <option>6 weeks</option>
+                    <option>8 weeks</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-sm font-medium mb-1">Theory Hours</label>
+                  <input 
+                    type="number" 
+                    defaultValue="20" 
+                    className="w-full px-3 py-2 border rounded-md"
+                  />
+                </div>
+                <Button>Update Configuration</Button>
+              </CardContent>
+            </Card>
+          </div>
         </TabsContent>
       </Tabs>
     </div>
@@ -298,49 +297,3 @@ const AdminDashboard = () => {
 };
 
 export default AdminDashboard;
-
-// Missing components
-const Label = ({ htmlFor, children }: { htmlFor?: string; children: React.ReactNode }) => (
-  <label htmlFor={htmlFor} className="block text-sm font-medium text-gray-700 mb-1">
-    {children}
-  </label>
-);
-
-const Input = React.forwardRef<
-  HTMLInputElement,
-  React.InputHTMLAttributes<HTMLInputElement>
->(({ className, ...props }, ref) => {
-  return (
-    <input
-      className={`flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50`}
-      ref={ref}
-      {...props}
-    />
-  );
-});
-Input.displayName = "Input";
-
-// Mock Select components
-const Select = ({ children, defaultValue }: { children: React.ReactNode; defaultValue?: string }) => {
-  return <div>{children}</div>;
-};
-
-const SelectTrigger = ({ children }: { children: React.ReactNode }) => {
-  return (
-    <div className="flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background">
-      {children}
-    </div>
-  );
-};
-
-const SelectValue = ({ placeholder }: { placeholder?: string }) => {
-  return <span className="text-muted-foreground">{placeholder}</span>;
-};
-
-const SelectContent = ({ children }: { children: React.ReactNode }) => {
-  return <div className="hidden">{children}</div>;
-};
-
-const SelectItem = ({ value, children }: { value: string; children: React.ReactNode }) => {
-  return <div data-value={value}>{children}</div>;
-};

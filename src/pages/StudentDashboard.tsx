@@ -4,7 +4,9 @@ import { useAuth } from '../contexts/AuthContext';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
 import { Button } from '../components/ui/button';
+import StudentStats from '../components/dashboard/student/StudentStats';
 import CourseProgress from '../components/dashboard/CourseProgress';
+import LessonSchedule from '../components/dashboard/student/LessonSchedule';
 import { Calendar, BookOpen, CreditCard, MessageSquare, User, Bell } from 'lucide-react';
 
 const StudentDashboard = () => {
@@ -30,10 +32,14 @@ const StudentDashboard = () => {
       </div>
 
       <div className="container mx-auto px-4 py-8">
+        {/* Student Statistics */}
+        <StudentStats />
+
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Main Content - Course Progress */}
-          <div className="lg:col-span-2">
+          <div className="lg:col-span-2 space-y-6">
             <CourseProgress />
+            <LessonSchedule />
           </div>
 
           {/* Sidebar */}
@@ -66,35 +72,6 @@ const StudentDashboard = () => {
               </CardContent>
             </Card>
 
-            {/* Upcoming Lessons */}
-            <Card>
-              <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <Calendar className="text-hirtoli-red" size={20} />
-                  Upcoming Lessons
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="space-y-3">
-                  <div className="p-3 bg-blue-50 rounded-lg">
-                    <h4 className="font-medium">Defensive Driving</h4>
-                    <p className="text-sm text-gray-600">Theory Class</p>
-                    <p className="text-sm font-medium text-blue-600">Today, 2:00 PM</p>
-                  </div>
-                  <div className="p-3 bg-green-50 rounded-lg">
-                    <h4 className="font-medium">Highway Driving</h4>
-                    <p className="text-sm text-gray-600">Practical Session</p>
-                    <p className="text-sm font-medium text-green-600">Jan 20, 10:00 AM</p>
-                  </div>
-                  <div className="p-3 bg-orange-50 rounded-lg">
-                    <h4 className="font-medium">Night Driving</h4>
-                    <p className="text-sm text-gray-600">Practical Session</p>
-                    <p className="text-sm font-medium text-orange-600">Jan 22, 7:00 PM</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
             {/* Payment Status */}
             <Card>
               <CardHeader>
@@ -120,6 +97,32 @@ const StudentDashboard = () => {
                   <Button className="w-full bg-hirtoli-red hover:bg-hirtoli-red/90 mt-3">
                     Pay Balance
                   </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Recent Achievements */}
+            <Card>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-2">
+                  <BookOpen className="text-hirtoli-red" size={20} />
+                  Recent Achievements
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="space-y-3">
+                  <div className="p-3 bg-green-50 rounded-lg border-l-4 border-green-500">
+                    <h4 className="font-medium text-green-800">Theory Test Passed!</h4>
+                    <p className="text-sm text-green-600">Scored 95% on traffic rules exam</p>
+                  </div>
+                  <div className="p-3 bg-blue-50 rounded-lg border-l-4 border-blue-500">
+                    <h4 className="font-medium text-blue-800">10 Hours Completed</h4>
+                    <p className="text-sm text-blue-600">Practical driving milestone reached</p>
+                  </div>
+                  <div className="p-3 bg-purple-50 rounded-lg border-l-4 border-purple-500">
+                    <h4 className="font-medium text-purple-800">Perfect Attendance</h4>
+                    <p className="text-sm text-purple-600">No missed lessons this month</p>
+                  </div>
                 </div>
               </CardContent>
             </Card>
