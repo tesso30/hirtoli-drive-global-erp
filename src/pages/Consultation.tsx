@@ -9,6 +9,7 @@ import { Label } from '../components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../components/ui/select';
 import { Calendar, Clock, MapPin, Phone, Mail, CheckCircle } from 'lucide-react';
 import { useToast } from '../hooks/use-toast';
+import { supabase } from '../integrations/supabase/client';
 
 const Consultation = () => {
   const navigate = useNavigate();
@@ -30,8 +31,27 @@ const Consultation = () => {
     setIsSubmitting(true);
 
     try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Save consultation request to Supabase
+      const { data, error } = await supabase
+        .from('consultation_requests')
+        .insert({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          preferred_date: formData.preferredDate || null,
+          preferred_time: formData.preferredTime || null,
+          branch: formData.branch || null,
+          experience: formData.experience || null,
+          message: formData.message || null,
+          status: 'pending'
+        });
+
+      if (error) {
+        console.error('Error saving consultation request:', error);
+        throw error;
+      }
+
+      console.log('Consultation request saved successfully:', data);
       
       toast({
         title: "Consultation Booked!",
@@ -50,6 +70,7 @@ const Consultation = () => {
         message: ''
       });
     } catch (error) {
+      console.error('Failed to save consultation request:', error);
       toast({
         title: "Booking Failed",
         description: "Please try again or contact us directly.",
