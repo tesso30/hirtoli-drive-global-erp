@@ -7,7 +7,7 @@ import CourseDetailCard from '../CourseDetailCard';
 
 const CoursesSection: React.FC = () => {
   const navigate = useNavigate();
-  const { t } = useLanguage();
+  const { t, tArray } = useLanguage();
 
   const detailedCourses = [
     {
@@ -18,14 +18,7 @@ const CoursesSection: React.FC = () => {
       classSize: t('courses.detailed.beginner.class_size'),
       price: t('courses.detailed.beginner.price'),
       level: t('courses.detailed.beginner.level'),
-      features: t('courses.features.beginner') || [
-        "Basic vehicle controls and safety",
-        "Traffic rules and road signs",
-        "Parking and maneuvering",
-        "Highway driving skills",
-        "Test preparation",
-        "License application support"
-      ]
+      features: tArray('courses.features.beginner')
     },
     {
       title: t('courses.detailed.advanced.title'),
@@ -35,14 +28,7 @@ const CoursesSection: React.FC = () => {
       classSize: t('courses.detailed.advanced.class_size'),
       price: t('courses.detailed.advanced.price'),
       level: t('courses.detailed.advanced.level'),
-      features: t('courses.features.advanced') || [
-        "Advanced maneuvering techniques",
-        "Night and weather driving",
-        "Emergency response training",
-        "Fuel-efficient driving",
-        "Vehicle maintenance basics",
-        "Confidence building exercises"
-      ]
+      features: tArray('courses.features.advanced')
     },
     {
       title: t('courses.detailed.commercial.title'),
@@ -52,14 +38,7 @@ const CoursesSection: React.FC = () => {
       classSize: t('courses.detailed.commercial.class_size'),
       price: t('courses.detailed.commercial.price'),
       level: t('courses.detailed.commercial.level'),
-      features: t('courses.features.commercial') || [
-        "Heavy vehicle operation",
-        "Commercial traffic regulations",
-        "Load management and safety",
-        "Professional driver etiquette",
-        "Business driving practices",
-        "Commercial license exam prep"
-      ]
+      features: tArray('courses.features.commercial')
     },
   ];
 

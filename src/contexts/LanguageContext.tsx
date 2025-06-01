@@ -1,3 +1,4 @@
+
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
 // Define available languages
@@ -8,6 +9,7 @@ type LanguageContextType = {
   language: Language;
   setLanguage: (lang: Language) => void;
   t: (key: string) => string;
+  tArray: (key: string) => string[];
 };
 
 // Create context with default values
@@ -15,6 +17,7 @@ const LanguageContext = createContext<LanguageContextType>({
   language: 'en',
   setLanguage: () => {},
   t: (key) => key,
+  tArray: (key) => [key],
 });
 
 // Language provider props type
@@ -27,7 +30,7 @@ import enTranslations from '../locales/en.json';
 import amTranslations from '../locales/am.json';
 import omTranslations from '../locales/om.json';
 
-const translations: Record<Language, Record<string, string>> = {
+const translations: Record<Language, Record<string, string | string[]>> = {
   en: enTranslations,
   am: amTranslations,
   om: omTranslations,
@@ -66,13 +69,20 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
     }
   }, [language]);
 
-  // Translation function
+  // Translation function for strings
   const t = (key: string): string => {
-    return translations[language][key] || translations['en'][key] || key;
+    const value = translations[language][key] || translations['en'][key] || key;
+    return typeof value === 'string' ? value : key;
+  };
+
+  // Translation function for arrays
+  const tArray = (key: string): string[] => {
+    const value = translations[language][key] || translations['en'][key];
+    return Array.isArray(value) ? value : [key];
   };
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+    <LanguageContext.Provider value={{ language, setLanguage, t, tArray }}>
       {children}
     </LanguageContext.Provider>
   );
