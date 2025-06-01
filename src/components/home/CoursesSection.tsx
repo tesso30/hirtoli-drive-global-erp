@@ -1,22 +1,24 @@
 
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useLanguage } from '../../contexts/LanguageContext';
 import { Button } from '../ui/button';
 import CourseDetailCard from '../CourseDetailCard';
 
 const CoursesSection: React.FC = () => {
   const navigate = useNavigate();
+  const { t } = useLanguage();
 
   const detailedCourses = [
     {
-      title: "Complete Beginner Course",
-      description: "Perfect for absolute beginners with no driving experience",
+      title: t('courses.detailed.beginner.title'),
+      description: t('courses.detailed.beginner.desc'),
       image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-4.0.3",
-      duration: "6-8 Weeks",
-      classSize: "Max 4 Students",
-      price: "3,500 ETB",
-      level: "Beginner",
-      features: [
+      duration: t('courses.detailed.beginner.duration'),
+      classSize: t('courses.detailed.beginner.class_size'),
+      price: t('courses.detailed.beginner.price'),
+      level: t('courses.detailed.beginner.level'),
+      features: t('courses.features.beginner') || [
         "Basic vehicle controls and safety",
         "Traffic rules and road signs",
         "Parking and maneuvering",
@@ -26,14 +28,14 @@ const CoursesSection: React.FC = () => {
       ]
     },
     {
-      title: "Advanced Defensive Driving",
-      description: "Enhance your skills with advanced techniques and safety measures",
+      title: t('courses.detailed.advanced.title'),
+      description: t('courses.detailed.advanced.desc'),
       image: "https://images.unsplash.com/photo-1580273916550-e323be2ae537?ixlib=rb-4.0.3",
-      duration: "4 Weeks",
-      classSize: "Max 6 Students",
-      price: "2,800 ETB",
-      level: "Advanced",
-      features: [
+      duration: t('courses.detailed.advanced.duration'),
+      classSize: t('courses.detailed.advanced.class_size'),
+      price: t('courses.detailed.advanced.price'),
+      level: t('courses.detailed.advanced.level'),
+      features: t('courses.features.advanced') || [
         "Advanced maneuvering techniques",
         "Night and weather driving",
         "Emergency response training",
@@ -43,14 +45,14 @@ const CoursesSection: React.FC = () => {
       ]
     },
     {
-      title: "Commercial License Training",
-      description: "Professional training for commercial vehicle operation",
+      title: t('courses.detailed.commercial.title'),
+      description: t('courses.detailed.commercial.desc'),
       image: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?ixlib=rb-4.0.3",
-      duration: "8-12 Weeks",
-      classSize: "Max 8 Students",
-      price: "5,200 ETB",
-      level: "Professional",
-      features: [
+      duration: t('courses.detailed.commercial.duration'),
+      classSize: t('courses.detailed.commercial.class_size'),
+      price: t('courses.detailed.commercial.price'),
+      level: t('courses.detailed.commercial.level'),
+      features: t('courses.features.commercial') || [
         "Heavy vehicle operation",
         "Commercial traffic regulations",
         "Load management and safety",
@@ -64,7 +66,7 @@ const CoursesSection: React.FC = () => {
   return (
     <section className="py-16 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-4">Our Comprehensive Courses</h2>
+        <h2 className="text-3xl font-bold text-center mb-4">{t('home.courses.title')}</h2>
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
           Choose from our range of professionally designed courses tailored to different skill levels and needs.
         </p>
@@ -80,7 +82,7 @@ const CoursesSection: React.FC = () => {
         </div>
         <div className="text-center mt-12">
           <Button onClick={() => navigate('/services')} size="lg" className="bg-hirtoli-red hover:bg-opacity-90">
-            View All Courses & Pricing
+            {t('common.view_all')} {t('home.courses.title')} & {t('common.price')}
           </Button>
         </div>
       </div>

@@ -19,69 +19,69 @@ const BranchInfoSection: React.FC = () => {
         
         {branch === 'chiro' && (
           <div className="max-w-2xl mx-auto">
-            <p className="mb-4">Our Chiro branch offers comprehensive driving courses with modern facilities and experienced instructors.</p>
+            <p className="mb-4">{t('branch.chiro.description')}</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
               <div className="bg-gray-50 p-4 rounded-lg">
                 <h3 className="font-semibold mb-2">Location</h3>
-                <p>Chiro, Oromia Region</p>
+                <p>{t('branch.chiro.location')}</p>
                 <a 
                   href="https://maps.app.goo.gl/cB4ErmznYy7H7bAx8" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-hirtoli-green text-sm hover:underline"
                 >
-                  View on Google Maps
+                  {t('branch.chiro.maps')}
                 </a>
               </div>
               <div className="bg-gray-50 p-4 rounded-lg">
-                <h3 className="font-semibold mb-2">Contact</h3>
-                <p>Phone: +251 911 123 456</p>
-                <p>Email: chiro@hirtoli.com</p>
+                <h3 className="font-semibold mb-2">{t('branch.chiro.contact')}</h3>
+                <p>{t('branch.chiro.phone')}</p>
+                <p>{t('branch.chiro.email')}</p>
               </div>
             </div>
             <div className="bg-gray-50 p-4 rounded-lg mb-6">
-              <h3 className="font-semibold mb-2">Operating Hours</h3>
+              <h3 className="font-semibold mb-2">{t('branch.chiro.hours')}</h3>
               <div className="grid grid-cols-2 gap-2">
-                <div>Monday - Friday</div><div>8:00 AM - 6:00 PM</div>
-                <div>Saturday</div><div>9:00 AM - 4:00 PM</div>
-                <div>Sunday</div><div>Closed</div>
+                <div>{t('branch.chiro.weekdays')}</div><div>{t('branch.chiro.weekdays_time')}</div>
+                <div>{t('branch.chiro.saturday')}</div><div>{t('branch.chiro.saturday_time')}</div>
+                <div>{t('branch.chiro.sunday')}</div><div>{t('branch.chiro.sunday_time')}</div>
               </div>
             </div>
-            <Button onClick={() => navigate('/contact')} className="bg-hirtoli-green">Contact This Branch</Button>
+            <Button onClick={() => navigate('/contact')} className="bg-hirtoli-green">{t('branch.chiro.cta')}</Button>
           </div>
         )}
         
         {branch === 'harar' && (
           <div className="max-w-2xl mx-auto">
-            <p className="mb-4">Our Harar branch serves the region with quality driving education and specialized training programs.</p>
+            <p className="mb-4">{t('branch.harar.description')}</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
               <div className="bg-gray-50 p-4 rounded-lg">
                 <h3 className="font-semibold mb-2">Location</h3>
-                <p>Harar, Harari Region</p>
+                <p>{t('branch.harar.location')}</p>
                 <a 
                   href="https://maps.app.goo.gl/jiD7jU2kgVmnXfA87" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-hirtoli-green text-sm hover:underline"
                 >
-                  View on Google Maps
+                  {t('branch.harar.maps')}
                 </a>
               </div>
               <div className="bg-gray-50 p-4 rounded-lg">
-                <h3 className="font-semibold mb-2">Contact</h3>
-                <p>Phone: +251 922 123 456</p>
-                <p>Email: harar@hirtoli.com</p>
+                <h3 className="font-semibold mb-2">{t('branch.harar.contact')}</h3>
+                <p>{t('branch.harar.phone')}</p>
+                <p>{t('branch.harar.email')}</p>
               </div>
             </div>
             <div className="bg-gray-50 p-4 rounded-lg mb-6">
-              <h3 className="font-semibold mb-2">Operating Hours</h3>
+              <h3 className="font-semibold mb-2">{t('branch.harar.hours')}</h3>
               <div className="grid grid-cols-2 gap-2">
-                <div>Monday - Friday</div><div>8:30 AM - 5:30 PM</div>
-                <div>Saturday</div><div>9:00 AM - 3:00 PM</div>
-                <div>Sunday</div><div>Closed</div>
+                <div>{t('branch.harar.weekdays')}</div><div>{t('branch.harar.weekdays_time')}</div>
+                <div>{t('branch.harar.saturday')}</div><div>{t('branch.harar.saturday_time')}</div>
+                <div>{t('branch.harar.sunday')}</div><div>{t('branch.harar.sunday_time')}</div>
               </div>
             </div>
-            <Button onClick={() => navigate('/contact')} className="bg-hirtoli-green">Contact This Branch</Button>
+            <Button onClick={() => navigate('/contact')} className="bg-hirtoli-green">{t('branch.harar.cta')}</Button>
           </div>
         )}
       </div>

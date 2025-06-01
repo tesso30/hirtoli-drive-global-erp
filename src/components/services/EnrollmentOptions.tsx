@@ -12,8 +12,8 @@ const EnrollmentOptions: React.FC = () => {
 
   const enrollmentOptions = [
     {
-      title: t('enrollment.online.title') || 'Online Registration',
-      description: t('enrollment.online.desc') || 'Quick and convenient online enrollment process',
+      title: t('enrollment.online.title'),
+      description: t('enrollment.online.desc'),
       icon: <MessageSquare className="w-12 h-12 text-hirtoli-green" />,
       features: [
         'Instant confirmation',
@@ -25,8 +25,8 @@ const EnrollmentOptions: React.FC = () => {
       estimatedTime: '10 minutes'
     },
     {
-      title: t('enrollment.phone.title') || 'Phone Enrollment',
-      description: t('enrollment.phone.desc') || 'Speak with our enrollment advisors for personalized assistance',
+      title: t('enrollment.phone.title'),
+      description: t('enrollment.phone.desc'),
       icon: <Phone className="w-12 h-12 text-hirtoli-red" />,
       features: [
         'Personal guidance',
@@ -38,8 +38,8 @@ const EnrollmentOptions: React.FC = () => {
       estimatedTime: '15 minutes'
     },
     {
-      title: t('enrollment.visit.title') || 'Visit Our Office',
-      description: t('enrollment.visit.desc') || 'Get hands-on assistance and tour our facilities',
+      title: t('enrollment.visit.title'),
+      description: t('enrollment.visit.desc'),
       icon: <FileText className="w-12 h-12 text-hirtoli-black" />,
       features: [
         'Facility tour',
@@ -56,10 +56,10 @@ const EnrollmentOptions: React.FC = () => {
     <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
       <div className="text-center mb-8">
         <h3 className="text-2xl md:text-3xl font-bold mb-4">
-          {t('enrollment.ready.title') || 'Ready to Get Started?'}
+          {t('enrollment.ready.title')}
         </h3>
         <p className="text-gray-600 mb-6 text-lg">
-          {t('enrollment.ready.subtitle') || 'Take the first step towards becoming a confident driver. Choose your preferred enrollment method.'}
+          {t('enrollment.ready.subtitle')}
         </p>
       </div>
       
@@ -106,7 +106,7 @@ const EnrollmentOptions: React.FC = () => {
             
             <Button 
               onClick={() => {
-                if (option.title.includes('Online')) {
+                if (option.title.includes(t('enrollment.online.title'))) {
                   navigate('/register');
                 } else {
                   navigate('/contact');
@@ -116,8 +116,8 @@ const EnrollmentOptions: React.FC = () => {
                 index === 0 ? 'bg-hirtoli-green hover:bg-hirtoli-green/90' : 'bg-hirtoli-red hover:bg-hirtoli-red/90'
               } text-white`}
             >
-              {option.title.includes('Online') ? 'Register Online' : 
-               option.title.includes('Phone') ? 'Call Now' : 'Find Location'}
+              {option.title.includes(t('enrollment.online.title')) ? t('common.register_online') : 
+               option.title.includes(t('enrollment.phone.title')) ? t('common.call_now') : t('common.find_location')}
             </Button>
           </Card>
         ))}

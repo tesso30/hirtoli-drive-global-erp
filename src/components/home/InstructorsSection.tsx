@@ -1,11 +1,13 @@
 
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useLanguage } from '../../contexts/LanguageContext';
 import { Button } from '../ui/button';
 import InstructorCard from '../InstructorCard';
 
 const InstructorsSection: React.FC = () => {
   const navigate = useNavigate();
+  const { t } = useLanguage();
 
   const instructors = [
     {
@@ -45,9 +47,9 @@ const InstructorsSection: React.FC = () => {
   return (
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center mb-4">Meet Our Expert Instructors</h2>
+        <h2 className="text-3xl font-bold text-center mb-4">{t('home.instructors.title')}</h2>
         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-          Our certified instructors bring years of experience and a passion for safe driving education.
+          {t('home.instructors.subtitle')}
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {instructors.map((instructor, index) => (
@@ -58,7 +60,7 @@ const InstructorsSection: React.FC = () => {
         </div>
         <div className="text-center mt-12">
           <Button onClick={() => navigate('/about')} variant="outline" size="lg">
-            Meet All Our Instructors
+            {t('home.instructors.cta')}
           </Button>
         </div>
       </div>

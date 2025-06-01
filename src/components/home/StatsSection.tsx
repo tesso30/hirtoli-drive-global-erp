@@ -1,82 +1,85 @@
 
 import React from 'react';
+import { useLanguage } from '../../contexts/LanguageContext';
 import { UserCheck, Calendar, Award, Users, MapPin, Phone, Car, Clock, Shield, Star, Zap, Heart } from 'lucide-react';
 
 const StatsSection: React.FC = () => {
+  const { t } = useLanguage();
+
   const stats = [
     {
       value: "15,000+",
-      label: "Students Trained",
+      label: t('home.stats.students'),
       icon: <UserCheck className="w-8 h-8 text-hirtoli-green" />,
-      description: "Successful graduates since 2010",
+      description: t('home.stats.description.students'),
       gradient: "from-green-500/10 to-emerald-500/10",
       hoverGradient: "group-hover:from-green-500/20 group-hover:to-emerald-500/20"
     },
     {
       value: "13+",
-      label: "Years Experience",
+      label: t('home.stats.experience'),
       icon: <Calendar className="w-8 h-8 text-hirtoli-red" />,
-      description: "Serving Ethiopia with excellence"
+      description: t('home.stats.description.experience')
     },
     {
       value: "98%",
-      label: "Pass Rate",
+      label: t('home.stats.pass_rate'),
       icon: <Award className="w-8 h-8 text-hirtoli-black" />,
-      description: "First-time test success rate"
+      description: t('home.stats.description.pass_rate')
     },
     {
       value: "50+",
-      label: "Expert Instructors",
+      label: t('home.stats.instructors'),
       icon: <Users className="w-8 h-8 text-hirtoli-green" />,
-      description: "Certified and experienced"
+      description: t('home.stats.description.instructors')
     },
     {
       value: "2",
-      label: "Branch Locations",
+      label: t('home.stats.branches'),
       icon: <MapPin className="w-8 h-8 text-hirtoli-red" />,
-      description: "Chiro and Harar branches"
+      description: t('home.stats.description.branches')
     },
     {
       value: "24/7",
-      label: "Support Available",
+      label: t('home.stats.support'),
       icon: <Phone className="w-8 h-8 text-hirtoli-black" />,
-      description: "Student assistance anytime"
+      description: t('home.stats.description.support')
     },
     {
       value: "200+",
-      label: "Modern Vehicles",
+      label: t('home.stats.vehicles'),
       icon: <Car className="w-8 h-8 text-blue-600" />,
-      description: "Latest safety features included"
+      description: t('home.stats.description.vehicles')
     },
     {
       value: "6 Days",
-      label: "Average Training Time",
+      label: t('home.stats.training_time'),
       icon: <Clock className="w-8 h-8 text-purple-600" />,
-      description: "Efficient learning programs"
+      description: t('home.stats.description.training_time')
     },
     {
       value: "100%",
-      label: "Safety Record",
+      label: t('home.stats.safety'),
       icon: <Shield className="w-8 h-8 text-green-600" />,
-      description: "Zero accidents in training"
+      description: t('home.stats.description.safety')
     },
     {
       value: "4.9/5",
-      label: "Student Rating",
+      label: t('home.stats.rating'),
       icon: <Star className="w-8 h-8 text-yellow-500" />,
-      description: "Excellent student satisfaction"
+      description: t('home.stats.description.rating')
     },
     {
       value: "30+",
-      label: "Course Options",
+      label: t('home.stats.courses'),
       icon: <Zap className="w-8 h-8 text-orange-500" />,
-      description: "Comprehensive training programs"
+      description: t('home.stats.description.courses')
     },
     {
       value: "95%",
-      label: "Student Satisfaction",
+      label: t('home.stats.satisfaction'),
       icon: <Heart className="w-8 h-8 text-pink-500" />,
-      description: "Students love our approach"
+      description: t('home.stats.description.satisfaction')
     },
   ];
 

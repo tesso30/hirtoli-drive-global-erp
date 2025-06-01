@@ -16,10 +16,10 @@ const EnrollmentProcess: React.FC = () => {
         {/* Enhanced header with statistics */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-hirtoli-black to-hirtoli-red bg-clip-text text-transparent">
-            {t('enrollment.title') || 'Simple Enrollment Process'}
+            {t('enrollment.title')}
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto mb-8 text-lg">
-            {t('enrollment.subtitle') || 'Getting started is easy! Follow these simple steps to begin your driving education journey with us.'}
+            {t('enrollment.subtitle')}
           </p>
           
           <EnrollmentStats />

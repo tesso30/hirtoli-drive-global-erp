@@ -26,7 +26,7 @@ const Footer = () => {
 
           {/* Quick links */}
           <div className="col-span-1">
-            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold mb-4">{t('footer.quick_links')}</h3>
             <ul className="space-y-2">
               <li>
                 <Link to="/" className="text-gray-300 hover:text-hirtoli-green transition">
@@ -53,11 +53,11 @@ const Footer = () => {
 
           {/* Contact information */}
           <div className="col-span-1">
-            <h3 className="text-lg font-semibold mb-4">Contact</h3>
+            <h3 className="text-lg font-semibold mb-4">{t('footer.contact')}</h3>
             <address className="not-italic text-gray-300 space-y-2">
-              <p>Chiro & Harar, Ethiopia</p>
-              <p>Email: info@hirtoli.com</p>
-              <p>Tel: +251 911 123 456</p>
+              <p>{t('footer.address')}</p>
+              <p>{t('footer.email')}</p>
+              <p>{t('footer.phone')}</p>
             </address>
           </div>
 
@@ -74,7 +74,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="border-t border-gray-800 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
           <div className="text-gray-400 mb-4 md:mb-0">
-            &copy; {currentYear} Hirtoli Driving School. {t('footer.rights')}
+            &copy; {currentYear} {t('app.title')}. {t('footer.rights')}
           </div>
           <div className="flex space-x-4">
             <Link to="/privacy" className="text-gray-400 hover:text-hirtoli-green transition">
