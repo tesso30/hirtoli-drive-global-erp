@@ -1,0 +1,44 @@
+
+{
+  "ato_alemayehu": {
+    "name": "Ato Alemayehu Tadesse",
+    "experience": "15 Years Experience",
+    "description": "Expert instructor specializing in building confidence in new drivers with a patient and encouraging approach."
+  },
+  "wt_meron": {
+    "name": "W/t Meron Bekele",
+    "experience": "12 Years Experience",
+    "description": "Dedicated to empowering women drivers and specializes in advanced driving techniques and city driving skills."
+  },
+  "ato_bekele": {
+    "name": "Ato Bekele Worku",
+    "experience": "18 Years Experience",
+    "description": "Commercial vehicle specialist with extensive experience in training professional drivers and fleet operations."
+  },
+  "wt_hanan": {
+    "name": "W/t Hanan Mohammed",
+    "experience": "10 Years Experience",
+    "description": "Specializes in working with anxious drivers and young students, creating a comfortable learning environment."
+  },
+  "specializations": {
+    "beginner": "Beginner Training",
+    "defensive": "Defensive Driving",
+    "test_prep": "Test Preparation",
+    "advanced": "Advanced Skills",
+    "women": "Women's Training",
+    "parking": "Parallel Parking",
+    "commercial": "Commercial Vehicles",
+    "highway": "Highway Driving",
+    "fleet": "Fleet Training",
+    "youth": "Youth Training",
+    "anxiety": "Anxiety Management",
+    "safety": "Safe Driving"
+  },
+  "languages": {
+    "amharic": "Amharic",
+    "english": "English",
+    "oromo": "Oromo",
+    "tigrinya": "Tigrinya",
+    "arabic": "Arabic"
+  }
+}

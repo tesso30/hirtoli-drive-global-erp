@@ -17,7 +17,7 @@ const TestimonialsSection: React.FC = () => {
       course: "Complete Beginner Course",
       location: "Addis Ababa Branch",
       date: "2 months ago",
-      highlight: "First-time pass"
+      highlight: t('testimonials.highlights.first_time_pass')
     },
     {
       name: "Tigist Hailu",
@@ -28,7 +28,7 @@ const TestimonialsSection: React.FC = () => {
       course: "Commercial License Training",
       location: "Adama Branch",
       date: "1 month ago",
-      highlight: "Job placement success"
+      highlight: t('testimonials.highlights.job_placement')
     },
     {
       name: "Dawit Mekonen",
@@ -39,7 +39,7 @@ const TestimonialsSection: React.FC = () => {
       course: "Advanced Defensive Driving",
       location: "Bahir Dar Branch",
       date: "3 weeks ago",
-      highlight: "Anxiety overcome"
+      highlight: t('testimonials.highlights.anxiety_overcome')
     },
     {
       name: "Hiwot Alemseged",
@@ -50,7 +50,7 @@ const TestimonialsSection: React.FC = () => {
       course: "Complete Beginner Course",
       location: "Addis Ababa Branch",
       date: "2 weeks ago",
-      highlight: "Fear conquered"
+      highlight: t('testimonials.highlights.fear_conquered')
     },
     {
       name: "Solomon Tesfaye",
@@ -61,7 +61,7 @@ const TestimonialsSection: React.FC = () => {
       course: "Commercial License Training",
       location: "Adama Branch",
       date: "6 weeks ago",
-      highlight: "Career success"
+      highlight: t('testimonials.highlights.career_success')
     },
     {
       name: "Rahel Girma",
@@ -72,7 +72,7 @@ const TestimonialsSection: React.FC = () => {
       course: "Complete Beginner Course",
       location: "Bahir Dar Branch",
       date: "1 month ago",
-      highlight: "Work-life balance"
+      highlight: t('testimonials.highlights.work_life_balance')
     },
     {
       name: "Yohannes Tadesse",
@@ -83,7 +83,7 @@ const TestimonialsSection: React.FC = () => {
       course: "Advanced Defensive Driving",
       location: "Chiro Branch",
       date: "3 months ago",
-      highlight: "Safety expert"
+      highlight: t('testimonials.highlights.safety_expert')
     },
     {
       name: "Almaz Bekele",
@@ -94,7 +94,7 @@ const TestimonialsSection: React.FC = () => {
       course: "Complete Beginner Course",
       location: "Harar Branch",
       date: "5 weeks ago",
-      highlight: "Family convenience"
+      highlight: t('testimonials.highlights.family_convenience')
     },
     {
       name: "Getachew Wolde",
@@ -105,23 +105,23 @@ const TestimonialsSection: React.FC = () => {
       course: "Complete Beginner Course",
       location: "Addis Ababa Branch",
       date: "4 weeks ago",
-      highlight: "Value for money"
+      highlight: t('testimonials.highlights.value_for_money')
     },
   ];
 
   const stats = [
-    { icon: <Heart className="w-6 h-6 text-red-500" />, value: "4.9/5", label: t('home.testimonials.stats.rating') },
-    { icon: <ThumbsUp className="w-6 h-6 text-blue-500" />, value: "98%", label: t('home.testimonials.stats.recommend') },
-    { icon: <Award className="w-6 h-6 text-yellow-500" />, value: "95%", label: t('home.testimonials.stats.satisfaction') },
+    { icon: <Heart className="w-6 h-6 text-red-500" />, value: "4.9/5", label: t('testimonials.stats.rating') },
+    { icon: <ThumbsUp className="w-6 h-6 text-blue-500" />, value: "98%", label: t('testimonials.stats.recommend') },
+    { icon: <Award className="w-6 h-6 text-yellow-500" />, value: "95%", label: t('testimonials.stats.satisfaction') },
   ];
 
   return (
     <section className="py-20 bg-gray-100">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">{t('home.testimonials.title')}</h2>
+          <h2 className="text-4xl font-bold mb-4">{t('testimonials.title')}</h2>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            {t('home.testimonials.subtitle')}
+            {t('testimonials.subtitle')}
           </p>
           
           {/* Rating stats */}
@@ -189,12 +189,12 @@ const TestimonialsSection: React.FC = () => {
         {/* Call to action */}
         <div className="text-center mt-16">
           <div className="bg-white p-8 rounded-xl shadow-lg max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4">{t('home.testimonials.cta_title')}</h3>
+            <h3 className="text-2xl font-bold mb-4">{t('testimonials.cta.title')}</h3>
             <p className="text-gray-600 mb-6">
-              {t('home.testimonials.cta_subtitle')}
+              {t('testimonials.cta.subtitle')}
             </p>
             <button className="bg-hirtoli-red text-white px-8 py-3 rounded-lg hover:bg-opacity-90 transition-colors font-semibold">
-              {t('home.testimonials.cta_button')}
+              {t('testimonials.cta.button')}
             </button>
           </div>
         </div>

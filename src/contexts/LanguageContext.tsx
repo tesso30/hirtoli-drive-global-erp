@@ -32,6 +32,14 @@ import appEn from '../locales/en/app.json';
 import languageEn from '../locales/en/language.json';
 import branchesEn from '../locales/en/branches.json';
 import homeEn from '../locales/en/home.json';
+import coursesEn from '../locales/en/courses.json';
+import servicesEn from '../locales/en/services.json';
+import instructorsEn from '../locales/en/instructors.json';
+import testimonialsEn from '../locales/en/testimonials.json';
+import enrollmentEn from '../locales/en/enrollment.json';
+import aboutEn from '../locales/en/about.json';
+import contactEn from '../locales/en/contact.json';
+import footerEn from '../locales/en/footer.json';
 
 import amTranslations from '../locales/am.json';
 import omTranslations from '../locales/om.json';
@@ -44,32 +52,14 @@ const enTranslations = {
   lang: languageEn,
   branch: branchesEn,
   home: homeEn,
-  // Add remaining translations from original file
-  "home.why_choose_us.title": "Why Choose Hirtoli?",
-  "home.why_choose_us.subtitle": "We're committed to providing the highest quality driving education with a focus on safety, confidence, and success. Here's what sets us apart from other driving schools.",
-  "home.why_choose_us.rated_badge": "Rated #1 Driving School in Ethiopia",
-  "home.why_choose_us.proven_track_record": "Proven Track Record",
-  "home.why_choose_us.proven_track_record_desc": "Over 98% of our students pass their driving test on the first attempt, thanks to our comprehensive training methodology and experienced instructors.",
-  "home.why_choose_us.student_centered": "Student-Centered Approach",
-  "home.why_choose_us.student_centered_desc": "We prioritize each student's individual learning pace and style, ensuring a comfortable and effective learning environment for everyone.",
-  "home.why_choose_us.safety_first": "Safety First",
-  "home.why_choose_us.safety_first_desc": "All our vehicles are equipped with dual controls and latest safety features. Our instructors are trained in emergency procedures and defensive driving.",
-  "home.why_choose_us.flexible_scheduling": "Flexible Scheduling",
-  "home.why_choose_us.flexible_scheduling_desc": "Learn at your own pace with morning, afternoon, and weekend classes available to fit your busy lifestyle and work schedule.",
-  "home.why_choose_us.certified_excellence": "Certified Excellence",
-  "home.why_choose_us.certified_excellence_desc": "ISO 9001:2015 certified with full accreditation from Ethiopian Road Authority and Ministry of Education for quality assurance.",
-  "home.why_choose_us.expert_instructors": "Expert Instructors",
-  "home.why_choose_us.expert_instructors_desc": "Learn from 50+ certified instructors with extensive experience in both practical driving and theoretical knowledge.",
-  "home.why_choose_us.modern_fleet": "Modern Fleet",
-  "home.why_choose_us.modern_fleet_desc": "Practice with our fleet of 200+ modern vehicles including manual, automatic, and commercial vehicles for comprehensive training.",
-  "home.why_choose_us.complete_materials": "Complete Learning Materials",
-  "home.why_choose_us.complete_materials_desc": "Comprehensive study materials including digital guides, practice tests, and video tutorials for theory and practical preparation.",
-  "home.why_choose_us.support_24_7": "24/7 Student Support",
-  "home.why_choose_us.support_24_7_desc": "Round-the-clock assistance for scheduling, questions, and emergency support to ensure your learning journey is smooth.",
-  "home.why_choose_us.ready_title": "Ready to Experience the Difference?",
-  "home.why_choose_us.ready_subtitle": "Join thousands of satisfied students who chose Hirtoli for their driving education. Start your journey to confident driving today.",
-  "home.why_choose_us.book_consultation": "Book Free Consultation",
-  "home.why_choose_us.download_brochure": "Download Brochure"
+  courses: coursesEn,
+  services: servicesEn,
+  instructors: instructorsEn,
+  testimonials: testimonialsEn,
+  enrollment: enrollmentEn,
+  about: aboutEn,
+  contact: contactEn,
+  footer: footerEn
 };
 
 const translations: Record<Language, Record<string, any>> = {

@@ -1,0 +1,88 @@
+
+{
+  "title": "Simple Enrollment Process",
+  "subtitle": "Getting started is easy! Follow these simple steps to begin your driving education journey with us.",
+  "stats": {
+    "total_time": "Total Time",
+    "success_rate": "Success Rate",
+    "rating": "Experience Rating",
+    "steps": "Easy Steps"
+  },
+  "view_mode": "View:",
+  "grid_view": "Grid",
+  "list_view": "List",
+  "viewing_status": "Currently viewing enrollment process in",
+  "viewing_mode": "mode",
+  "online": {
+    "title": "Online Registration",
+    "desc": "Quick and convenient online enrollment process"
+  },
+  "phone": {
+    "title": "Phone Enrollment",
+    "desc": "Speak with our enrollment advisors for personalized assistance"
+  },
+  "visit": {
+    "title": "Visit Our Office",
+    "desc": "Get hands-on assistance and tour our facilities"
+  },
+  "ready": {
+    "title": "Ready to Get Started?",
+    "subtitle": "Take the first step towards becoming a confident driver. Choose your preferred enrollment method."
+  },
+  "steps": {
+    "step1": {
+      "title": "Choose Your Course",
+      "desc": "Select the course that best fits your needs and experience level",
+      "action": "Browse Courses",
+      "details": [
+        "Compare course features and pricing",
+        "Read detailed course descriptions",
+        "Check instructor profiles and ratings"
+      ]
+    },
+    "step2": {
+      "title": "Complete Registration",
+      "desc": "Fill out the registration form with your personal details",
+      "action": "Register Now",
+      "details": [
+        "Provide personal information and documents",
+        "Upload required identification",
+        "Choose payment plan and make initial payment"
+      ]
+    },
+    "step3": {
+      "title": "Schedule Your Classes",
+      "desc": "Book your theory and practical lessons at convenient times",
+      "action": "Schedule Classes",
+      "details": [
+        "Choose from flexible morning, afternoon, or evening slots",
+        "Select your preferred certified instructor",
+        "Confirm booking and receive calendar invites"
+      ]
+    },
+    "step4": {
+      "title": "Start Learning",
+      "desc": "Begin your driving education journey with expert instructors",
+      "action": "Start Course",
+      "details": [
+        "Attend comprehensive theory sessions",
+        "Practice with experienced instructors",
+        "Track progress with digital dashboard"
+      ]
+    }
+  },
+  "features": {
+    "instant": "Instant confirmation",
+    "digital": "Digital document upload",
+    "payment": "Online payment options",
+    "available": "24/7 availability",
+    "guidance": "Personal guidance",
+    "answers": "Immediate answers",
+    "scheduling": "Custom scheduling",
+    "assistance": "Payment assistance",
+    "tour": "Facility tour",
+    "meet": "Meet instructors",
+    "documents": "Document assistance",
+    "immediate": "Immediate enrollment"
+  }
+}

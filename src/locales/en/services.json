@@ -1,0 +1,63 @@
+
+{
+  "title": {
+    "main": "Our Premium",
+    "sub": "Services"
+  },
+  "description": {
+    "main": "Professional driving education tailored to your needs and skill level, delivered with excellence, innovation, and commitment to road safety.",
+    "detailed": "From beginner courses to advanced commercial training, we offer comprehensive programs designed to build confident, skilled drivers while maintaining the highest safety standards in the industry. Our modern fleet, expert instructors, and flexible scheduling ensure you get the best driving education experience."
+  },
+  "stats": {
+    "vehicles": "200+ Modern Vehicles",
+    "instructors": "50+ Expert Instructors",
+    "certified": "Certified Training Programs",
+    "safety": "100% Safety Guaranteed",
+    "languages": "3 Language Support"
+  },
+  "categories": {
+    "beginner": "Beginner Training",
+    "beginner_desc": "Complete foundation courses for new drivers",
+    "advanced": "Advanced Skills",
+    "advanced_desc": "Enhancement programs for experienced drivers",
+    "commercial": "Commercial Training",
+    "commercial_desc": "Professional licenses for commercial vehicles",
+    "specialized": "Specialized Programs",
+    "specialized_desc": "Custom training for specific needs"
+  },
+  "highlights": {
+    "flexible": "Flexible Scheduling",
+    "flexible_desc": "Learn at your own pace with convenient time slots and personalized scheduling options",
+    "modern": "Modern Fleet",
+    "modern_desc": "Practice on latest vehicles equipped with modern safety features and technology",
+    "certified": "Certified Excellence",
+    "certified_desc": "Internationally recognized training standards with continuous quality improvement"
+  },
+  "course_comparison": {
+    "title": "Compare Our Courses",
+    "subtitle": "Find the perfect course for your skill level and goals. Each course is designed to provide comprehensive training with experienced instructors.",
+    "beginner_category": "Beginner Courses",
+    "beginner_desc": "Perfect for those with no prior driving experience",
+    "intermediate_category": "Intermediate Courses",
+    "intermediate_desc": "For drivers with basic skills who want to improve",
+    "advanced_category": "Advanced & Professional",
+    "advanced_desc": "Specialized training for professional drivers",
+    "highlights": "Key Highlights"
+  },
+  "pricing": {
+    "title": "Choose Your Training Package",
+    "subtitle": "Select the package that best fits your experience level and learning goals. All packages include modern vehicles, certified instructors, and comprehensive support.",
+    "basic_title": "Basic Package",
+    "basic_desc": "Perfect for those with some driving experience",
+    "standard_title": "Standard Package",
+    "standard_desc": "Most popular choice for new drivers",
+    "premium_title": "Premium Package",
+    "premium_desc": "Complete professional training",
+    "most_popular": "Most Popular",
+    "recommended": "Recommended",
+    "choose_package": "Choose This Package",
+    "custom_title": "Need a Custom Package?",
+    "custom_subtitle": "Contact us for personalized training options tailored to your specific needs and schedule.",
+    "custom_quote": "Get Custom Quote"
+  }
+}

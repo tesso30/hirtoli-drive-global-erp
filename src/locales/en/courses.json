@@ -1,0 +1,57 @@
+
+{
+  "title": "Our Courses",
+  "subtitle": "Choose from our range of professionally designed courses tailored to different skill levels and needs.",
+  "detailed": {
+    "beginner": {
+      "title": "Complete Beginner Course",
+      "desc": "Perfect for absolute beginners with no driving experience",
+      "duration": "6-8 Weeks",
+      "class_size": "Max 4 Students",
+      "price": "3,500 ETB",
+      "level": "Beginner"
+    },
+    "advanced": {
+      "title": "Advanced Defensive Driving",
+      "desc": "Enhance your skills with advanced techniques and safety measures",
+      "duration": "4 Weeks",
+      "class_size": "Max 6 Students",
+      "price": "2,800 ETB",
+      "level": "Advanced"
+    },
+    "commercial": {
+      "title": "Commercial License Training",
+      "desc": "Professional training for commercial vehicle operation",
+      "duration": "8-12 Weeks",
+      "class_size": "Max 8 Students",
+      "price": "5,200 ETB",
+      "level": "Professional"
+    }
+  },
+  "features": {
+    "beginner": [
+      "Basic vehicle controls and safety",
+      "Traffic rules and road signs",
+      "Parking and maneuvering",
+      "Highway driving skills",
+      "Test preparation",
+      "License application support"
+    ],
+    "advanced": [
+      "Advanced maneuvering techniques",
+      "Night and weather driving",
+      "Emergency response training",
+      "Fuel-efficient driving",
+      "Vehicle maintenance basics",
+      "Confidence building exercises"
+    ],
+    "commercial": [
+      "Heavy vehicle operation",
+      "Commercial traffic regulations",
+      "Load management and safety",
+      "Professional driver etiquette",
+      "Business driving practices",
+      "Commercial license exam prep"
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+
+{
+  "title": "What Our Students Say",
+  "subtitle": "Real stories from our graduates who have successfully learned to drive with confidence at Hirtoli Driving School. Their success is our greatest achievement.",
+  "stats": {
+    "rating": "Average Rating",
+    "recommend": "Recommend Us",
+    "satisfaction": "Satisfaction Rate"
+  },
+  "cta": {
+    "title": "Join Our Success Stories",
+    "subtitle": "Be part of the thousands who have successfully learned to drive with Hirtoli. Your success story could be next!",
+    "button": "Start Your Journey Today"
+  },
+  "highlights": {
+    "first_time_pass": "First-time pass",
+    "job_placement": "Job placement success",
+    "anxiety_overcome": "Anxiety overcome",
+    "fear_conquered": "Fear conquered",
+    "career_success": "Career success",
+    "work_life_balance": "Work-life balance",
+    "safety_expert": "Safety expert",
+    "family_convenience": "Family convenience",
+    "value_for_money": "Value for money"
+  },
+  "reviews": {
+    "abebe": {
+      "name": "Abebe Kebede",
+      "role": "Student Driver",
+      "quote": "Hirtoli Driving School transformed me from a nervous beginner to a confident driver in just 4 weeks. The instructors were patient and professional. I passed my test on the first try!",
+      "course": "Complete Beginner Course",
+      "location": "Addis Ababa Branch",
+      "date": "2 months ago"
+    },
+    "tigist": {
+      "name": "Tigist Hailu",
+      "role": "Commercial License Holder",
+      "quote": "The commercial license training at Hirtoli was comprehensive and practical. I now drive professionally with skills that keep me and others safe. The job placement support was excellent!",
+      "course": "Commercial License Training",
+      "location": "Adama Branch",
+      "date": "1 month ago"
+    }
+  }
+}

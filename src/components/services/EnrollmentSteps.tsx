@@ -18,57 +18,41 @@ const EnrollmentSteps: React.FC<EnrollmentStepsProps> = ({ viewMode }) => {
   const enrollmentSteps = [
     {
       step: 1,
-      title: t('enrollment.step1.title'),
-      description: t('enrollment.step1.desc'),
+      title: t('enrollment.steps.step1.title'),
+      description: t('enrollment.steps.step1.desc'),
       icon: <FileText className="w-8 h-8 text-hirtoli-red" />,
-      action: t('enrollment.step1.action'),
-      details: [
-        t('enrollment.step1.detail1'),
-        t('enrollment.step1.detail2'),
-        t('enrollment.step1.detail3')
-      ],
+      action: t('enrollment.steps.step1.action'),
+      details: t('enrollment.steps.step1.details') as unknown as string[],
       duration: '15 minutes',
       difficulty: 'Easy'
     },
     {
       step: 2,
-      title: t('enrollment.step2.title'),
-      description: t('enrollment.step2.desc'),
+      title: t('enrollment.steps.step2.title'),
+      description: t('enrollment.steps.step2.desc'),
       icon: <CreditCard className="w-8 h-8 text-hirtoli-green" />,
-      action: t('enrollment.step2.action'),
-      details: [
-        t('enrollment.step2.detail1'),
-        t('enrollment.step2.detail2'),
-        t('enrollment.step2.detail3')
-      ],
+      action: t('enrollment.steps.step2.action'),
+      details: t('enrollment.steps.step2.details') as unknown as string[],
       duration: '10 minutes',
       difficulty: 'Easy'
     },
     {
       step: 3,
-      title: t('enrollment.step3.title'),
-      description: t('enrollment.step3.desc'),
+      title: t('enrollment.steps.step3.title'),
+      description: t('enrollment.steps.step3.desc'),
       icon: <Calendar className="w-8 h-8 text-hirtoli-black" />,
-      action: t('enrollment.step3.action'),
-      details: [
-        t('enrollment.step3.detail1'),
-        t('enrollment.step3.detail2'),
-        t('enrollment.step3.detail3')
-      ],
+      action: t('enrollment.steps.step3.action'),
+      details: t('enrollment.steps.step3.details') as unknown as string[],
       duration: '5 minutes',
       difficulty: 'Easy'
     },
     {
       step: 4,
-      title: t('enrollment.step4.title'),
-      description: t('enrollment.step4.desc'),
+      title: t('enrollment.steps.step4.title'),
+      description: t('enrollment.steps.step4.desc'),
       icon: <GraduationCap className="w-8 h-8 text-hirtoli-red" />,
-      action: t('enrollment.step4.action'),
-      details: [
-        t('enrollment.step4.detail1'),
-        t('enrollment.step4.detail2'),
-        t('enrollment.step4.detail3')
-      ],
+      action: t('enrollment.steps.step4.action'),
+      details: t('enrollment.steps.step4.details') as unknown as string[],
       duration: 'Course dependent',
       difficulty: 'Progressive'
     }
@@ -121,7 +105,7 @@ const EnrollmentSteps: React.FC<EnrollmentStepsProps> = ({ viewMode }) => {
                 activeStep === step.step ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
               }`}>
                 <ul className="space-y-2 mb-4">
-                  {step.details.map((detail, detailIndex) => (
+                  {Array.isArray(step.details) && step.details.map((detail, detailIndex) => (
                     <li key={detailIndex} className="text-sm text-gray-500 flex items-start">
                       <CheckCircle className="w-4 h-4 text-hirtoli-green mr-2 mt-0.5 flex-shrink-0" />
                       {detail}

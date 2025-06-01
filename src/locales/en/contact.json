@@ -1,0 +1,43 @@
+
+{
+  "title": {
+    "main": "Get in Touch",
+    "sub": "With Us"
+  },
+  "description": {
+    "main": "Ready to start your driving journey? We're here to help you every step of the way with personalized support and expert guidance.",
+    "detailed": "Whether you have questions about our courses, need to schedule a lesson, or want to visit our facilities, our dedicated multilingual team is available through multiple channels to provide you with personalized assistance and support."
+  },
+  "stats": {
+    "phone_support": "24/7 Phone Support",
+    "email_support": "Quick Email Response",
+    "live_chat": "Live Chat Available",
+    "in_person": "In-Person Consultations",
+    "multilingual": "Multilingual Support"
+  },
+  "features": {
+    "instant": "Instant Support",
+    "instant_desc": "Get immediate help through multiple channels",
+    "expert": "Expert Consultation",
+    "expert_desc": "Talk to certified driving education specialists",
+    "flexible": "Flexible Communication",
+    "flexible_desc": "Choose your preferred communication method"
+  },
+  "methods": {
+    "call": "Call Us",
+    "call_desc": "Speak directly with our expert team",
+    "call_details": "Average response: Immediate",
+    "email": "Email Support",
+    "email_desc": "Detailed inquiries and documentation",
+    "email_details": "Average response: 2 hours",
+    "visit": "Visit Our Offices",
+    "visit_desc": "Personal consultations and facility tours",
+    "visit_details": "Open Mon-Sat, 8AM-6PM"
+  },
+  "response_stats": {
+    "response": "Average Response Time",
+    "satisfaction": "Customer Satisfaction",
+    "availability": "Support Available",
+    "locations": "Office Locations"
+  }
+}

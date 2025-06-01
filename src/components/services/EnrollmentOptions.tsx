@@ -116,8 +116,8 @@ const EnrollmentOptions: React.FC = () => {
                 index === 0 ? 'bg-hirtoli-green hover:bg-hirtoli-green/90' : 'bg-hirtoli-red hover:bg-hirtoli-red/90'
               } text-white`}
             >
-              {option.title.includes(t('enrollment.online.title')) ? t('common.register_online') : 
-               option.title.includes(t('enrollment.phone.title')) ? t('common.call_now') : t('common.find_location')}
+              {option.title.includes(t('enrollment.online.title')) ? t('register_online') : 
+               option.title.includes(t('enrollment.phone.title')) ? t('call_now') : t('find_location')}
             </Button>
           </Card>
         ))}
