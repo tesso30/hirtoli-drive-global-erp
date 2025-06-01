@@ -1,0 +1,128 @@
+
+{
+  "hero": {
+    "title": "Learn to Drive with Confidence",
+    "subtitle": "Professional driving instructors with years of experience",
+    "detailed_subtitle": "Learn from Ethiopia's most experienced driving instructors with modern vehicles, flexible scheduling, and comprehensive training programs designed for your success.",
+    "cta": "Start Learning",
+    "browse_courses": "Browse Courses",
+    "watch_video": "Watch Video",
+    "free_consultation": "Free Consultation",
+    "trust_indicators": {
+      "rating": "4.9/5 Rating",
+      "graduates": "15,000+ Graduates",
+      "pass_rate": "98% Pass Rate"
+    },
+    "offers": {
+      "theory_title": "Free Theory Materials",
+      "theory_desc": "Complete digital study guides included",
+      "payment_title": "Flexible Payment Plans",
+      "payment_desc": "Pay in installments that work for you",
+      "job_title": "Job Placement Support",
+      "job_desc": "Career assistance for commercial drivers"
+    }
+  },
+  "stats": {
+    "students": "Students Trained",
+    "experience": "Years Experience",
+    "pass_rate": "Pass Rate",
+    "instructors": "Expert Instructors",
+    "branches": "Branch Locations",
+    "support": "Support Available",
+    "vehicles": "Modern Vehicles",
+    "training_time": "Average Training Time",
+    "safety": "Safety Record",
+    "rating": "Student Rating",
+    "courses": "Course Options",
+    "satisfaction": "Student Satisfaction",
+    "track_record_title": "Our Track Record Speaks",
+    "track_record_subtitle": "Over a decade of excellence in driving education with measurable results that demonstrate our commitment to student success and road safety.",
+    "description": {
+      "students": "Successful graduates since 2010",
+      "experience": "Serving Ethiopia with excellence",
+      "pass_rate": "First-time test success rate",
+      "instructors": "Certified and experienced",
+      "branches": "Chiro and Harar branches",
+      "support": "Student assistance anytime",
+      "vehicles": "Latest safety features included",
+      "training_time": "Efficient learning programs",
+      "safety": "Zero accidents in training",
+      "rating": "Excellent student satisfaction",
+      "courses": "Comprehensive training programs",
+      "satisfaction": "Students love our approach"
+    }
+  },
+  "features": {
+    "title": "Why Choose Hirtoli",
+    "description": "Our comprehensive features and services are designed to provide you with the best possible driving education experience from start to finish.",
+    "quality": {
+      "title": "Quality Training",
+      "desc": "Comprehensive courses taught by certified professionals"
+    },
+    "flexible": {
+      "title": "Flexible Schedule",
+      "desc": "Choose training times that fit your schedule"
+    },
+    "vehicles": {
+      "title": "Modern Vehicles",
+      "desc": "Learn on well-maintained, up-to-date vehicles"
+    },
+    "expert_instructors": "Expert Instructors",
+    "expert_instructors_desc": "Learn from certified professionals with years of teaching experience and perfect safety records.",
+    "expert_instructors_details": "Multi-lingual instructors fluent in Amharic, English, and Oromo",
+    "latest_technology": "Latest Technology",
+    "latest_technology_desc": "Practice with modern vehicles equipped with the latest safety features and dual controls.",
+    "latest_technology_details": "GPS tracking, dash cameras, and real-time performance monitoring",
+    "high_success_rate": "High Success Rate",
+    "high_success_rate_desc": "98% of our students pass their driving test on the first attempt with our proven methods.",
+    "high_success_rate_details": "Specialized test preparation and mock exam sessions included"
+  },
+  "courses": {
+    "title": "Our Courses",
+    "subtitle": "Choose from our range of professionally designed courses tailored to different skill levels and needs.",
+    "view_all": "View All Courses",
+    "beginner": {
+      "title": "Beginner Course",
+      "desc": "For those with no prior driving experience"
+    },
+    "advanced": {
+      "title": "Advanced Course", 
+      "desc": "Improve your existing driving skills"
+    },
+    "commercial": {
+      "title": "Commercial License",
+      "desc": "Training for commercial driving licenses"
+    }
+  },
+  "instructors": {
+    "title": "Meet Our Expert Instructors",
+    "subtitle": "Our certified instructors bring years of experience and a passion for safe driving education.",
+    "cta": "Meet All Our Instructors",
+    "view_profile": "View Profile",
+    "book_lesson": "Book Lesson",
+    "languages": "Languages",
+    "specializations": "Specializations",
+    "experience": "Experience"
+  },
+  "testimonials": {
+    "title": "What Our Students Say",
+    "subtitle": "Real stories from our graduates who have successfully learned to drive with confidence at Hirtoli Driving School. Their success is our greatest achievement.",
+    "view_all": "View All Reviews",
+    "write_review": "Write a Review",
+    "stats": {
+      "rating": "Average Rating",
+      "recommend": "Recommend Us", 
+      "satisfaction": "Satisfaction Rate"
+    },
+    "cta_title": "Join Our Success Stories",
+    "cta_subtitle": "Be part of the thousands who have successfully learned to drive with Hirtoli. Your success story could be next!",
+    "cta_button": "Start Your Journey Today"
+  },
+  "cta": {
+    "title": "Ready to Start Your Driving Journey?",
+    "subtitle": "Join thousands of successful graduates who have learned to drive with confidence at Hirtoli Driving School",
+    "register": "Register Now",
+    "contact": "Contact Us",
+    "learn_more": "Learn More"
+  }
+}

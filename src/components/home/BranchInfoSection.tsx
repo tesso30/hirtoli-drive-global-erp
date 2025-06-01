@@ -22,7 +22,7 @@ const BranchInfoSection: React.FC = () => {
             <p className="mb-4">{t('branch.chiro.description')}</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
               <div className="bg-gray-50 p-4 rounded-lg">
-                <h3 className="font-semibold mb-2">{t('common.location')}</h3>
+                <h3 className="font-semibold mb-2">{t('location')}</h3>
                 <p>{t('branch.chiro.location')}</p>
                 <a 
                   href="https://maps.app.goo.gl/cB4ErmznYy7H7bAx8" 
@@ -56,7 +56,7 @@ const BranchInfoSection: React.FC = () => {
             <p className="mb-4">{t('branch.harar.description')}</p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
               <div className="bg-gray-50 p-4 rounded-lg">
-                <h3 className="font-semibold mb-2">{t('common.location')}</h3>
+                <h3 className="font-semibold mb-2">{t('location')}</h3>
                 <p>{t('branch.harar.location')}</p>
                 <a 
                   href="https://maps.app.goo.gl/jiD7jU2kgVmnXfA87" 

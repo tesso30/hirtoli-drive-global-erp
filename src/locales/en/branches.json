@@ -1,0 +1,39 @@
+
+{
+  "title": "Our Branches",
+  "select": "Select Branch",
+  "chiro": {
+    "title": "Chiro Branch",
+    "description": "Our Chiro branch offers comprehensive driving courses with modern facilities and experienced instructors.",
+    "location": "Chiro, Oromia Region",
+    "contact": "Contact",
+    "phone": "Phone: +251 911 123 456",
+    "email": "Email: chiro@hirtoli.com",
+    "hours": "Operating Hours",
+    "weekdays": "Monday - Friday",
+    "weekdays_time": "8:00 AM - 6:00 PM",
+    "saturday": "Saturday",
+    "saturday_time": "9:00 AM - 4:00 PM",
+    "sunday": "Sunday",
+    "sunday_time": "Closed",
+    "cta": "Contact This Branch",
+    "maps": "View on Google Maps"
+  },
+  "harar": {
+    "title": "Harar Branch",
+    "description": "Our Harar branch serves the region with quality driving education and specialized training programs.",
+    "location": "Harar, Harari Region",
+    "contact": "Contact",
+    "phone": "Phone: +251 922 123 456",
+    "email": "Email: harar@hirtoli.com",
+    "hours": "Operating Hours",
+    "weekdays": "Monday - Friday",
+    "weekdays_time": "8:30 AM - 5:30 PM",
+    "saturday": "Saturday",
+    "saturday_time": "9:00 AM - 3:00 PM",
+    "sunday": "Sunday",
+    "sunday_time": "Closed",
+    "cta": "Contact This Branch",
+    "maps": "View on Google Maps"
+  }
+}
