@@ -91,11 +91,10 @@ const StatsSection: React.FC = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-20">
           <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-hirtoli-black via-gray-700 to-hirtoli-black bg-clip-text text-transparent">
-            Our Track Record Speaks
+            {t('home.stats.track_record_title')}
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Over a decade of excellence in driving education with measurable results 
-            that demonstrate our commitment to student success and road safety.
+            {t('home.stats.track_record_subtitle')}
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-hirtoli-red to-hirtoli-green mx-auto mt-6 rounded-full"></div>
         </div>
