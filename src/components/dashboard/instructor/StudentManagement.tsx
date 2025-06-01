@@ -74,7 +74,7 @@ const StudentManagement = () => {
                 <div>
                   <h4 className="font-medium">{student.name}</h4>
                   <p className="text-sm text-gray-600">{student.course}</p>
-                  <Badge className={getStatusColor(student.status)} size="sm">
+                  <Badge className={getStatusColor(student.status)}>
                     {student.status}
                   </Badge>
                 </div>
