@@ -16,10 +16,10 @@ const EnrollmentOptions: React.FC = () => {
       description: t('enrollment.online.desc'),
       icon: <MessageSquare className="w-12 h-12 text-hirtoli-green" />,
       features: [
-        'Instant confirmation',
-        'Digital document upload',
-        'Online payment options',
-        '24/7 availability'
+        t('enrollment.features.instant'),
+        t('enrollment.features.digital'),
+        t('enrollment.features.payment'),
+        t('enrollment.features.available')
       ],
       rating: '4.9/5',
       estimatedTime: '10 minutes'
@@ -29,10 +29,10 @@ const EnrollmentOptions: React.FC = () => {
       description: t('enrollment.phone.desc'),
       icon: <Phone className="w-12 h-12 text-hirtoli-red" />,
       features: [
-        'Personal guidance',
-        'Immediate answers',
-        'Custom scheduling',
-        'Payment assistance'
+        t('enrollment.features.guidance'),
+        t('enrollment.features.answers'),
+        t('enrollment.features.scheduling'),
+        t('enrollment.features.assistance')
       ],
       rating: '4.8/5',
       estimatedTime: '15 minutes'
@@ -42,10 +42,10 @@ const EnrollmentOptions: React.FC = () => {
       description: t('enrollment.visit.desc'),
       icon: <FileText className="w-12 h-12 text-hirtoli-black" />,
       features: [
-        'Facility tour',
-        'Meet instructors',
-        'Document assistance',
-        'Immediate enrollment'
+        t('enrollment.features.tour'),
+        t('enrollment.features.meet'),
+        t('enrollment.features.documents'),
+        t('enrollment.features.immediate')
       ],
       rating: '5.0/5',
       estimatedTime: '30 minutes'

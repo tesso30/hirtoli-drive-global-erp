@@ -18,56 +18,56 @@ const EnrollmentSteps: React.FC<EnrollmentStepsProps> = ({ viewMode }) => {
   const enrollmentSteps = [
     {
       step: 1,
-      title: t('enrollment.step1.title') || 'Choose Your Course',
-      description: t('enrollment.step1.desc') || 'Select the course that best fits your needs and experience level',
+      title: t('enrollment.step1.title'),
+      description: t('enrollment.step1.desc'),
       icon: <FileText className="w-8 h-8 text-hirtoli-red" />,
-      action: t('enrollment.step1.action') || 'Browse Courses',
+      action: t('enrollment.step1.action'),
       details: [
-        t('enrollment.step1.detail1') || 'Compare course features and pricing',
-        t('enrollment.step1.detail2') || 'Read detailed course descriptions',
-        t('enrollment.step1.detail3') || 'Check instructor profiles and ratings'
+        t('enrollment.step1.detail1'),
+        t('enrollment.step1.detail2'),
+        t('enrollment.step1.detail3')
       ],
       duration: '15 minutes',
       difficulty: 'Easy'
     },
     {
       step: 2,
-      title: t('enrollment.step2.title') || 'Complete Registration',
-      description: t('enrollment.step2.desc') || 'Fill out the registration form with your personal details',
+      title: t('enrollment.step2.title'),
+      description: t('enrollment.step2.desc'),
       icon: <CreditCard className="w-8 h-8 text-hirtoli-green" />,
-      action: t('enrollment.step2.action') || 'Register Now',
+      action: t('enrollment.step2.action'),
       details: [
-        t('enrollment.step2.detail1') || 'Provide personal information and documents',
-        t('enrollment.step2.detail2') || 'Upload required identification',
-        t('enrollment.step2.detail3') || 'Choose payment plan and make initial payment'
+        t('enrollment.step2.detail1'),
+        t('enrollment.step2.detail2'),
+        t('enrollment.step2.detail3')
       ],
       duration: '10 minutes',
       difficulty: 'Easy'
     },
     {
       step: 3,
-      title: t('enrollment.step3.title') || 'Schedule Your Classes',
-      description: t('enrollment.step3.desc') || 'Book your theory and practical lessons at convenient times',
+      title: t('enrollment.step3.title'),
+      description: t('enrollment.step3.desc'),
       icon: <Calendar className="w-8 h-8 text-hirtoli-black" />,
-      action: t('enrollment.step3.action') || 'Schedule Classes',
+      action: t('enrollment.step3.action'),
       details: [
-        t('enrollment.step3.detail1') || 'Choose from flexible morning, afternoon, or evening slots',
-        t('enrollment.step3.detail2') || 'Select your preferred certified instructor',
-        t('enrollment.step3.detail3') || 'Confirm booking and receive calendar invites'
+        t('enrollment.step3.detail1'),
+        t('enrollment.step3.detail2'),
+        t('enrollment.step3.detail3')
       ],
       duration: '5 minutes',
       difficulty: 'Easy'
     },
     {
       step: 4,
-      title: t('enrollment.step4.title') || 'Start Learning',
-      description: t('enrollment.step4.desc') || 'Begin your driving education journey with expert instructors',
+      title: t('enrollment.step4.title'),
+      description: t('enrollment.step4.desc'),
       icon: <GraduationCap className="w-8 h-8 text-hirtoli-red" />,
-      action: t('enrollment.step4.action') || 'Start Course',
+      action: t('enrollment.step4.action'),
       details: [
-        t('enrollment.step4.detail1') || 'Attend comprehensive theory sessions',
-        t('enrollment.step4.detail2') || 'Practice with experienced instructors',
-        t('enrollment.step4.detail3') || 'Track progress with digital dashboard'
+        t('enrollment.step4.detail1'),
+        t('enrollment.step4.detail2'),
+        t('enrollment.step4.detail3')
       ],
       duration: 'Course dependent',
       difficulty: 'Progressive'

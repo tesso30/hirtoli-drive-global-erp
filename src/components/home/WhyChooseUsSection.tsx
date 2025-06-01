@@ -1,63 +1,66 @@
+
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useLanguage } from '../../contexts/LanguageContext';
 import { Target, Heart, Shield, Clock, Award, Users, Car, BookOpen, Headphones } from 'lucide-react';
 
 const WhyChooseUsSection: React.FC = () => {
   const navigate = useNavigate();
+  const { t } = useLanguage();
 
   const whyChooseUs = [
     {
       icon: <Target className="w-12 h-12 text-hirtoli-red" />,
-      title: "Proven Track Record",
-      description: "Over 98% of our students pass their driving test on the first attempt, thanks to our comprehensive training methodology and experienced instructors.",
+      title: t('home.why_choose_us.proven_track_record'),
+      description: t('home.why_choose_us.proven_track_record_desc'),
       features: ["98% first-time pass rate", "15,000+ successful graduates", "13 years of excellence"]
     },
     {
       icon: <Heart className="w-12 h-12 text-hirtoli-green" />,
-      title: "Student-Centered Approach",
-      description: "We prioritize each student's individual learning pace and style, ensuring a comfortable and effective learning environment for everyone.",
+      title: t('home.why_choose_us.student_centered'),
+      description: t('home.why_choose_us.student_centered_desc'),
       features: ["Personalized instruction", "Flexible scheduling", "Supportive environment"]
     },
     {
       icon: <Shield className="w-12 h-12 text-hirtoli-black" />,
-      title: "Safety First",
-      description: "All our vehicles are equipped with dual controls and latest safety features. Our instructors are trained in emergency procedures and defensive driving.",
+      title: t('home.why_choose_us.safety_first'),
+      description: t('home.why_choose_us.safety_first_desc'),
       features: ["Dual control vehicles", "Latest safety tech", "Emergency trained staff"]
     },
     {
       icon: <Clock className="w-12 h-12 text-blue-600" />,
-      title: "Flexible Scheduling",
-      description: "Learn at your own pace with morning, afternoon, and weekend classes available to fit your busy lifestyle and work schedule.",
+      title: t('home.why_choose_us.flexible_scheduling'),
+      description: t('home.why_choose_us.flexible_scheduling_desc'),
       features: ["7-day availability", "Multiple time slots", "Make-up sessions"]
     },
     {
       icon: <Award className="w-12 h-12 text-purple-600" />,
-      title: "Certified Excellence",
-      description: "ISO 9001:2015 certified with full accreditation from Ethiopian Road Authority and Ministry of Education for quality assurance.",
+      title: t('home.why_choose_us.certified_excellence'),
+      description: t('home.why_choose_us.certified_excellence_desc'),
       features: ["ISO certified", "Government accredited", "Quality guaranteed"]
     },
     {
       icon: <Users className="w-12 h-12 text-orange-500" />,
-      title: "Expert Instructors",
-      description: "Learn from 50+ certified instructors with extensive experience in both practical driving and theoretical knowledge.",
+      title: t('home.why_choose_us.expert_instructors'),
+      description: t('home.why_choose_us.expert_instructors_desc'),
       features: ["50+ instructors", "Multi-language support", "Specialized training"]
     },
     {
       icon: <Car className="w-12 h-12 text-green-600" />,
-      title: "Modern Fleet",
-      description: "Practice with our fleet of 200+ modern vehicles including manual, automatic, and commercial vehicles for comprehensive training.",
+      title: t('home.why_choose_us.modern_fleet'),
+      description: t('home.why_choose_us.modern_fleet_desc'),
       features: ["200+ vehicles", "Manual & automatic", "Commercial options"]
     },
     {
       icon: <BookOpen className="w-12 h-12 text-red-500" />,
-      title: "Complete Learning Materials",
-      description: "Comprehensive study materials including digital guides, practice tests, and video tutorials for theory and practical preparation.",
+      title: t('home.why_choose_us.complete_materials'),
+      description: t('home.why_choose_us.complete_materials_desc'),
       features: ["Digital resources", "Practice tests", "Video tutorials"]
     },
     {
       icon: <Headphones className="w-12 h-12 text-indigo-600" />,
-      title: "24/7 Student Support",
-      description: "Round-the-clock assistance for scheduling, questions, and emergency support to ensure your learning journey is smooth.",
+      title: t('home.why_choose_us.support_24_7'),
+      description: t('home.why_choose_us.support_24_7_desc'),
       features: ["24/7 availability", "Multiple channels", "Emergency support"]
     },
   ];
@@ -73,15 +76,14 @@ const WhyChooseUsSection: React.FC = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-20">
           <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-hirtoli-red via-hirtoli-black to-hirtoli-green bg-clip-text text-transparent">
-            Why Choose Hirtoli?
+            {t('home.why_choose_us.title')}
           </h2>
           <p className="text-xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed">
-            We're committed to providing the highest quality driving education with a focus on safety, confidence, and success. 
-            Here's what sets us apart from other driving schools.
+            {t('home.why_choose_us.subtitle')}
           </p>
           <div className="inline-flex items-center gap-3 bg-gradient-to-r from-hirtoli-green to-green-600 text-white px-8 py-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 group">
             <Award className="w-6 h-6 group-hover:rotate-12 transition-transform duration-300" />
-            <span className="font-semibold text-lg">Rated #1 Driving School in Ethiopia</span>
+            <span className="font-semibold text-lg">{t('home.why_choose_us.rated_badge')}</span>
           </div>
         </div>
         
@@ -126,21 +128,20 @@ const WhyChooseUsSection: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-to-br from-hirtoli-green/0 to-hirtoli-red/0 group-hover:from-hirtoli-green/5 group-hover:to-hirtoli-red/5 transition-all duration-500"></div>
             
             <h3 className="relative z-10 text-3xl font-bold mb-6 bg-gradient-to-r from-hirtoli-black to-gray-700 bg-clip-text text-transparent">
-              Ready to Experience the Difference?
+              {t('home.why_choose_us.ready_title')}
             </h3>
             <p className="relative z-10 text-gray-600 mb-8 text-lg leading-relaxed">
-              Join thousands of satisfied students who chose Hirtoli for their driving education. 
-              Start your journey to confident driving today.
+              {t('home.why_choose_us.ready_subtitle')}
             </p>
             <div className="relative z-10 flex flex-wrap gap-6 justify-center">
               <button 
                 className="bg-gradient-to-r from-hirtoli-red to-red-600 text-white px-10 py-4 rounded-full hover:from-red-600 hover:to-hirtoli-red transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 group"
                 onClick={() => navigate('/consultation')}
               >
-                Book Free Consultation
+                {t('home.why_choose_us.book_consultation')}
               </button>
               <button className="border-2 border-hirtoli-green text-hirtoli-green px-10 py-4 rounded-full hover:bg-hirtoli-green hover:text-white transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105">
-                Download Brochure
+                {t('home.why_choose_us.download_brochure')}
               </button>
             </div>
           </div>

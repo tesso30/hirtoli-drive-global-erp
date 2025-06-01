@@ -1,10 +1,11 @@
 
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { useLanguage } from '../../contexts/LanguageContext';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '../ui/card';
 import { Button } from '../ui/button';
 import { Badge } from '../ui/badge';
 import { Check, Star, Zap, Award, Users } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
 
 interface PricingPlan {
   id: string;
@@ -22,14 +23,15 @@ interface PricingPlan {
 
 const PricingTable: React.FC = () => {
   const navigate = useNavigate();
+  const { t } = useLanguage();
 
   const pricingPlans: PricingPlan[] = [
     {
       id: 'basic',
-      name: 'Basic Package',
+      name: t('services.pricing.basic_title'),
       price: 2500,
       duration: '2 weeks',
-      description: 'Perfect for those with some driving experience',
+      description: t('services.pricing.basic_desc'),
       features: [
         '8 practical lessons',
         '3 theory sessions',
@@ -42,11 +44,11 @@ const PricingTable: React.FC = () => {
     },
     {
       id: 'standard',
-      name: 'Standard Package',
+      name: t('services.pricing.standard_title'),
       price: 4500,
       originalPrice: 5000,
       duration: '4 weeks',
-      description: 'Most popular choice for new drivers',
+      description: t('services.pricing.standard_desc'),
       features: [
         '15 practical lessons',
         '8 theory sessions',
@@ -62,10 +64,10 @@ const PricingTable: React.FC = () => {
     },
     {
       id: 'premium',
-      name: 'Premium Package',
+      name: t('services.pricing.premium_title'),
       price: 7500,
       duration: '6 weeks',
-      description: 'Complete professional training',
+      description: t('services.pricing.premium_desc'),
       features: [
         '25 practical lessons',
         '12 theory sessions',
@@ -93,11 +95,10 @@ const PricingTable: React.FC = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-hirtoli-black via-gray-700 to-hirtoli-black bg-clip-text text-transparent">
-            Choose Your Training Package
+            {t('services.pricing.title')}
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Select the package that best fits your experience level and learning goals. 
-            All packages include modern vehicles, certified instructors, and comprehensive support.
+            {t('services.pricing.subtitle')}
           </p>
           <div className="w-24 h-1 bg-gradient-to-r from-hirtoli-red to-hirtoli-green mx-auto mt-6 rounded-full"></div>
         </div>
@@ -111,13 +112,13 @@ const PricingTable: React.FC = () => {
               {plan.popular && (
                 <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-hirtoli-red to-red-600 text-white shadow-lg animate-pulse z-10">
                   <Star className="w-3 h-3 mr-1" />
-                  Most Popular
+                  {t('services.pricing.most_popular')}
                 </Badge>
               )}
               {plan.recommended && (
                 <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-hirtoli-green to-green-600 text-white shadow-lg z-10">
                   <Award className="w-3 h-3 mr-1" />
-                  Recommended
+                  {t('services.pricing.recommended')}
                 </Badge>
               )}
               
@@ -164,7 +165,7 @@ const PricingTable: React.FC = () => {
                   } text-white border-0 shadow-lg hover:shadow-xl`}
                   onClick={() => navigate('/register')}
                 >
-                  Choose This Package
+                  {t('services.pricing.choose_package')}
                 </Button>
               </CardFooter>
               
@@ -176,16 +177,16 @@ const PricingTable: React.FC = () => {
         
         <div className="text-center mt-16 animate-fade-in" style={{ animationDelay: '0.8s' }}>
           <div className="bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-xl border border-gray-200 max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4 text-gray-800">Need a Custom Package?</h3>
+            <h3 className="text-2xl font-bold mb-4 text-gray-800">{t('services.pricing.custom_title')}</h3>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              Contact us for personalized training options tailored to your specific needs and schedule.
+              {t('services.pricing.custom_subtitle')}
             </p>
             <Button 
               variant="outline" 
               onClick={() => navigate('/contact')}
               className="border-2 border-hirtoli-green text-hirtoli-green hover:bg-hirtoli-green hover:text-white transition-all duration-300 transform hover:scale-105"
             >
-              Get Custom Quote
+              {t('services.pricing.custom_quote')}
             </Button>
           </div>
         </div>

@@ -1,16 +1,19 @@
 
 import React from 'react';
+import { useLanguage } from '../../contexts/LanguageContext';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/tabs';
 import { Badge } from '../ui/badge';
 import { Clock, Users, Award, Target } from 'lucide-react';
 
 const CourseComparison: React.FC = () => {
+  const { t } = useLanguage();
+
   const courseCategories = [
     {
       id: 'beginner',
-      name: 'Beginner Courses',
-      description: 'Perfect for those with no prior driving experience',
+      name: t('services.course_comparison.beginner_category'),
+      description: t('services.course_comparison.beginner_desc'),
       courses: [
         {
           name: 'Complete Beginner Course',
@@ -32,8 +35,8 @@ const CourseComparison: React.FC = () => {
     },
     {
       id: 'intermediate',
-      name: 'Intermediate Courses',
-      description: 'For drivers with basic skills who want to improve',
+      name: t('services.course_comparison.intermediate_category'),
+      description: t('services.course_comparison.intermediate_desc'),
       courses: [
         {
           name: 'Skill Enhancement Course',
@@ -55,8 +58,8 @@ const CourseComparison: React.FC = () => {
     },
     {
       id: 'advanced',
-      name: 'Advanced & Professional',
-      description: 'Specialized training for professional drivers',
+      name: t('services.course_comparison.advanced_category'),
+      description: t('services.course_comparison.advanced_desc'),
       courses: [
         {
           name: 'Commercial License Training',
@@ -82,10 +85,9 @@ const CourseComparison: React.FC = () => {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Compare Our Courses</h2>
+          <h2 className="text-3xl font-bold mb-4">{t('services.course_comparison.title')}</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Find the perfect course for your skill level and goals. Each course is designed 
-            to provide comprehensive training with experienced instructors.
+            {t('services.course_comparison.subtitle')}
           </p>
         </div>
 
@@ -135,7 +137,7 @@ const CourseComparison: React.FC = () => {
                       <div>
                         <h4 className="font-medium mb-2 flex items-center">
                           <Target className="w-4 h-4 text-hirtoli-black mr-2" />
-                          Key Highlights
+                          {t('services.course_comparison.highlights')}
                         </h4>
                         <ul className="space-y-1">
                           {course.highlights.map((highlight, highlightIndex) => (

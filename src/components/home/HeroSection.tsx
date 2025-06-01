@@ -27,9 +27,9 @@ const HeroSection: React.FC = () => {
         {/* Trust indicators with enhanced styling */}
         <div className="flex flex-wrap items-center justify-center gap-8 mb-8 animate-fade-in">
           {[
-            { icon: Star, text: "4.9/5 Rating", color: "text-yellow-400" },
-            { icon: Users, text: "15,000+ Graduates", color: "text-blue-300" },
-            { icon: Award, text: "98% Pass Rate", color: "text-green-300" }
+            { icon: Star, text: t('home.hero.trust_indicators.rating'), color: "text-yellow-400" },
+            { icon: Users, text: t('home.hero.trust_indicators.graduates'), color: "text-blue-300" },
+            { icon: Award, text: t('home.hero.trust_indicators.pass_rate'), color: "text-green-300" }
           ].map((item, index) => (
             <div key={index} className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20 hover:bg-white/20 transition-all duration-300 group">
               <item.icon className={`w-4 h-4 ${item.color} group-hover:scale-110 transition-transform duration-300`} />
@@ -47,8 +47,7 @@ const HeroSection: React.FC = () => {
         </p>
         
         <p className="text-lg mb-10 max-w-4xl text-gray-200 animate-fade-in leading-relaxed" style={{ animationDelay: '0.3s' }}>
-          Learn from Ethiopia's most experienced driving instructors with modern vehicles, 
-          flexible scheduling, and comprehensive training programs designed for your success.
+          {t('home.hero.detailed_subtitle')}
         </p>
 
         {/* Enhanced CTA buttons */}
@@ -68,7 +67,7 @@ const HeroSection: React.FC = () => {
             onClick={() => navigate('/services')}
           >
             <Play className="w-5 h-5 mr-2 group-hover:scale-110 transition-transform duration-300" />
-            Browse Courses
+            {t('home.hero.browse_courses')}
           </Button>
         </div>
 
@@ -76,20 +75,20 @@ const HeroSection: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 max-w-5xl animate-fade-in" style={{ animationDelay: '0.5s' }}>
           {[
             {
-              title: "Free Theory Materials",
-              description: "Complete digital study guides included",
+              title: t('home.hero.offers.theory_title'),
+              description: t('home.hero.offers.theory_desc'),
               icon: "📚",
               gradient: "from-blue-500/20 to-purple-500/20"
             },
             {
-              title: "Flexible Payment Plans",
-              description: "Pay in installments that work for you",
+              title: t('home.hero.offers.payment_title'),
+              description: t('home.hero.offers.payment_desc'),
               icon: "💳",
               gradient: "from-green-500/20 to-blue-500/20"
             },
             {
-              title: "Job Placement Support",
-              description: "Career assistance for commercial drivers",
+              title: t('home.hero.offers.job_title'),
+              description: t('home.hero.offers.job_desc'),
               icon: "🚗",
               gradient: "from-purple-500/20 to-pink-500/20"
             }

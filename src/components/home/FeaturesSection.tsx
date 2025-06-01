@@ -11,73 +11,73 @@ const FeaturesSection: React.FC = () => {
       icon: <Award className="w-10 h-10 text-hirtoli-red" />,
       title: t('home.features.quality.title'),
       description: t('home.features.quality.desc'),
-      details: "Government certified instructors with continuous professional development"
+      details: t('home.features.quality.desc')
     },
     {
       icon: <Clock className="w-10 h-10 text-hirtoli-green" />,
       title: t('home.features.flexible.title'),
       description: t('home.features.flexible.desc'),
-      details: "Early morning, afternoon, evening, and weekend sessions available"
+      details: t('home.features.flexible.desc')
     },
     {
       icon: <Shield className="w-10 h-10 text-hirtoli-black" />,
       title: t('home.features.vehicles.title'),
       description: t('home.features.vehicles.desc'),
-      details: "Regular maintenance checks and comprehensive insurance coverage"
+      details: t('home.features.vehicles.desc')
     },
     {
       icon: <GraduationCap className="w-10 h-10 text-hirtoli-red" />,
-      title: "Expert Instructors",
-      description: "Learn from certified professionals with years of teaching experience and perfect safety records.",
-      details: "Multi-lingual instructors fluent in Amharic, English, and Oromo"
+      title: t('home.features.expert_instructors'),
+      description: t('home.features.expert_instructors_desc'),
+      details: t('home.features.expert_instructors_details')
     },
     {
       icon: <Car className="w-10 h-10 text-hirtoli-green" />,
-      title: "Latest Technology",
-      description: "Practice with modern vehicles equipped with the latest safety features and dual controls.",
-      details: "GPS tracking, dash cameras, and real-time performance monitoring"
+      title: t('home.features.latest_technology'),
+      description: t('home.features.latest_technology_desc'),
+      details: t('home.features.latest_technology_details')
     },
     {
       icon: <Trophy className="w-10 h-10 text-hirtoli-black" />,
-      title: "High Success Rate",
-      description: "98% of our students pass their driving test on the first attempt with our proven methods.",
-      details: "Specialized test preparation and mock exam sessions included"
+      title: t('home.features.high_success_rate'),
+      description: t('home.features.high_success_rate_desc'),
+      details: t('home.features.high_success_rate_details')
     },
     {
       icon: <Smartphone className="w-10 h-10 text-blue-600" />,
-      title: "Digital Learning Platform",
-      description: "Access theory materials, practice tests, and schedule lessons through our mobile app.",
-      details: "Interactive learning modules with progress tracking and gamification"
+      title: t('home.features.digital_learning'),
+      description: t('home.features.digital_learning_desc'),
+      details: t('home.features.digital_learning_details')
     },
     {
       icon: <Globe className="w-10 h-10 text-purple-600" />,
-      title: "Multi-Language Support",
-      description: "Learn in your preferred language with materials available in Amharic, English, and Oromo.",
-      details: "Cultural sensitivity training ensures comfortable learning environment"
+      title: t('home.features.multi_language'),
+      description: t('home.features.multi_language_desc'),
+      details: t('home.features.multi_language_details')
     },
     {
       icon: <Users2 className="w-10 h-10 text-orange-500" />,
-      title: "Small Class Sizes",
-      description: "Maximum 4 students per practical session for personalized attention and faster learning.",
-      details: "One-on-one sessions available for students with special requirements"
+      title: t('home.features.small_class'),
+      description: t('home.features.small_class_desc'),
+      details: t('home.features.small_class_details')
     },
     {
       icon: <BookOpen className="w-10 h-10 text-green-600" />,
-      title: "Comprehensive Curriculum",
-      description: "Complete driving education covering theory, practical skills, and road safety awareness.",
-      details: "Regular curriculum updates based on latest traffic regulations"
+      title: t('home.features.comprehensive_curriculum'),
+      description: t('home.features.comprehensive_curriculum_desc'),
+      details: t('home.features.comprehensive_curriculum_details')
     },
     {
       icon: <FileCheck className="w-10 h-10 text-red-500" />,
-      title: "License Application Support",
-      description: "Full assistance with paperwork, documentation, and license application processes.",
-      details: "Direct coordination with licensing authorities for faster processing"
+      title: t('home.features.license_support'),
+      description: t('home.features.license_support_desc'),
+      details: t('home.features.license_support_details')
     },
     {
       icon: <Headphones className="w-10 h-10 text-indigo-600" />,
-      title: "Student Support Services",
-      description: "Dedicated support team available 24/7 for questions, scheduling, and assistance.",
-      details: "Multiple contact channels including phone, email, and live chat"
+      title: t('home.features.student_support'),
+      description: t('home.features.student_support_desc'),
+      details: t('home.features.student_support_details')
     },
   ];
 
@@ -87,8 +87,7 @@ const FeaturesSection: React.FC = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold mb-4">{t('home.features.title')}</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Our comprehensive features and services are designed to provide you with the best possible 
-            driving education experience from start to finish.
+            {t('home.features.description')}
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
@@ -110,19 +109,19 @@ const FeaturesSection: React.FC = () => {
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div className="bg-gradient-to-br from-hirtoli-red to-red-600 text-white p-6 rounded-xl text-center">
             <h4 className="font-bold text-lg mb-2">98%</h4>
-            <p className="text-sm">Success Rate</p>
+            <p className="text-sm">{t('home.stats.pass_rate')}</p>
           </div>
           <div className="bg-gradient-to-br from-hirtoli-green to-green-600 text-white p-6 rounded-xl text-center">
             <h4 className="font-bold text-lg mb-2">15,000+</h4>
-            <p className="text-sm">Graduates</p>
+            <p className="text-sm">{t('home.stats.students')}</p>
           </div>
           <div className="bg-gradient-to-br from-hirtoli-black to-gray-800 text-white p-6 rounded-xl text-center">
             <h4 className="font-bold text-lg mb-2">13+</h4>
-            <p className="text-sm">Years Experience</p>
+            <p className="text-sm">{t('home.stats.experience')}</p>
           </div>
           <div className="bg-gradient-to-br from-blue-600 to-blue-700 text-white p-6 rounded-xl text-center">
             <h4 className="font-bold text-lg mb-2">4.9/5</h4>
-            <p className="text-sm">Student Rating</p>
+            <p className="text-sm">{t('home.stats.rating')}</p>
           </div>
         </div>
       </div>

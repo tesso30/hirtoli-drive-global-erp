@@ -26,14 +26,14 @@ const EnrollmentProcess: React.FC = () => {
 
           {/* View mode toggle */}
           <div className="flex items-center justify-center gap-2 mb-8">
-            <span className="text-sm text-gray-600">View:</span>
+            <span className="text-sm text-gray-600">{t('enrollment.view_mode')}</span>
             <Button
               variant={viewMode === 'grid' ? 'default' : 'outline'}
               size="sm"
               onClick={() => setViewMode('grid')}
               aria-label="Grid view"
             >
-              Grid
+              {t('enrollment.grid_view')}
             </Button>
             <Button
               variant={viewMode === 'list' ? 'default' : 'outline'}
@@ -41,7 +41,7 @@ const EnrollmentProcess: React.FC = () => {
               onClick={() => setViewMode('list')}
               aria-label="List view"
             >
-              List
+              {t('enrollment.list_view')}
             </Button>
           </div>
         </div>
@@ -51,7 +51,7 @@ const EnrollmentProcess: React.FC = () => {
 
         {/* Progress indicator for screen readers */}
         <div className="sr-only" role="status" aria-live="polite">
-          Currently viewing enrollment process in {viewMode} mode
+          {t('enrollment.viewing_status')} {viewMode} {t('enrollment.viewing_mode')}
         </div>
       </div>
     </section>

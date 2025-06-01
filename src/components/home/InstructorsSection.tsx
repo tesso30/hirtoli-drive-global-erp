@@ -11,36 +11,36 @@ const InstructorsSection: React.FC = () => {
 
   const instructors = [
     {
-      name: "Ato Alemayehu Tadesse",
+      name: t('instructors.ato_alemayehu.name'),
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3",
-      experience: "15 Years Experience",
-      specializations: ["Beginner Training", "Defensive Driving", "Test Preparation"],
-      languages: ["Amharic", "English", "Oromo"],
-      description: "Expert instructor specializing in building confidence in new drivers with a patient and encouraging approach."
+      experience: t('instructors.ato_alemayehu.experience'),
+      specializations: [t('instructors.specializations.beginner'), t('instructors.specializations.defensive'), t('instructors.specializations.test_prep')],
+      languages: [t('instructors.languages.amharic'), t('instructors.languages.english'), t('instructors.languages.oromo')],
+      description: t('instructors.ato_alemayehu.description')
     },
     {
-      name: "W/t Meron Bekele",
+      name: t('instructors.wt_meron.name'),
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3",
-      experience: "12 Years Experience",
-      specializations: ["Advanced Skills", "Women's Training", "Parallel Parking"],
-      languages: ["Amharic", "English"],
-      description: "Dedicated to empowering women drivers and specializes in advanced driving techniques and city driving skills."
+      experience: t('instructors.wt_meron.experience'),
+      specializations: [t('instructors.specializations.advanced'), t('instructors.specializations.women'), t('instructors.specializations.parking')],
+      languages: [t('instructors.languages.amharic'), t('instructors.languages.english')],
+      description: t('instructors.wt_meron.description')
     },
     {
-      name: "Ato Bekele Worku",
+      name: t('instructors.ato_bekele.name'),
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3",
-      experience: "18 Years Experience",
-      specializations: ["Commercial Vehicles", "Highway Driving", "Fleet Training"],
-      languages: ["Amharic", "English", "Tigrinya"],
-      description: "Commercial vehicle specialist with extensive experience in training professional drivers and fleet operations."
+      experience: t('instructors.ato_bekele.experience'),
+      specializations: [t('instructors.specializations.commercial'), t('instructors.specializations.highway'), t('instructors.specializations.fleet')],
+      languages: [t('instructors.languages.amharic'), t('instructors.languages.english'), t('instructors.languages.tigrinya')],
+      description: t('instructors.ato_bekele.description')
     },
     {
-      name: "W/t Hanan Mohammed",
+      name: t('instructors.wt_hanan.name'),
       image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3",
-      experience: "10 Years Experience",
-      specializations: ["Youth Training", "Anxiety Management", "Safe Driving"],
-      languages: ["Amharic", "Arabic", "English"],
-      description: "Specializes in working with anxious drivers and young students, creating a comfortable learning environment."
+      experience: t('instructors.wt_hanan.experience'),
+      specializations: [t('instructors.specializations.youth'), t('instructors.specializations.anxiety'), t('instructors.specializations.safety')],
+      languages: [t('instructors.languages.amharic'), t('instructors.languages.arabic'), t('instructors.languages.english')],
+      description: t('instructors.wt_hanan.description')
     },
   ];
 

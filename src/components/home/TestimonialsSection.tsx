@@ -1,9 +1,12 @@
 
 import React from 'react';
+import { useLanguage } from '../../contexts/LanguageContext';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../ui/card';
 import { Star, GraduationCap, MapPin, Quote, Heart, ThumbsUp, Award } from 'lucide-react';
 
 const TestimonialsSection: React.FC = () => {
+  const { t } = useLanguage();
+
   const testimonials = [
     {
       name: "Abebe Kebede",
@@ -107,19 +110,18 @@ const TestimonialsSection: React.FC = () => {
   ];
 
   const stats = [
-    { icon: <Heart className="w-6 h-6 text-red-500" />, value: "4.9/5", label: "Average Rating" },
-    { icon: <ThumbsUp className="w-6 h-6 text-blue-500" />, value: "98%", label: "Recommend Us" },
-    { icon: <Award className="w-6 h-6 text-yellow-500" />, value: "95%", label: "Satisfaction Rate" },
+    { icon: <Heart className="w-6 h-6 text-red-500" />, value: "4.9/5", label: t('home.testimonials.stats.rating') },
+    { icon: <ThumbsUp className="w-6 h-6 text-blue-500" />, value: "98%", label: t('home.testimonials.stats.recommend') },
+    { icon: <Award className="w-6 h-6 text-yellow-500" />, value: "95%", label: t('home.testimonials.stats.satisfaction') },
   ];
 
   return (
     <section className="py-20 bg-gray-100">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold mb-4">What Our Students Say</h2>
+          <h2 className="text-4xl font-bold mb-4">{t('home.testimonials.title')}</h2>
           <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Real stories from our graduates who have successfully learned to drive with confidence at Hirtoli Driving School. 
-            Their success is our greatest achievement.
+            {t('home.testimonials.subtitle')}
           </p>
           
           {/* Rating stats */}
@@ -187,13 +189,12 @@ const TestimonialsSection: React.FC = () => {
         {/* Call to action */}
         <div className="text-center mt-16">
           <div className="bg-white p-8 rounded-xl shadow-lg max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold mb-4">Join Our Success Stories</h3>
+            <h3 className="text-2xl font-bold mb-4">{t('home.testimonials.cta_title')}</h3>
             <p className="text-gray-600 mb-6">
-              Be part of the thousands who have successfully learned to drive with Hirtoli. 
-              Your success story could be next!
+              {t('home.testimonials.cta_subtitle')}
             </p>
             <button className="bg-hirtoli-red text-white px-8 py-3 rounded-lg hover:bg-opacity-90 transition-colors font-semibold">
-              Start Your Journey Today
+              {t('home.testimonials.cta_button')}
             </button>
           </div>
         </div>
