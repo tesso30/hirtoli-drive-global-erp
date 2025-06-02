@@ -1,0 +1,39 @@
+
+{
+  "title": "Dameewwan keenya",
+  "select": "Damee filaadhaa",
+  "chiro": {
+    "title": "Damee Ciroo",
+    "description": "Dameen Ciroo meeshaalee amma ayyaanaa fi barsiisota ogeeyyii qabee koorsiidhaa konkolaachisuu bal'aa ni kenna.",
+    "location": "Ciroo, Naannoo Oromiyaa",
+    "contact": "Qunnamtii",
+    "phone": "Bilbila: +251 911 123 456",
+    "email": "Iimeelii: chiro@hirtoli.com",
+    "hours": "Sa'aatii hojii",
+    "weekdays": "Wiixata - Jimaata",
+    "weekdays_time": "Ganama 8:00 - Galgala 6:00",
+    "saturday": "Sanbata",
+    "saturday_time": "Ganama 9:00 - Waareeffama 4:00",
+    "sunday": "Dilbata",
+    "sunday_time": "Cufaa",
+    "cta": "Damee kana waliin haasa'aa",
+    "maps": "Kaartaa Google irratti ilaali"
+  },
+  "harar": {
+    "title": "Damee Hararii",
+    "description": "Dameen Hararii naannichaa kanaf barumsa konkolaachisuu qulqulluu fi sagantaalee leenjii addaa ni tajaajila.",
+    "location": "Hararii, Naannoo Hararii",
+    "contact": "Qunnamtii",
+    "phone": "Bilbila: +251 922 123 456",
+    "email": "Iimeelii: harar@hirtoli.com",
+    "hours": "Sa'aatii hojii",
+    "weekdays": "Wiixata - Jimaata",
+    "weekdays_time": "Ganama 8:30 - Galgala 5:30",
+    "saturday": "Sanbata",
+    "saturday_time": "Ganama 9:00 - Waareeffama 3:00",
+    "sunday": "Dilbata",
+    "sunday_time": "Cufaa",
+    "cta": "Damee kana waliin haasa'aa",
+    "maps": "Kaartaa Google irratti ilaali"
+  }
+}

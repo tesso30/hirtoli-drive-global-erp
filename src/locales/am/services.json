@@ -1,0 +1,91 @@
+
+{
+  "title": {
+    "main": "የእኛ ፕሪሚየም",
+    "sub": "አገልግሎቶች"
+  },
+  "description": {
+    "main": "ለእርስዎ ፍላጎቶች እና የክህሎት ደረጃ የተበጀ ሙያዊ የመንዳት ትምህርት፣ በባለሙያነት፣ በፈጠራ እና በመንገድ ደህንነት ብቃት ቁርጠኝነት የሚቀርብ።",
+    "detailed": "ከጀማሪ ኮርሶች እስከ የላቀ የንግድ ስልጠና፣ በኢንዱስትሪው ውስጥ ከፍተኛውን የደህንነት መስፈርት በመጠበቅ በራስ የሚተማመኑ፣ የሰለጠኑ ሹፌሮችን ለመገንባት የተዘጋጁ ሰፊ ፕሮግራሞችን እናቀርባለን። የእኛ ዘመናዊ መርከብ፣ የባለሙያ አስተማሪዎች እና ተለዋዋጭ ምርሃ ግብር ምርጡን የመንዳት ትምህርት ልምድ እንዲያገኙ ያረጋግጣል።"
+  },
+  "stats": {
+    "vehicles": "200+ ዘመናዊ ተሽከርካሪዎች",
+    "instructors": "50+ የባለሙያ አስተማሪዎች",
+    "certified": "የተመሰከረላቸው የስልጠና ፕሮግራሞች",
+    "safety": "100% የደህንነት መዝገብ",
+    "languages": "3 ቋንቋ ድጋፍ"
+  },
+  "categories": {
+    "beginner": "የጀማሪ ስልጠና",
+    "beginner_desc": "ለአዲስ ሹፌሮች ሙሉ መሰረት ኮርሶች",
+    "advanced": "የላቀ ክህሎቶች",
+    "advanced_desc": "ለልምድ ያላቸው ሹፌሮች የማሻሻያ ፕሮግራሞች",
+    "commercial": "የንግድ ስልጠና",
+    "commercial_desc": "ለንግድ ተሽከርካሪዎች ባለሙያ ፈቃዶች",
+    "specialized": "ልዩ ፕሮግራሞች",
+    "specialized_desc": "ለተወሰኑ ፍላጎቶች ብጁ ስልጠና"
+  },
+  "highlights": {
+    "flexible": "ተለዋዋጭ ምርሃ ግብር",
+    "flexible_desc": "ምቹ የጊዜ ክፍተቶች እና ብጁ ምርሃ ግብር አማራጮች በራስዎ ፍጥነት ለመማር ይገኛሉ",
+    "modern": "ዘመናዊ መርከብ",
+    "modern_desc": "በዘመናዊ የደህንነት ባህሪያት እና ቴክኖሎጂ በተዘጋጁ የቅርብ ጊዜ ተሽከርካሪዎች ላይ ይለማመዱ",
+    "certified": "የተመሰከረ ብቃት",
+    "certified_desc": "ከቀጣይ የጥራት መሻሻል ጋር በአለም አቀፍ ደረጃ የተቀበሉ የስልጠና መስፈርቶች"
+  },
+  "course_comparison": {
+    "title": "ኮርሶቻችንን ያወዳድሩ",
+    "subtitle": "ለእርስዎ የክህሎት ደረጃ እና ግቦች ፍጹም ኮርስ ያግኙ። እያንዳንዱ ኮርስ ከልምድ ባላቸው አስተማሪዎች ጋር ሰፊ ስልጠና ለመስጠት የተዘጋጀ ነው።",
+    "beginner_category": "የጀማሪ ኮርሶች",
+    "beginner_desc": "ቀድሞ የመንዳት ልምድ ለሌላቸው ፍጹም",
+    "intermediate_category": "መካከለኛ ኮርሶች",
+    "intermediate_desc": "መሰረታዊ ክህሎቶች ያላቸው እና መሻሻል ለሚፈልጉ ሹፌሮች",
+    "advanced_category": "የላቀ እና ባለሙያ",
+    "advanced_desc": "ለባለሙያ ሹፌሮች ልዩ ስልጠና",
+    "highlights": "ቁልፍ ድምቀቶች"
+  },
+  "pricing": {
+    "title": "የስልጠና ጥቅልዎን ይምረጡ",
+    "subtitle": "ከእርስዎ የልምድ ደረጃ እና የመማሪያ ግቦች ጋር በሚስማማ ጥቅል ይምረጡ። ሁሉም ጥቅሎች ዘመናዊ ተሽከርካሪዎች፣ የተመሰከረላቸው አስተማሪዎች እና ሰፊ ድጋፍ ያካትታሉ።",
+    "basic_title": "መሰረታዊ ጥቅል",
+    "basic_desc": "የተወሰነ የመንዳት ልምድ ላላቸው ፍጹም",
+    "standard_title": "መደበኛ ጥቅል",
+    "standard_desc": "ለአዲስ ሹፌሮች በጣም ተወዳጅ ምርጫ",
+    "premium_title": "ፕሪሚየም ጥቅል",
+    "premium_desc": "ሙሉ ባለሙያ ስልጠና",
+    "most_popular": "በጣም ተወዳጅ",
+    "recommended": "የሚመከር",
+    "choose_package": "ይህንን ጥቅል ይምረጡ",
+    "custom_title": "ብጁ ጥቅል ይፈልጋሉ?",
+    "custom_subtitle": "ለእርስዎ የተወሰኑ ፍላጎቶች እና ምርሃ ግብር የተበጁ ብጁ የስልጠና አማራጮች ያነጋግሩን።",
+    "custom_quote": "ብጁ ዋጋ ያግኙ"
+  },
+  "quick_start_title": "ፈጣን ጅምር ኮርስ",
+  "quick_start_duration": "3-4 ሳምንት",
+  "quick_start_price": "4,500 ብር",
+  "quick_start_class_size": "ቢበዛ 6 ተማሪዎች",
+  "quick_start_highlight1": "የተፋጠነ ትምህርት",
+  "quick_start_highlight2": "መሰረታዊ ክህሎቶች ትኩረት",
+  "quick_start_highlight3": "በበጀት ተስማሚ",
+  "skill_enhancement_title": "የክህሎት ማሻሻያ ኮርስ",
+  "skill_enhancement_duration": "2-3 ሳምንት",
+  "skill_enhancement_price": "3,500 ብር",
+  "skill_enhancement_class_size": "ቢበዛ 6 ተማሪዎች",
+  "skill_enhancement_highlight1": "በራስ መተማመንን ይገንቡ",
+  "skill_enhancement_highlight2": "የላቀ ቴክኒኮች",
+  "skill_enhancement_highlight3": "የግል ምላሽ",
+  "refresher_title": "የማደስ ኮርስ",
+  "refresher_duration": "1-2 ሳምንት",
+  "refresher_price": "2,500 ብር",
+  "refresher_class_size": "ቢበዛ 8 ተማሪዎች",
+  "refresher_highlight1": "ፈጣን ማደስ",
+  "refresher_highlight2": "የህግ ማሻሻያዎች",
+  "refresher_highlight3": "በራስ መተማመን ግንባታ",
+  "intermediate_level": "መካከለኛ",
+  "commercial_highlight1": "የከባድ ተሽከርካሪ ስልጠና",
+  "commercial_highlight2": "የንግድ ደንቦች",
+  "commercial_highlight3": "የሙያ ዝግጅት",
+  "defensive_highlight1": "የደህንነት ትኩረት",
+  "defensive_highlight2": "የአደጋ መቀነስ",
+  "defensive_highlight3": "የላቀ ቴክኒኮች"
+}

@@ -1,0 +1,19 @@
+
+{
+  "home": "መነሻ",
+  "about": "ስለ እኛ",
+  "services": "አገልግሎቶች",
+  "contact": "ያገናኙን",
+  "login": "ግባ",
+  "register": "ይመዝገቡ",
+  "dashboard": "ዳሽቦርድ",
+  "profile": "መገለጫ",
+  "settings": "ቅንብሮች",
+  "logout": "ውጣ",
+  "courses": "ኮርሶች",
+  "instructors": "አስተማሪዎች",
+  "blog": "ብሎግ",
+  "faq": "ተደጋጋሚ ጥያቄዎች",
+  "testimonials": "ምስክርነቶች",
+  "pricing": "ዋጋ አወጣጥ"
+}

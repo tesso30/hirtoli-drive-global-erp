@@ -1,0 +1,95 @@
+
+{
+  "hero": {
+    "title": "Of Amansiisaa Konkolaachisuu Baraadhaa",
+    "subtitle": "Barsiisota konkolaachisuu ogeessaa waggaa hedduu muuxannoo qaban",
+    "detailed_subtitle": "Barsiisota konkolaachisuu Itoophiyaa keessaa muuxannoo guddaa qaban waliin konkolaatota amma ayyaanaa, sa'aatii jijjiiramuu danda'u, fi sagantaalee leenjii bal'aa milkaa'ina keessaniif qophaa'an baraadhaa.",
+    "cta": "Barachuu Jalqabaa",
+    "browse_courses": "Koorsiidhaa Qoradhaa",
+    "watch_video": "Viidiyoo Ilaalaa",
+    "free_consultation": "Gorsaa Bilisaa",
+    "trust_indicators": {
+      "rating": "Madaallii 4.9/5",
+      "graduates": "Barattootni 15,000+ Xumura",
+      "pass_rate": "Danda'ama Darban 98%"
+    },
+    "offers": {
+      "theory_title": "Meeshaalee Tiiyoorii Bilisaa",
+      "theory_desc": "Qajeelfama qorannoo dijitaalaa guutuu ni dabalatama",
+      "payment_title": "Karaalee Kaffaltii Jijjiiramuu",
+      "payment_desc": "Akkaataa isinii hojjetu addaan addaan kaffaladhaa",
+      "job_title": "Deeggarsa Hojii Argachuu",
+      "job_desc": "Gargaarsa ogummaa konkolaatota daldalaa"
+    }
+  },
+  "stats": {
+    "students": "Barattootni Leenji'an",
+    "experience": "Waggaa Muuxannoo",
+    "pass_rate": "Danda'ama Darban",
+    "instructors": "Barsiisota Ogeeyyii",
+    "branches": "Bakka Dameewwanii",
+    "support": "Deeggarsi Argamu",
+    "vehicles": "Konkolaatota Amma Ayyaanaa",
+    "training_time": "Yeroo Leenjii Giddugaleessaa",
+    "safety": "Galmee Nageenya",
+    "rating": "Madaalchuu Barattootaa",
+    "courses": "Filannoo Koorsii",
+    "satisfaction": "Itti Quufinsa Barattootaa",
+    "track_record_title": "Galmeen Keenya Mataa Isaa Dubbata",
+    "track_record_subtitle": "Kurmaata kudhan barumsa konkolaachisuu keessatti gargaarummaa fi milkaa'ina barattootaa nageenya konkolaachisuu irratti kutaan nu qabnuuf agarsiisu bu'aa safartuu qaban.",
+    "description": {
+      "students": "Barra 2010 jalqabee xumurtoota milkaa'oo",
+      "experience": "Itoophiyaa gargaarumsaan ogeessa",
+      "pass_rate": "Yeroo jalqabaaf qormaata milkaa'ina",
+      "instructors": "Ragaa qabaniifi muuxannoo qaban",
+      "branches": "Dameewwan Ciroo fi Hararii",
+      "support": "Yeroo kamiyyuu gargaarsa barattootaa",
+      "vehicles": "Amaloota nageenya yeroo dhiyoo ni dabalatama",
+      "training_time": "Sagantaalee barnoota gahumsa qaban",
+      "safety": "Leenjii keessatti balaa zeeroo",
+      "rating": "Itti quufinsa barattootaa gaarii",
+      "courses": "Sagantaalee leenjii bal'aa",
+      "satisfaction": "Barattooti mala keenya ni jaallatu"
+    }
+  },
+  "features": {
+    "title": "Maaliif Hirtoli Filachuu",
+    "description": "Amaloonnifi tajaajiloonni keenya bal'aan muuxannoo barumsa konkolaachisuu gaarii ta'e jalqaba hanga xumuramatti akka argataniif qophaa'aniidha.",
+    "quality": {
+      "title": "Leenjii Qulqulluu",
+      "desc": "Koorsiidhaa bal'aa ogeessota ragaa qaban barsiisan"
+    },
+    "flexible": {
+      "title": "Yeroo Jijjiiramuu Danda'u",
+      "desc": "Yeroo leenjii sa'aatii keessan waliin walsimu filaadhaa"
+    },
+    "vehicles": {
+      "title": "Konkolaatota Amma Ayyaanaa",
+      "desc": "Konkolaatota haala gaarii fi amma ayyaanaafi teeknooloojii qaban irratti shaakalaa"
+    }
+  },
+  "courses": {
+    "title": "Koorsiidhaa Keenya",
+    "subtitle": "Sadarkaa dandeettii fi fedhii adda addaa ogeessummaan qophaa'an koorsiidhaa keessaa filaadhaa.",
+    "view_all": "Koorsiidhaa Hunda Ilaalaa",
+    "beginner": {
+      "title": "Koorsii Jalqabaa",
+      "desc": "Duraan muuxannoo konkolaachisuu hin qabneef"
+    },
+    "advanced": {
+      "title": "Koorsii Ol'aanaa",
+      "desc": "Dandeettii konkolaachisuu qabdan fooyyessaa"
+    },
+    "commercial": {
+      "title": "Eeyyama Daldalaa",
+      "desc": "Leenjii eeyyama konkolaachisuu daldalaa"
+    }
+  },
+  "cta": {
+    "title": "Imala Konkolaachisuu Jalqabuuf Qophii Dhaa?",
+    "subtitle": "Mana Barumsaa Konkolaachisuu Hirtoli keessatti of amansiisaa konkolaachisuu baratan kumaatama xumurtoota milkaa'oo waliin makamaa",
+    "register": "Amma Galmaa'aa",
+    "contact": "Nu Qunnamaa",
+    "learn_more": "Caalu Baraadhaa"
+  }
+}

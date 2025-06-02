@@ -25,7 +25,7 @@ type LanguageProviderProps = {
   children: React.ReactNode;
 };
 
-// Import categorized translation files
+// Import categorized translation files for English
 import commonEn from '../locales/en/common.json';
 import navigationEn from '../locales/en/navigation.json';
 import appEn from '../locales/en/app.json';
@@ -41,8 +41,23 @@ import aboutEn from '../locales/en/about.json';
 import contactEn from '../locales/en/contact.json';
 import footerEn from '../locales/en/footer.json';
 
-import amTranslations from '../locales/am.json';
-import omTranslations from '../locales/om.json';
+// Import categorized translation files for Amharic
+import commonAm from '../locales/am/common.json';
+import navigationAm from '../locales/am/navigation.json';
+import appAm from '../locales/am/app.json';
+import languageAm from '../locales/am/language.json';
+import branchesAm from '../locales/am/branches.json';
+import homeAm from '../locales/am/home.json';
+import coursesAm from '../locales/am/courses.json';
+import servicesAm from '../locales/am/services.json';
+
+// Import categorized translation files for Oromo
+import commonOm from '../locales/om/common.json';
+import navigationOm from '../locales/om/navigation.json';
+import appOm from '../locales/om/app.json';
+import languageOm from '../locales/om/language.json';
+import branchesOm from '../locales/om/branches.json';
+import homeOm from '../locales/om/home.json';
 
 // Combine all English translations
 const enTranslations = {
@@ -60,6 +75,28 @@ const enTranslations = {
   about: aboutEn,
   contact: contactEn,
   footer: footerEn
+};
+
+// Combine all Amharic translations
+const amTranslations = {
+  ...commonAm,
+  nav: navigationAm,
+  app: appAm,
+  lang: languageAm,
+  branch: branchesAm,
+  home: homeAm,
+  courses: coursesAm,
+  services: servicesAm
+};
+
+// Combine all Oromo translations
+const omTranslations = {
+  ...commonOm,
+  nav: navigationOm,
+  app: appOm,
+  lang: languageOm,
+  branch: branchesOm,
+  home: homeOm
 };
 
 const translations: Record<Language, Record<string, any>> = {
