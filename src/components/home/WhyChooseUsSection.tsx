@@ -2,7 +2,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../../contexts/LanguageContext';
-import { Target, Heart, Shield, Clock, Award, Users, Car, BookOpen, Headphones } from 'lucide-react';
+import { Target, Heart, Shield, Clock, Award, Users, Car, BookOpen, Headphones, GraduationCap, Smartphone, Globe, Users2, FileCheck } from 'lucide-react';
 
 const WhyChooseUsSection: React.FC = () => {
   const navigate = useNavigate();
@@ -13,55 +13,79 @@ const WhyChooseUsSection: React.FC = () => {
       icon: <Target className="w-12 h-12 text-hirtoli-red" />,
       title: t('home.why_choose_us.proven_track_record'),
       description: t('home.why_choose_us.proven_track_record_desc'),
-      features: ["98% first-time pass rate", "15,000+ successful graduates", "13 years of excellence"]
+      features: [t('home.why_choose_us.features.first_time_pass'), t('home.why_choose_us.features.successful_graduates'), t('home.why_choose_us.features.years_excellence')]
     },
     {
       icon: <Heart className="w-12 h-12 text-hirtoli-green" />,
       title: t('home.why_choose_us.student_centered'),
       description: t('home.why_choose_us.student_centered_desc'),
-      features: ["Personalized instruction", "Flexible scheduling", "Supportive environment"]
+      features: [t('home.why_choose_us.features.personalized_instruction'), t('home.why_choose_us.features.flexible_scheduling'), t('home.why_choose_us.features.supportive_environment')]
     },
     {
       icon: <Shield className="w-12 h-12 text-hirtoli-black" />,
       title: t('home.why_choose_us.safety_first'),
       description: t('home.why_choose_us.safety_first_desc'),
-      features: ["Dual control vehicles", "Latest safety tech", "Emergency trained staff"]
+      features: [t('home.why_choose_us.features.dual_control_vehicles'), t('home.why_choose_us.features.latest_safety_tech'), t('home.why_choose_us.features.emergency_trained_staff')]
     },
     {
       icon: <Clock className="w-12 h-12 text-blue-600" />,
       title: t('home.why_choose_us.flexible_scheduling'),
       description: t('home.why_choose_us.flexible_scheduling_desc'),
-      features: ["7-day availability", "Multiple time slots", "Make-up sessions"]
+      features: [t('home.why_choose_us.features.seven_day_availability'), t('home.why_choose_us.features.multiple_time_slots'), t('home.why_choose_us.features.makeup_sessions')]
     },
     {
       icon: <Award className="w-12 h-12 text-purple-600" />,
       title: t('home.why_choose_us.certified_excellence'),
       description: t('home.why_choose_us.certified_excellence_desc'),
-      features: ["ISO certified", "Government accredited", "Quality guaranteed"]
+      features: [t('home.why_choose_us.features.iso_certified'), t('home.why_choose_us.features.government_accredited'), t('home.why_choose_us.features.quality_guaranteed')]
     },
     {
-      icon: <Users className="w-12 h-12 text-orange-500" />,
+      icon: <GraduationCap className="w-12 h-12 text-orange-500" />,
       title: t('home.why_choose_us.expert_instructors'),
       description: t('home.why_choose_us.expert_instructors_desc'),
-      features: ["50+ instructors", "Multi-language support", "Specialized training"]
+      features: [t('home.why_choose_us.features.fifty_plus_instructors'), t('home.why_choose_us.features.multi_language_support'), t('home.why_choose_us.features.specialized_training')]
     },
     {
       icon: <Car className="w-12 h-12 text-green-600" />,
       title: t('home.why_choose_us.modern_fleet'),
       description: t('home.why_choose_us.modern_fleet_desc'),
-      features: ["200+ vehicles", "Manual & automatic", "Commercial options"]
+      features: [t('home.why_choose_us.features.two_hundred_vehicles'), t('home.why_choose_us.features.manual_automatic'), t('home.why_choose_us.features.commercial_options')]
+    },
+    {
+      icon: <Smartphone className="w-12 h-12 text-blue-600" />,
+      title: t('home.why_choose_us.digital_learning'),
+      description: t('home.why_choose_us.digital_learning_desc'),
+      features: [t('home.why_choose_us.features.mobile_app_access'), t('home.why_choose_us.features.video_tutorials'), t('home.why_choose_us.features.practice_tests')]
+    },
+    {
+      icon: <Globe className="w-12 h-12 text-purple-600" />,
+      title: t('home.why_choose_us.multi_language'),
+      description: t('home.why_choose_us.multi_language_desc'),
+      features: [t('home.why_choose_us.features.culturally_adapted'), t('home.why_choose_us.features.native_speaking'), t('home.why_choose_us.features.three_languages')]
+    },
+    {
+      icon: <Users2 className="w-12 h-12 text-orange-500" />,
+      title: t('home.why_choose_us.small_class'),
+      description: t('home.why_choose_us.small_class_desc'),
+      features: [t('home.why_choose_us.features.individual_feedback'), t('home.why_choose_us.features.customized_learning'), t('home.why_choose_us.features.personal_attention')]
     },
     {
       icon: <BookOpen className="w-12 h-12 text-red-500" />,
-      title: t('home.why_choose_us.complete_materials'),
-      description: t('home.why_choose_us.complete_materials_desc'),
-      features: ["Digital resources", "Practice tests", "Video tutorials"]
+      title: t('home.why_choose_us.comprehensive_curriculum'),
+      description: t('home.why_choose_us.comprehensive_curriculum_desc'),
+      features: [t('home.why_choose_us.features.traffic_laws'), t('home.why_choose_us.features.defensive_driving'), t('home.why_choose_us.features.emergency_procedures')]
+    },
+    {
+      icon: <FileCheck className="w-12 h-12 text-green-500" />,
+      title: t('home.why_choose_us.license_support'),
+      description: t('home.why_choose_us.license_support_desc'),
+      features: [t('home.why_choose_us.features.document_preparation'), t('home.why_choose_us.features.test_scheduling'), t('home.why_choose_us.features.renewal_services')]
     },
     {
       icon: <Headphones className="w-12 h-12 text-indigo-600" />,
       title: t('home.why_choose_us.support_24_7'),
       description: t('home.why_choose_us.support_24_7_desc'),
-      features: ["24/7 availability", "Multiple channels", "Emergency support"]
+      features: [t('home.why_choose_us.features.twenty_four_seven'), t('home.why_choose_us.features.multiple_channels'), t('home.why_choose_us.features.emergency_support')]
     },
   ];
 
@@ -87,7 +111,7 @@ const WhyChooseUsSection: React.FC = () => {
           </div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
           {whyChooseUs.map((item, index) => (
             <div 
               key={index} 
@@ -103,7 +127,7 @@ const WhyChooseUsSection: React.FC = () => {
               </div>
               
               <h3 className="relative z-10 text-xl font-semibold mb-6 group-hover:text-hirtoli-green transition-colors duration-300">{item.title}</h3>
-              <p className="relative z-10 text-gray-600 mb-8 leading-relaxed">{item.description}</p>
+              <p className="relative z-10 text-gray-600 mb-8 leading-relaxed text-sm">{item.description}</p>
               
               {/* Feature list with staggered animation */}
               <ul className="relative z-10 space-y-3 text-sm text-gray-500">
