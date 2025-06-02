@@ -16,20 +16,20 @@ const CourseComparison: React.FC = () => {
       description: t('services.course_comparison.beginner_desc'),
       courses: [
         {
-          name: 'Complete Beginner Course',
-          duration: '6-8 weeks',
-          price: '7,500 ETB',
-          level: 'Beginner',
-          classSize: 'Max 4 students',
-          highlights: ['Zero experience required', 'Comprehensive training', 'Test preparation included']
+          name: t('courses.detailed.beginner.title'),
+          duration: t('courses.detailed.beginner.duration'),
+          price: t('courses.detailed.beginner.price'),
+          level: t('courses.detailed.beginner.level'),
+          classSize: t('courses.detailed.beginner.class_size'),
+          highlights: [t('enrollment.features.instant'), t('enrollment.features.digital'), t('enrollment.features.payment')]
         },
         {
-          name: 'Quick Start Course',
-          duration: '3-4 weeks',
-          price: '4,500 ETB',
-          level: 'Beginner',
-          classSize: 'Max 6 students',
-          highlights: ['Accelerated learning', 'Basic skills focus', 'Budget-friendly']
+          name: t('services.quick_start_title'),
+          duration: t('services.quick_start_duration'),
+          price: t('services.quick_start_price'),
+          level: t('courses.detailed.beginner.level'),
+          classSize: t('services.quick_start_class_size'),
+          highlights: [t('services.quick_start_highlight1'), t('services.quick_start_highlight2'), t('services.quick_start_highlight3')]
         }
       ]
     },
@@ -39,20 +39,20 @@ const CourseComparison: React.FC = () => {
       description: t('services.course_comparison.intermediate_desc'),
       courses: [
         {
-          name: 'Skill Enhancement Course',
-          duration: '2-3 weeks',
-          price: '3,500 ETB',
-          level: 'Intermediate',
-          classSize: 'Max 6 students',
-          highlights: ['Build confidence', 'Advanced techniques', 'Personalized feedback']
+          name: t('services.skill_enhancement_title'),
+          duration: t('services.skill_enhancement_duration'),
+          price: t('services.skill_enhancement_price'),
+          level: t('services.intermediate_level'),
+          classSize: t('services.skill_enhancement_class_size'),
+          highlights: [t('services.skill_enhancement_highlight1'), t('services.skill_enhancement_highlight2'), t('services.skill_enhancement_highlight3')]
         },
         {
-          name: 'Refresher Course',
-          duration: '1-2 weeks',
-          price: '2,500 ETB',
-          level: 'Intermediate',
-          classSize: 'Max 8 students',
-          highlights: ['Quick refresher', 'Rule updates', 'Confidence building']
+          name: t('services.refresher_title'),
+          duration: t('services.refresher_duration'),
+          price: t('services.refresher_price'),
+          level: t('services.intermediate_level'),
+          classSize: t('services.refresher_class_size'),
+          highlights: [t('services.refresher_highlight1'), t('services.refresher_highlight2'), t('services.refresher_highlight3')]
         }
       ]
     },
@@ -62,20 +62,20 @@ const CourseComparison: React.FC = () => {
       description: t('services.course_comparison.advanced_desc'),
       courses: [
         {
-          name: 'Commercial License Training',
-          duration: '8-12 weeks',
-          price: '12,000 ETB',
-          level: 'Professional',
-          classSize: 'Max 4 students',
-          highlights: ['Heavy vehicle training', 'Commercial regulations', 'Career preparation']
+          name: t('courses.detailed.commercial.title'),
+          duration: t('courses.detailed.commercial.duration'),
+          price: t('courses.detailed.commercial.price'),
+          level: t('courses.detailed.commercial.level'),
+          classSize: t('courses.detailed.commercial.class_size'),
+          highlights: [t('services.commercial_highlight1'), t('services.commercial_highlight2'), t('services.commercial_highlight3')]
         },
         {
-          name: 'Defensive Driving Course',
-          duration: '1-2 weeks',
-          price: '3,500 ETB',
-          level: 'Advanced',
-          classSize: 'Max 6 students',
-          highlights: ['Safety focus', 'Risk reduction', 'Advanced techniques']
+          name: t('courses.detailed.advanced.title'),
+          duration: t('courses.detailed.advanced.duration'),
+          price: t('courses.detailed.advanced.price'),
+          level: t('courses.detailed.advanced.level'),
+          classSize: t('courses.detailed.advanced.class_size'),
+          highlights: [t('services.defensive_highlight1'), t('services.defensive_highlight2'), t('services.defensive_highlight3')]
         }
       ]
     }

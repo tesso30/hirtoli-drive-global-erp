@@ -5,14 +5,14 @@
     "sub": "Services"
   },
   "description": {
-    "main": "Professional driving education tailored to your needs and skill level, delivered with excellence, innovation, and commitment to road safety.",
-    "detailed": "From beginner courses to advanced commercial training, we offer comprehensive programs designed to build confident, skilled drivers while maintaining the highest safety standards in the industry. Our modern fleet, expert instructors, and flexible scheduling ensure you get the best driving education experience."
+    "main": "Professional driving education tailored to your needs and skill level, delivered with expertise, innovation, and a commitment to road safety excellence.",
+    "detailed": "From beginner courses to advanced commercial training, we offer comprehensive programs designed to build confident, skilled drivers while maintaining the highest safety standards in the industry. Our modern fleet, expert instructors, and flexible scheduling ensure you receive the best driving education experience possible."
   },
   "stats": {
     "vehicles": "200+ Modern Vehicles",
     "instructors": "50+ Expert Instructors",
     "certified": "Certified Training Programs",
-    "safety": "100% Safety Guaranteed",
+    "safety": "100% Safety Record",
     "languages": "3 Language Support"
   },
   "categories": {
@@ -27,11 +27,11 @@
   },
   "highlights": {
     "flexible": "Flexible Scheduling",
-    "flexible_desc": "Learn at your own pace with convenient time slots and personalized scheduling options",
+    "flexible_desc": "Convenient time slots and customized schedules options available learn at your own pace",
     "modern": "Modern Fleet",
     "modern_desc": "Practice on latest vehicles equipped with modern safety features and technology",
     "certified": "Certified Excellence",
-    "certified_desc": "Internationally recognized training standards with continuous quality improvement"
+    "certified_desc": "Internationally accepted training standards with continuous quality improvement"
   },
   "course_comparison": {
     "title": "Compare Our Courses",
@@ -57,7 +57,35 @@
     "recommended": "Recommended",
     "choose_package": "Choose This Package",
     "custom_title": "Need a Custom Package?",
-    "custom_subtitle": "Contact us for personalized training options tailored to your specific needs and schedule.",
+    "custom_subtitle": "Contact us for customized training options tailored to your specific needs and schedule.",
     "custom_quote": "Get Custom Quote"
-  }
+  },
+  "quick_start_title": "Quick Start Course",
+  "quick_start_duration": "3-4 weeks",
+  "quick_start_price": "4,500 ETB",
+  "quick_start_class_size": "Max 6 students",
+  "quick_start_highlight1": "Accelerated learning",
+  "quick_start_highlight2": "Basic skills focus",
+  "quick_start_highlight3": "Budget-friendly",
+  "skill_enhancement_title": "Skill Enhancement Course",
+  "skill_enhancement_duration": "2-3 weeks",
+  "skill_enhancement_price": "3,500 ETB",
+  "skill_enhancement_class_size": "Max 6 students",
+  "skill_enhancement_highlight1": "Build confidence",
+  "skill_enhancement_highlight2": "Advanced techniques",
+  "skill_enhancement_highlight3": "Personalized feedback",
+  "refresher_title": "Refresher Course",
+  "refresher_duration": "1-2 weeks",
+  "refresher_price": "2,500 ETB",
+  "refresher_class_size": "Max 8 students",
+  "refresher_highlight1": "Quick refresher",
+  "refresher_highlight2": "Rule updates",
+  "refresher_highlight3": "Confidence building",
+  "intermediate_level": "Intermediate",
+  "commercial_highlight1": "Heavy vehicle training",
+  "commercial_highlight2": "Commercial regulations",
+  "commercial_highlight3": "Career preparation",
+  "defensive_highlight1": "Safety focus",
+  "defensive_highlight2": "Risk reduction",
+  "defensive_highlight3": "Advanced techniques"
 }

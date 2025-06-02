@@ -1,200 +1,255 @@
-
 {
-  "view_all": "Hunda Ilaaluu",
-  "learn_more": "Dabalataan Barachuu",
-  "get_started": "Jalqabaa",
-  "contact_us": "Nu Qunnamaa",
-  "register_online": "Toora Interneetii Galmeeffachuu",
-  "call_now": "Amma Bilbilaa",
-  "find_location": "Bakka Argachuu",
+  "view_all": "Hunda ilaali",
+  "learn_more": "Caalu barachuu",
+  "get_started": "Jalqabi",
+  "contact_us": "Nu qunnamaa",
+  "register_online": "Toora interneetii irratti galmaa'i",
+  "call_now": "Amma bilbili",
+  "find_location": "Bakka argadhu",
   "duration": "Yeroo",
-  "class_size": "Hammam Barattoota",
+  "class_size": "Baay'ina daree",
   "price": "Gatii",
   "level": "Sadarkaa",
   "features": "Amaloota",
-  "enroll": "Galmeeffachuu",
-  "active": "socho'aa",
-  "paused": "dhaabbatee",
-  "completed": "xumurame",
+  "enroll": "Galmaa'i",
+  "active": "Ka'umsa qaba",
+  "paused": "Dhaabatera",
+  "completed": "Xumurama",
   "location": "Bakka",
-  "book_now": "Amma Galmeeffachuu",
-  "schedule_now": "Amma Sagantaa Qopheessuu",
-  "apply_now": "Amma Iyyannoo",
-  "download": "Gadi Buusuu",
-  "upload": "Olkaa'uu",
-  "save": "Olkeessuu",
-  "cancel": "Dhiisuu",
-  "continue": "Itti Fufuu",
-  "back": "Duubatti Deebi'uu",
-  "next": "Itti Aanaa",
-  "previous": "Dura",
-  "submit": "Galchuu",
-  "loading": "Fedhii jira...",
+  "book_now": "Amma buusi",
+  "schedule_now": "Amma sagantaa qopheessi",
+  "apply_now": "Amma eeyyami",
+  "download": "Buufadhu",
+  "upload": "Ol kaasi",
+  "save": "Olkaa'i",
+  "cancel": "Dhiisi",
+  "continue": "Itti fufi",
+  "back": "Deebi'i",
+  "next": "Itti aansu",
+  "previous": "Duraa",
+  "submit": "Galchi",
+  "loading": "Fe'amaa jira...",
   "error": "Dogoggora",
   "success": "Milkaa'ina",
   "warning": "Akeekkachiisa",
   "info": "Odeeffannoo",
 
   "nav": {
-    "home": "Galma",
-    "about": "Waa'ee Keenya",
+    "home": "Mana",
+    "about": "Waa'ee keenya",
     "services": "Tajaajila",
-    "contact": "Nu Qunnamaa",
-    "login": "Seenuu",
-    "register": "Galmeeffachuu",
-    "dashboard": "Gabatee Hojii",
-    "profile": "Seenaa Dhuunfaa",
+    "contact": "Qunnamtii",
+    "login": "Seeni",
+    "register": "Galmaa'i",
+    "dashboard": "Gabatee to'annoo",
+    "profile": "Seensa dhuunfaa",
     "settings": "Qindaa'ina",
-    "logout": "Ba'uu",
+    "logout": "Ba'i",
     "courses": "Koorsii",
     "instructors": "Barsiisota",
-    "blog": "Biloogii",
-    "faq": "Gaaffii Irra Deddeebi'u",
-    "testimonials": "Dhugaa Baasii",
-    "pricing": "Gatii Kaa'uu"
+    "blog": "Blaagii",
+    "faq": "Gaaffii yeroo baay'ee gaafataman",
+    "testimonials": "Ragaalee",
+    "pricing": "Gatii kaa'umsaa"
   },
 
   "app": {
-    "title": "Mana Barumsaa Konkolaataa Oofuu Hirtoli",
-    "tagline": "Barnoota Konkolaataa Oofuu Ogummaa",
-    "description": "Mana barumsaa konkolaataa oofuu Itoophiyaa keessatti hundee ta'een amanamummaan konkolaataa oofuu baradhaa",
-    "keywords": "mana barumsaa konkolaataa oofuu, Itoophiyaa, konkolaataa oofuu barachuu, barnootni konkolaataa oofuu"
+    "title": "Mana Barumsaa Konkolaachisuu Hirtoli",
+    "tagline": "Barumsa konkolaachisuu ogeessaa",
+    "description": "Mana barumsaa konkolaachisuu Itoophiyaa keessaa guddaa ta'een of amansiisaa konkolaachisuu baraadhaa",
+    "keywords": "Mana barumsaa konkolaachisuu, Itoophiyaa, konkolaachisuu baradhu, barumsa konkolaachisuu"
   },
 
   "lang": {
     "english": "Afaan Ingilizii",
     "amharic": "Afaan Amaaraa",
     "oromo": "Afaan Oromoo",
-    "select_language": "Afaan Filadhu",
-    "change_language": "Afaan Jijjiiruu"
+    "select_language": "Afaan filaadhaa",
+    "change_language": "Afaan jijjiiraa"
   },
 
   "branch": {
-    "title": "Damee Keenya",
-    "select": "Damee Filadhu",
+    "title": "Dameewwan keenya",
+    "select": "Damee filaadhaa",
     "chiro": {
       "title": "Damee Ciroo",
-      "description": "Dameen Ciroo koorsii konkolaataa oofuu bal'aa meeshaalee ammayyaa fi barsiisota muuxannoo qaban waliin dhiyeessa.",
+      "description": "Dameen Ciroo meeshaalee amma ayyaanaa fi barsiisota ogeeyyii qabee koorsiidhaa konkolaachisuu bal'aa ni kenna.",
       "location": "Ciroo, Naannoo Oromiyaa",
-      "contact": "Quunnamtii",
+      "contact": "Qunnamtii",
       "phone": "Bilbila: +251 911 123 456",
-      "email": "Imeelii: chiro@hirtoli.com",
-      "hours": "Sa'aatii Hojii",
+      "email": "Iimeelii: chiro@hirtoli.com",
+      "hours": "Sa'aatii hojii",
       "weekdays": "Wiixata - Jimaata",
-      "weekdays_time": "Sa'a 8:00 ganama - Sa'a 6:00 galgala",
+      "weekdays_time": "Ganama 8:00 - Galgala 6:00",
       "saturday": "Sanbata",
-      "saturday_time": "Sa'a 9:00 ganama - Sa'a 4:00 waaree",
+      "saturday_time": "Ganama 9:00 - Waareeffama 4:00",
       "sunday": "Dilbata",
-      "sunday_time": "Cufame",
-      "cta": "Damee Kana Qunnamaa",
-      "maps": "Kaartaa Google irratti Ilaaluu"
+      "sunday_time": "Cufaa",
+      "cta": "Damee kana waliin haasa'aa",
+      "maps": "Kaartaa Google irratti ilaali"
     },
     "harar": {
       "title": "Damee Hararii",
-      "description": "Dameen Hararii naannoo sana barnoota konkolaataa oofuu qulqulluu fi sagantaalee leenjii addaa ta'een tajaajila.",
+      "description": "Dameen Hararii naannichaa kanaf barumsa konkolaachisuu qulqulluu fi sagantaalee leenjii addaa ni tajaajila.",
       "location": "Hararii, Naannoo Hararii",
-      "contact": "Quunnamtii",
+      "contact": "Qunnamtii",
       "phone": "Bilbila: +251 922 123 456",
-      "email": "Imeelii: harar@hirtoli.com",
-      "hours": "Sa'aatii Hojii",
+      "email": "Iimeelii: harar@hirtoli.com",
+      "hours": "Sa'aatii hojii",
       "weekdays": "Wiixata - Jimaata",
-      "weekdays_time": "Sa'a 8:30 ganama - Sa'a 5:30 galgala",
+      "weekdays_time": "Ganama 8:30 - Galgala 5:30",
       "saturday": "Sanbata",
-      "saturday_time": "Sa'a 9:00 ganama - Sa'a 3:00 waaree",
+      "saturday_time": "Ganama 9:00 - Waareeffama 3:00",
       "sunday": "Dilbata",
-      "sunday_time": "Cufame",
-      "cta": "Damee Kana Qunnamaa",
-      "maps": "Kaartaa Google irratti Ilaaluu"
+      "sunday_time": "Cufaa",
+      "cta": "Damee kana waliin haasa'aa",
+      "maps": "Kaartaa Google irratti ilaali"
     }
   },
 
   "home": {
+    "hero": {
+      "title": "Of Amansiisaa Konkolaachisuu Baraadhaa",
+      "subtitle": "Barsiisota konkolaachisuu ogeessaa waggaa hedduu muuxannoo qaban",
+      "detailed_subtitle": "Barsiisota konkolaachisuu Itoophiyaa keessaa muuxannoo guddaa qaban waliin konkolaatota amma ayyaanaa, sa'aatii jijjiiramuu danda'u, fi sagantaalee leenjii bal'aa milkaa'ina keessaniif qophaa'an baraadhaa.",
+      "cta": "Barachuu Jalqabaa",
+      "browse_courses": "Koorsiidhaa Qoradhaa",
+      "watch_video": "Viidiyoo Ilaalaa",
+      "free_consultation": "Gorsaa Bilisaa",
+      "trust_indicators": {
+        "rating": "Madaallii 4.9/5",
+        "graduates": "Barattootni 15,000+ Xumura",
+        "pass_rate": "Danda'ama Darban 98%"
+      },
+      "offers": {
+        "theory_title": "Meeshaalee Tiiyoorii Bilisaa",
+        "theory_desc": "Qajeelfama qorannoo dijitaalaa guutuu ni dabalatama",
+        "payment_title": "Karaalee Kaffaltii Jijjiiramuu",
+        "payment_desc": "Akkaataa isinii hojjetu addaan addaan kaffaladhaa",
+        "job_title": "Deeggarsa Hojii Argachuu",
+        "job_desc": "Gargaarsa ogummaa konkolaatota daldalaa"
+      }
+    },
     "stats": {
-      "students": "Barattoota Leenji'aman",
-      "experience": "Waggaalee Muuxannoo",
-      "pass_rate": "Sadarkaa Milkaa'ina",
+      "students": "Barattootni Leenji'an",
+      "experience": "Waggaa Muuxannoo",
+      "pass_rate": "Danda'ama Darban",
       "instructors": "Barsiisota Ogeeyyii",
       "branches": "Bakka Dameewwanii",
-      "support": "Deeggarsa Jiru",
-      "vehicles": "Konkolaataalee Ammayyaa",
-      "training_time": "Yeroo Leenjii Giddugaleessa",
+      "support": "Deeggarsi Argamu",
+      "vehicles": "Konkolaatota Amma Ayyaanaa",
+      "training_time": "Yeroo Leenjii Giddugaleessaa",
       "safety": "Galmee Nageenya",
-      "rating": "Madaallii Barattoota",
+      "rating": "Madaalchuu Barattootaa",
       "courses": "Filannoo Koorsii",
-      "satisfaction": "Itti Gammachuu Barattoota",
+      "satisfaction": "Itti Quufinsa Barattootaa",
+      "track_record_title": "Galmeen Keenya Mataa Isaa Dubbata",
+      "track_record_subtitle": "Kurmaata kudhan barumsa konkolaachisuu keessatti gargaarummaa fi milkaa'ina barattootaa nageenya konkolaachisuu irratti kutaa nu qabnuuf agarsiisu bu'aa safartuu qaban.",
       "description": {
-        "students": "Gradueetii milkaa'an bara 2010 irraa eegalee",
-        "experience": "Itoophiyaa dandeettiin tajaajiluu",
-        "pass_rate": "Sadarkaa milkaa'ina imtihaan jalqaba",
-        "instructors": "Ragaa qaban fi muuxannoo qaban",
+        "students": "Barra 2010 jalqabee xumurtoota milkaa'oo",
+        "experience": "Itoophiyaa gargaarumsaan ogeessa",
+        "pass_rate": "Yeroo jalqabaaf qormaata milkaa'ina",
+        "instructors": "Ragaa qabaniifi muuxannoo qaban",
         "branches": "Dameewwan Ciroo fi Hararii",
-        "support": "Gargaarsa barataa yeroo kamiyyuu",
-        "vehicles": "Amaloota nageenya yeroo ammaa kan of keessaa qaban",
-        "training_time": "Sagantaalee barnootaa gahumsa qaban",
-        "safety": "Balaa zeeroo leenjii keessatti",
-        "rating": "Itti gammachuu barataa gaarii",
+        "support": "Yeroo kamiyyuu gargaarsa barattootaa",
+        "vehicles": "Amaloota nageenya yeroo dhiyoo ni dabalatama",
+        "training_time": "Sagantaalee barnoota gahumsa qaban",
+        "safety": "Leenjii keessatti balaa zeeroo",
+        "rating": "Itti quufinsa barattootaa gaarii",
         "courses": "Sagantaalee leenjii bal'aa",
-        "satisfaction": "Barattoonni mala keenya jaallatanii"
-      },
-      "track_record_title": "Galmeen Keenya Dubbata",
-      "track_record_subtitle": "Milkaa'ina barataa fi nageenya daandii irratti qabnu gochuu keenyaaf agarsiisan bu'aa saffisaan argamu qaban waggaa kudhan ol ogummaa barnoota konkolaataa oofuu keessatti."
-    }
-  },
-
-  "courses": {
-    "title": "Koorsii Keenya",
-    "subtitle": "Sadarkaa dandeettii fi fedhii adda addaatiif ogummaatti qophaa'an koorsii gidduu keessa filadhu.",
-    "detailed": {
-      "beginner": {
-        "title": "Koorsii Jalqabaa Guutuu",
-        "desc": "Muuxannoo konkolaataa oofuu tokko illee hin qabneef guutumaan jalqabaaf",
-        "duration": "Torban 6-8",
-        "class_size": "Hamma Barattoota 4",
-        "price": "Qarshii 3,500",
-        "level": "Jalqabaa"
-      },
-      "advanced": {
-        "title": "Konkolaataa Oofuu Eegumsa Olaanaa",
-        "desc": "Tooftaalee olaanaa fi tarkaanfiiwwan nageenya dandeettii keessan guddisaa",
-        "duration": "Torban 4",
-        "class_size": "Hamma Barattoota 6",
-        "price": "Qarshii 2,800",
-        "level": "Olaanaa"
-      },
-      "commercial": {
-        "title": "Leenjii Eeyyama Daldala",
-        "desc": "Hojii konkolaataawwan daldala ogummaa leenjii",
-        "duration": "Torban 8-12",
-        "class_size": "Hamma Barattoota 8",
-        "price": "Qarshii 5,200",
-        "level": "Ogummaa"
+        "satisfaction": "Barattooti mala keenya ni jaallatu"
       }
     },
     "features": {
-      "beginner": [
-        "To'annoo konkolaataa bu'uuraa fi nageenya",
-        "Seerota tiraafikii fi mallattoolee daandii",
-        "Dhaabachuu fi sochii",
-        "Dandeettii konkolaataa oofuu highway",
-        "Qophii imtihaan",
-        "Deeggarsa iyyannoo eeyyama"
-      ],
-      "advanced": [
-        "Tooftaalee sochii olaanaa",
-        "Halkan fi haala qilleensaa konkolaataa oofuu",
-        "Leenjii deebii tasaa",
-        "Konkolaataa oofuu boba qusatu",
-        "Bu'uuraalee kunuunsa konkolaataa",
-        "Shaakala ijaaruu amanamummaa"
-      ],
-      "commercial": [
-        "Hojii konkolaataa ulfaatuu",
-        "Dambiiwwan tiraafikii daldala",
-        "Bulchiinsa fe'umsaa fi nageenya",
-        "Amala konkolaataa oofuu ogummaa",
-        "Gochaalee konkolaataa oofuu daldalaa",
-        "Qophii imtihaan eeyyama daldala"
-      ]
+      "title": "Maaliif Hirtoli Filachuu",
+      "description": "Amaloonnifi tajaajiloonni keenya bal'aan muuxannoo barumsa konkolaachisuu gaarii ta'e jalqaba hanga xumuramatti akka argataniif qophaa'aniidha.",
+      "quality": {
+        "title": "Leenjii Qulqulluu",
+        "desc": "Koorsiidhaa bal'aa ogeessota ragaa qaban barsiisan"
+      },
+      "flexible": {
+        "title": "Yeroo Jijjiiramuu Danda'u",
+        "desc": "Yeroo leenjii sa'aatii keessan waliin walsimu filaadhaa"
+      },
+      "vehicles": {
+        "title": "Konkolaatota Amma Ayyaanaa",
+        "desc": "Konkolaatota haala gaarii fi amma ayyaanaafi teeknooloojii qaban irratti shaakalaa"
+      },
+      "expert_instructors": "Barsiisota Ogeeyyii",
+      "expert_instructors_desc": "Ogeessota ragaa qaban waggaa hedduu muuxannoo barsiisuu fi galmeewwan nageenya hirʼina hin qabneen baraadhaa.",
+      "expert_instructors_details": "Barsiisota afaan hedduu dubbatan Afaan Amaaraa, Afaan Ingilizii fi Afaan Oromoo",
+      "latest_technology": "Teeknooloojii Haaraa",
+      "latest_technology_desc": "Konkolaatota amma ayyaanaa amaloota nageenya haaraa fi to'annoo lamaa qaban irratti shaakalaa",
+      "latest_technology_details": "Hordoffii GPS, kaameeraawwan daashii fi hordoffii raawwii yeroo qabatamaatii",
+      "high_success_rate": "Danda'ama Milkaa'ina Ol'aanaa",
+      "high_success_rate_desc": "98% barattootni keenya malaawwan keenya ragaa ta'aniin qormaata konkolaachisuu isaanii yeroo jalqabaaf ni darbu.",
+      "high_success_rate_details": "Qophii qormaata addaa fi kutaalee qormaata fakkeenyaa ni dabalatama",
+      "digital_learning": "Waltajjii Barumsaa Dijitaalaa",
+      "digital_learning_desc": "Barnoota tiiyoorii toora interneetii wal-qunnamtii fi gabatee hordoffii adeemsa.",
+      "digital_learning_details": "Eeyyama appii mobaayilaa, barsiisa viidiyoo fi qormaata shaakalaa",
+      "multi_language": "Deeggarsa Afaan Hedduu",
+      "multi_language_desc": "Leenjii fi meeshaaloonniin Afaan Amaaraa, Afaan Ingilizii fi Afaan Oromoo argamu.",
+      "multi_language_details": "Kaarikulamii aadaatti madaqe fi barsiisota afaan dhalootaa dubbatan",
+      "small_class": "Baay'ina Daree Xiqqaa",
+      "small_class_desc": "Xiyyeeffannoo dhuunfaa kutaa qabatamaatii keessatti barattootni guddatti 4-6 jiran.",
+      "small_class_details": "Yaada dhuunfaa fi saffisa barumsaa haala barbaachisu",
+      "comprehensive_curriculum": "Kaarikulamii Bal'aa",
+      "comprehensive_curriculum_desc": "Barumsa konkolaachisuu guutuu tiiyoorii, dandeettii qabatamaatii fi nageenya daandii of keessaa qaba.",
+      "comprehensive_curriculum_details": "Seerota tiraafikaa, konkolaachisuu ittisaa fi adeemsa yeroo hatattamaa",
+      "license_support": "Deeggarsa Eeyyama Iyyaannoo",
+      "license_support_desc": "Gargaarsa guutuu adeemsa eeyyama iyyaannoo fi qopheessuu ragaa.",
+      "license_support_details": "Qopheessuu ragaa, yeroo qormaata saganteessuu fi tajaajila haaromsuu",
+      "student_support": "Deeggarsa Barattootaa 24/7",
+      "student_support_desc": "Gargaarsa guyyaa fi halkan saganteessuu, gaaffii fi deeggarsa yeroo hatattamaaf.",
+      "student_support_details": "Bilbila, iimeelii fi gorsaa kallattiin ni jira"
+    },
+    "courses": {
+      "title": "Koorsiidhaa Keenya",
+      "subtitle": "Sadarkaa dandeettii fi fedhii adda addaa ogeessummaan qophaa'an koorsiidhaa keessaa filaadhaa.",
+      "view_all": "Koorsiidhaa Hunda Ilaalaa",
+      "beginner": {
+        "title": "Koorsii Jalqabaa",
+        "desc": "Duraan muuxannoo konkolaachisuu hin qabneef"
+      },
+      "advanced": {
+        "title": "Koorsii Ol'aanaa",
+        "desc": "Dandeettii konkolaachisuu qabdan fooyyessaa"
+      },
+      "commercial": {
+        "title": "Eeyyama Daldalaa",
+        "desc": "Leenjii eeyyama konkolaachisuu daldalaa"
+      }
+    },
+    "instructors": {
+      "title": "Barsiisota Keenya Ogeeyyii Waliin Wal Argaa",
+      "subtitle": "Barsiisoonni keenya ragaa qaban muuxannoo waggaa hedduu fi fedhii barumsa konkolaachisuu nageenya qaban ni fidu.",
+      "cta": "Barsiisota Keenya Hunda Waliin Wal Argaa",
+      "view_profile": "Seensa Dhuunfaa Ilaalaa",
+      "book_lesson": "Barnoota Buusaa",
+      "languages": "Afaanota",
+      "specializations": "Ogummaawwan",
+      "experience": "Muuxannoo"
+    },
+    "testimonials": {
+      "title": "Barattoonnii Keenya Maal Jedhani",
+      "subtitle": "Seenaa dhugaa xumurtoota keenya Mana Barumsaa Konkolaachisuu Hirtoli keessatti of amansiisaa konkolaachisuu milkaa'inaan baratan. Milkaa'inni isaanii bu'aa keenya guddaa dha.",
+      "view_all": "Gamaaggama Hunda Ilaalaa",
+      "write_review": "Gamaaggama Barreessaa",
+      "stats": {
+        "rating": "Madaalchuu Giddugaleessaa",
+        "recommend": "Nu Gorsaanti",
+        "satisfaction": "Danda'ama Itti Quufinsa"
+      },
+      "cta_title": "Seenaa Milkaa'ina Keenya Keessatti Hirmaannaa",
+      "cta_subtitle": "Kumaatama Hirtoli konkolaachisuu barachuuf filatan waliin hirmaannaa. Seenaan milkaa'ina keessan itti aansu ta'uu danda'a!",
+      "cta_button": "Har'a Imala Keessan Jalqabaa"
+    },
+    "cta": {
+      "title": "Imala Konkolaachisuu Jalqabuuf Qophii Dhaa?",
+      "subtitle": "Mana Barumsaa Konkolaachisuu Hirtoli keessatti of amansiisaa konkolaachisuu baratan kumaatama xumurtoota milkaa'oo waliin makamaa",
+      "register": "Amma Galmaa'aa",
+      "contact": "Nu Qunnamaa",
+      "learn_more": "Caalu Baraadhaa"
     }
   },
 
@@ -204,244 +259,329 @@
       "sub": "Olaanaa"
     },
     "description": {
-      "main": "Barnoota konkolaataa oofuu ogummaa fedhii fi sadarkaa dandeettii keessaniif qophaa'e, ogummaa, haaromsaa fi gochuu nageenya daandii irratti qabnu waliin kenname.",
-      "detailed": "Koorsii jalqabaa irraa kaasee hanga leenjii daldala olaanaatti, sagantaalee bal'aa konkolaataaooftota amanamuu, ogeeyyii ijaaran yeroo safuu nageenya olaanaa industirii keessatti qabnu eeguun kan qophaa'an ni dhiyeessina. Dooniin keenya ammayyaa, barsiisota ogeeyyii fi yeroo jijjiiramaa sagantaa barnoota konkolaataa oofuu hundarra gaarii ta'e akka argattaan ni mirkaneessa."
+      "main": "Barumsa konkolaachisuu ogeessaa fedhii fi sadarkaa dandeettii keessaniif qophaa'e, ogummaa, kalaqaan fi kutaan nageenya konkolaachisuu olaanaatti kennama.",
+      "detailed": "Koorsiidhaa jalqabaa hanga leenjii daldalaa ol'aanaa, sagantaalee bal'aa of amansiisa, ogeeyyii konkolaatota ijaaruuf qophaa'an uumama keessatti sadarkaa nageenya ol'aanaa eeguun ni kennina. Konkolaatonnii keenya amma ayyaanaa, barsiisoonni ogeeyyii fi yeroo jijjiiramuu danda'u muuxannoo barumsa konkolaachisuu gaarii ta'e akka argatanii mirkaneessa."
     },
     "stats": {
-      "vehicles": "200+ Konkolaataalee Ammayyaa",
+      "vehicles": "200+ Konkolaatota Amma Ayyaanaa",
       "instructors": "50+ Barsiisota Ogeeyyii",
       "certified": "Sagantaalee Leenjii Ragaa Qaban",
-      "safety": "100% Nageenya Mirkaneessee",
+      "safety": "100% Galmee Nageenya",
       "languages": "Deeggarsa Afaan 3"
     },
     "categories": {
-      "beginner": "Leenjii Jalqabaaf",
-      "beginner_desc": "Koorsii bu'uuraa guutuu konkolaataaooftota haaraaf",
-      "advanced": "Dandeettii Olaanaa",
-      "advanced_desc": "Sagantaalee fooyya'iinsaa konkolaataaooftota muuxannoo qabaniif",
-      "commercial": "Leenjii Daldala",
-      "commercial_desc": "Eeyyamaalee ogummaa konkolaataalee daldalaaf",
+      "beginner": "Leenjii Jalqabaa",
+      "beginner_desc": "Koorsiidhaa bu'uura guutuu konkolaatota haaraaaf",
+      "advanced": "Dandeettii Ol'aanaa",
+      "advanced_desc": "Sagantaalee fooyyessaa konkolaatota muuxannoo qabaniif",
+      "commercial": "Leenjii Daldalaa",
+      "commercial_desc": "Eeyyama ogeessaa konkolaatota daldalaa",
       "specialized": "Sagantaalee Addaa",
-      "specialized_desc": "Leenjii adda ta'e fedhii addaaf"
+      "specialized_desc": "Leenjii haala barbaachisu addaaf qophaa'e"
     },
     "highlights": {
-      "flexible": "Yeroo Jijjiiramaa",
-      "flexible_desc": "Yeroo mijatoo fi filannoo yeroo dhuunfaa waliin saffisa mataa keessaniitiin baradhaa",
-      "modern": "Doonii Ammayyaa",
-      "modern_desc": "Konkolaataalee yeroo ammaa amaloota nageenya ammayyaa fi teknooloojii waliin qophaa'an irratti shaakala godhadhaa",
-      "certified": "Dandeettii Ragaa Qabame",
-      "certified_desc": "Ulaagaalee leenjii addunyaa irratti fuudhamanii fooyya'iinsa qulqulluu ittuma fufiinsaan"
+      "flexible": "Yeroo Jijjiiramuu Danda'u",
+      "flexible_desc": "Kutaalee yeroo mijatoo fi filannoo yeroo haala barbaachisu jiran guutumaan guutuutti saffisa keessan baraadhaa",
+      "modern": "Konkolaatota Amma Ayyaanaa",
+      "modern_desc": "Konkolaatota yeroo dhiyoo amaloota nageenya amma ayyaanaafi teeknooloojii qaban irratti shaakalaa",
+      "certified": "Olaantummaa Ragaa Qaba",
+      "certified_desc": "Addunyaa irratti fudhataman sadarkaa leenjii fooyyessuu qulqulluu itti fufiinsa qaban"
     },
     "course_comparison": {
-      "title": "Koorsii Keenya Walbira Qabaa",
-      "subtitle": "Sadarkaa dandeettii fi galma keessaniif koorsii mudaa hin qabne argadhaa. Koorsii hunduu barsiisota muuxannoo qaban waliin leenjii bal'aa kennuuf kan qophaa'e dha.",
-      "beginner_category": "Koorsii Jalqabaaf",
-      "beginner_desc": "Muuxannoo duraanii konkolaataa oofuu tokko illee hin qabneef mudaa hin qabne",
-      "intermediate_category": "Koorsii Giddugaleessa",
-      "intermediate_desc": "Dandeettii bu'uuraa qaban fi fooyya'uu barbaadan konkolaataaooftotaaf",
-      "advanced_category": "Olaanaa fi Ogummaa",
-      "advanced_desc": "Leenjii addaa konkolaataaooftota ogummaa qabaniif",
-      "highlights": "Ifa Ba'iinsa Ijoo"
+      "title": "Koorsiidhaa Keenya Wal Bira Qabaa",
+      "subtitle": "Sadarkaa dandeettii fi galma keessaniif koorsii gaarii argadhaa. Koorsiin hundii barsiisota muuxannoo qaban waliin leenjii bal'aa kennuuf qophaa'eedha.",
+      "beginner_category": "Koorsiidhaa Jalqabaa",
+      "beginner_desc": "Duraan muuxannoo konkolaachisuu hin qabneef mijataa",
+      "intermediate_category": "Koorsiidhaa Giddu-galeessaa",
+      "intermediate_desc": "Konkolaatota dandeettii bu'uuraa qabanii fooyyessuuf fedhanii",
+      "advanced_category": "Ol'aanaa fi Ogeessaa",
+      "advanced_desc": "Leenjii addaa konkolaatota ogeessaaf",
+      "highlights": "Jijjiirraa Ijoo"
     },
     "pricing": {
-      "title": "Paakeejii Leenjii Keessanii Filadhu",
-      "subtitle": "Sadarkaa muuxannoo fi galma barumsaa keessaniif hundarra mijatu paakeejii filadhu. Paakeejii hundi konkolaataalee ammayyaa, barsiisota ragaa qaban fi deeggarsa bal'aa of keessaa qaba.",
+      "title": "Paakeejii Leenjii Keessan Filaadhaa",
+      "subtitle": "Sadarkaa muuxannoo fi galma barumsaa keessaniif paakeejii gaarii ta'e filaadhaa. Paakeejiidhaa hundii konkolaatota amma ayyaanaa, barsiisota ragaa qabanii fi deeggarsa bal'aa ni dabalata.",
       "basic_title": "Paakeejii Bu'uuraa",
-      "basic_desc": "Muuxannoo konkolaataa oofuu tokko tokko qabaniif mudaa hin qabne",
-      "standard_title": "Paakeejii Waaltinaa",
-      "standard_desc": "Konkolaataaooftota haaraaf filannoo baay'ee jaallatamuudha",
-      "premium_title": "Paakeejii Premium",
-      "premium_desc": "Leenjii ogummaa guutuu",
-      "most_popular": "Baay'ee Jaallatamuudha",
-      "recommended": "Gorfamuudha",
-      "choose_package": "Paakeejii Kana Filadhu",
-      "custom_title": "Paakeejii Adda Ta'e Barbaadduu?",
-      "custom_subtitle": "Fedhii addaa fi yeroo keessaniif qophaa'an filannoo leenjii dhuunfaaf nu quunnamaa.",
-      "custom_quote": "Tilmaama Adda Ta'e Argadhaa"
+      "basic_desc": "Muuxannoo konkolaachisuu tokko tokko qabaniif mijataa",
+      "standard_title": "Paakeejii Dhuunfaa",
+      "standard_desc": "Konkolaatota haaraafsaffilannoo baay'ee jaallatamu",
+      "premium_title": "Paakeejii Olaanaa",
+      "premium_desc": "Leenjii ogeessaa guutuu",
+      "most_popular": "Baay'ee Jaallatamu",
+      "recommended": "Gorfamu",
+      "choose_package": "Paakeejii Kana Filaadhaa",
+      "custom_title": "Paakeejii Haala Barbaachisu Barbaadduu?",
+      "custom_subtitle": "Fedhii addaa fi yeroo keessaniif qophaa'an filannoo leenjii haala barbaachisu nu qunnamaa.",
+      "custom_quote": "Tilmaama Haala Barbaachisu Argadhaa"
+    },
+    "quick_start_title": "Koorsii Saffisaa Jalqaba",
+    "quick_start_duration": "Torban 3-4",
+    "quick_start_price": "Birraa 4,500",
+    "quick_start_class_size": "Guddatti Barattootni 6",
+    "quick_start_highlight1": "Barumsaa ariifatame",
+    "quick_start_highlight2": "Dandeettii bu'uuraa irratti xiyyeeffannoo",
+    "quick_start_highlight3": "Bajetiidhaan mijatu",
+    "skill_enhancement_title": "Koorsii Dandeettii Fooyyessuu",
+    "skill_enhancement_duration": "Torban 2-3",
+    "skill_enhancement_price": "Birraa 3,500",
+    "skill_enhancement_class_size": "Guddatti Barattootni 6",
+    "skill_enhancement_highlight1": "Of amansiisa ijaaruu",
+    "skill_enhancement_highlight2": "Mala ol'aanaa",
+    "skill_enhancement_highlight3": "Yaada dhuunfaa",
+    "refresher_title": "Koorsii Haaromsuu",
+    "refresher_duration": "Torban 1-2",
+    "refresher_price": "Birraa 2,500",
+    "refresher_class_size": "Guddatti Barattootni 8",
+    "refresher_highlight1": "Saffisaa haaromsuu",
+    "refresher_highlight2": "Fooyya'iinsa seeraa",
+    "refresher_highlight3": "Of amansiisa ijaaruu",
+    "intermediate_level": "Giddu-galeessaa",
+    "commercial_highlight1": "Leenjii konkolaata ulfaataa",
+    "commercial_highlight2": "Seerota daldalaa",
+    "commercial_highlight3": "Qopheessuu ogummaa",
+    "defensive_highlight1": "Nageenya irratti xiyyeeffannoo",
+    "defensive_highlight2": "Balaa hir'isuu",
+    "defensive_highlight3": "Mala ol'aanaa"
+  },
+
+  "courses": {
+    "title": "Koorsiidhaa Keenya",
+    "subtitle": "Sadarkaa dandeettii fi fedhii adda addaa ogeessummaan qophaa'an koorsiidhaa keessaa filaadhaa.",
+    "detailed": {
+      "beginner": {
+        "title": "Koorsii Jalqabaa Guutuu",
+        "desc": "Duraan muuxannoo konkolaachisuu hin qabne jalqabdootaaf mijataa",
+        "duration": "Torban 6-8",
+        "class_size": "Guddatti Barattootni 4",
+        "price": "Birraa 3,500",
+        "level": "Jalqaba"
+      },
+      "advanced": {
+        "title": "Konkolaachisuu Ittisaa Ol'aanaa",
+        "desc": "Mala ol'aanaa fi tarkaanfii nageenya dandeettii keessan fooyyessaa",
+        "duration": "Torban 4",
+        "class_size": "Guddatti Barattootni 6",
+        "price": "Birraa 2,800",
+        "level": "Ol'aanaa"
+      },
+      "commercial": {
+        "title": "Leenjii Eeyyama Daldalaa",
+        "desc": "Leenjii ogeessaa hojii konkolaata daldalaa",
+        "duration": "Torban 8-12",
+        "class_size": "Guddatti Barattootni 8",
+        "price": "Birraa 5,200",
+        "level": "Ogeessaa"
+      }
+    },
+    "features": {
+      "beginner": [
+        "To'annoo konkolaataa bu'uuraa fi nageenya",
+        "Seerota tiraafikaa fi mallattoolee daandii",
+        "Dhaabuu fi sochoosuu",
+        "Dandeettii konkolaachisuu daandii guddaa",
+        "Qopheessuu qormaataa",
+        "Deeggarsa iyyaannoo eeyyamaa"
+      ],
+      "advanced": [
+        "Mala sochoosaa ol'aanaa",
+        "Konkolaachisuu halkan fi haala qilleensaa",
+        "Leenjii deebii yeroo hatattamaa",
+        "Konkolaachisuu qusannoo boba'aa",
+        "Bu'uura suphaa konkolaataa",
+        "Shaakalaa of amansiisa ijaaruu"
+      ],
+      "commercial": [
+        "Hojii konkolaata ulfaataa",
+        "Seerota tiraafikaa daldalaa",
+        "Bulchiinsa fe'iinsaa fi nageenya",
+        "Amala konkolaataa ogeessaa",
+        "Gocha konkolaachisuu daldalaa",
+        "Qopheessuu qormaata eeyyama daldalaa"
+      ]
     }
   },
 
   "instructors": {
     "ato_alemayehu": {
-      "name": "Obbo Alemaayahuu Tadasaa",
+      "name": "Obbo Alemaayehu Taaddasaa",
       "experience": "Waggaa 15 Muuxannoo",
-      "description": "Barsiisa ogeeyyii konkolaataaooftota haaraa keessatti amanamummaa ijaaru irratti addaa obsa sanumaa fi mala jajjabeessuu waliin."
+      "description": "Barsiisaa ogeessaa konkolaatota haaraa keessatti of amansiisa ijaaruun addaan ba'e mala obsaa fi deeggarsa."
     },
     "wt_meron": {
-      "name": "Ad/t Meroon Baqqalaa",
+      "name": "Ad/tii Meron Baqalaa",
       "experience": "Waggaa 12 Muuxannoo",
-      "description": "Konkolaataaooftota dubartoota humna kennuu irratti kan of kennite fi tooftaalee konkolaataa oofuu olaanaa fi dandeettii konkolaataa oofuu magaalaa irratti addaa."
+      "description": "Konkolaatota dubartii humna kennuu fi mala konkolaachisuu ol'aanaa fi dandeettii konkolaachisuu magaalaa irratti addaan ba'e."
     },
     "ato_bekele": {
-      "name": "Obbo Baqqalaa Warquu",
+      "name": "Obbo Baqalaa Warquu",
       "experience": "Waggaa 18 Muuxannoo",
-      "description": "Ogeeyyii konkolaataa daldala muuxannoo bal'aa leenjii konkolaataaooftota ogummaa fi hojiiwwan doonii irratti qabuu."
+      "description": "Ogeessaa konkolaata daldalaa leenjii konkolaatota ogeessaa fi hojii doonii keessatti muuxannoo bal'aa qaba."
     },
     "wt_hanan": {
-      "name": "Ad/t Hanaan Mahammad",
+      "name": "Ad/tii Hanaan Mahammad",
       "experience": "Waggaa 10 Muuxannoo",
-      "description": "Konkolaataaooftota yaaddoo qaban fi barattoota xixiqqoo waliin hojjechuu irratti addaa, naannoo barumsaa mijataa uumuu."
+      "description": "Konkolaatota yaaddachuu fi barattootni dargaggoota waliin hojjechuun addaan ba'e, naannoo barumsa mijataa uumuun."
     },
     "specializations": {
-      "beginner": "Leenjii Jalqabaaf",
-      "defensive": "Konkolaataa Oofuu Eegumsa",
-      "test_prep": "Qophii Imtihaan",
-      "advanced": "Dandeettii Olaanaa",
-      "women": "Leenjii Dubartoota",
-      "parking": "Dhaabachuu Wal-fakkaataa",
-      "commercial": "Konkolaataalee Daldala",
-      "highway": "Konkolaataa Oofuu Highway",
+      "beginner": "Leenjii Jalqabaa",
+      "defensive": "Konkolaachisuu Ittisaa",
+      "test_prep": "Qopheessuu Qormaataa",
+      "advanced": "Dandeettii Ol'aanaa",
+      "women": "Leenjii Dubartootaa",
+      "parking": "Dhaabbii Walfakkaataa",
+      "commercial": "Konkolaatota Daldalaa",
+      "highway": "Konkolaachisuu Daandii Guddaa",
       "fleet": "Leenjii Doonii",
       "youth": "Leenjii Dargaggoota",
-      "anxiety": "Bulchiinsa Yaaddoo",
-      "safety": "Konkolaataa Oofuu Nageenya Qabu"
+      "anxiety": "Bulchiinsa Yaaddachuu",
+      "safety": "Konkolaachisuu Nageenya"
     },
     "languages": {
       "amharic": "Afaan Amaaraa",
       "english": "Afaan Ingilizii",
       "oromo": "Afaan Oromoo",
-      "tigrinya": "Afaan Tigrayaa",
-      "arabic": "Afaan Arabaa"
+      "tigrinya": "Afaan Tigiraay",
+      "arabic": "Afaan Arabii"
     }
   },
 
   "testimonials": {
-    "title": "Barattoonni Keenya Maal Jedhu",
-    "subtitle": "Seenaa dhugaa hawaasa keenya keessaa Mana Barumsaa Konkolaataa Oofuu Hirtoli irratti amanamummaan konkolaataa oofuu milkaa'inaan baratan. Milkaa'inni isaanii milkaa'ina keenya guddaa dha.",
+    "title": "Barattoonnii Keenya Maal Jedhani",
+    "subtitle": "Seenaa dhugaa xumurtoota keenya Mana Barumsaa Konkolaachisuu Hirtoli keessatti of amansiisaa konkolaachisuu milkaa'inaan baratan. Milkaa'inni isaanii bu'aa keenya guddaa dha.",
     "stats": {
-      "rating": "Madaallii Giddugaleessa",
-      "recommend": "Nu Gorfachisaa",
-      "satisfaction": "Sadarkaa Itti Gammachuu"
+      "rating": "Madaalchuu Giddugaleessaa",
+      "recommend": "Nu Gorsaanti",
+      "satisfaction": "Danda'ama Itti Quufinsa"
     },
     "cta": {
-      "title": "Seenaa Milkaa'ina Keenya Keessatti Makamaa",
-      "subtitle": "Kumaatamaan lakkaa'aman Hirtoli barnoota konkolaataawwan isaaniif filatan keessaa qaama ta'aa. Seenaan milkaa'ina keessanii itti aanu ta'uu danda'a!",
-      "button": "Har'a Imala Keessanii Jalqabaa"
+      "title": "Seenaa Milkaa'ina Keenya Keessatti Hirmaannaa",
+      "subtitle": "Kumaatama Hirtoli konkolaachisuu barachuuf filatan waliin hirmaannaa. Seenaan milkaa'ina keessan itti aansu ta'uu danda'a!",
+      "button": "Har'a Imala Keessan Jalqabaa"
     },
     "highlights": {
-      "first_time_pass": "Yeroo jalqabaaf darbuun",
-      "job_placement": "Milkaa'ina iddoo hojii",
-      "anxiety_overcome": "Yaaddoo mo'uun",
-      "fear_conquered": "Sodaa mo'uun",
-      "career_success": "Milkaa'ina hojii",
-      "work_life_balance": "Madaallii jireenya-hojii",
-      "safety_expert": "Ogeeyyii nageenya",
-      "family_convenience": "Mijannoo maatii",
+      "first_time_pass": "Yeroo jalqabaaf darban",
+      "job_placement": "Milkaa'ina bakka hojii",
+      "anxiety_overcome": "Yaaddachuu mo'uu",
+      "fear_conquered": "Sodaa mo'uu",
+      "career_success": "Milkaa'ina ogummaa",
+      "work_life_balance": "Madaallii hojii-jireenyaa",
+      "safety_expert": "Ogeessaa nageenya",
+      "family_convenience": "Mijataa maatii",
       "value_for_money": "Gatii maallaqaaf"
     }
   },
 
   "enrollment": {
-    "title": "Adeemsa Galmee Salphaa",
-    "subtitle": "Jalqabuun salphaa dha! Imala barnoota konkolaataa oofuu keenya nu waliin jalqabuuf tarkaanfiiwwan salphaa kana hordofaa.",
+    "title": "Adeemsa Galmaa'uu Salphaa",
+    "subtitle": "Jalqabuun salphaa dha! Imala barumsa konkolaachisuu nu waliin jalqabuuf tarkaanfiidhaa salphaa kana hordofaa.",
     "stats": {
-      "total_time": "Yeroo Waliigalaa",
-      "success_rate": "Sadarkaa Milkaa'ina",
-      "rating": "Madaallii Muuxannoo",
-      "steps": "Tarkaanfiiwwan Salphaa"
+      "total_time": "Yeroo Guutuu",
+      "success_rate": "Danda'ama Milkaa'ina",
+      "rating": "Madaalchuu Muuxannoo",
+      "steps": "Tarkaanfiidhaa Salphaa"
     },
-    "view_mode": "Mul'achuu:",
-    "grid_view": "Griidii",
+    "view_mode": "Ilaalaa:",
+    "grid_view": "Giridii",
     "list_view": "Tarree",
-    "viewing_status": "Yeroo ammaa adeemsa galmee mul'achaa jirtu",
-    "viewing_mode": "haalata",
+    "viewing_status": "Yeroo ammaa adeemsa galmaa'uu ilaalaa jirtu",
+    "viewing_mode": "akkaataa",
     "online": {
-      "title": "Galmee Toora Interneetii",
-      "desc": "Adeemsi galmee toora interneetii ariifataa fi mijataa"
+      "title": "Galmaa'uu Toora Interneetii",
+      "desc": "Adeemsa galmaa'uu toora interneetii saffisaa fi mijataa"
     },
     "phone": {
-      "title": "Galmee Bilbila",
-      "desc": "Gargaarsa dhuunfaaf gorsitota galmee keenya waliin dubbachuu"
+      "title": "Galmaa'uu Bilbilaan",
+      "desc": "Gargaarsa haala barbaachisu gorsitootni galmaa'uu nu waliin haasa'aa"
     },
     "visit": {
-      "title": "Waajjira Keenya Daawwachuu",
-      "desc": "Gargaarsa hojii fi daawwannaa meeshaalee keenya argachuu"
+      "title": "Waajjira Keenya Daawwataa",
+      "desc": "Gargaarsa qabatamaatii argadhaa fi meeshaalee keenya daawwataa"
     },
     "ready": {
-      "title": "Jalqabuuf Qophii ta'aa?",
-      "subtitle": "Konkolaataaoofuu amanamaa ta'uuf tarkaanfii jalqabaa fudhachuu. Mala galmee filattan filadhu."
+      "title": "Jalqabuuf Qophii Dhaa?",
+      "subtitle": "Konkolaataa of amansiisa ta'uuf tarkaanfii jalqabaa fuudhaa. Mala galmaa'uu filattan filaadhaa."
     },
     "steps": {
       "step1": {
-        "title": "Koorsii Keessanii Filadhu",
-        "desc": "Fedhii fi sadarkaa muuxannoo keessaniif hundarra mijatu koorsii filadhu",
-        "action": "Koorsii Ilaalaa",
+        "title": "Koorsii Keessan Filaadhaa",
+        "desc": "Fedhii fi sadarkaa muuxannoo keessaniif koorsii gaarii ta'e filaadhaa",
+        "action": "Koorsiidhaa Qoraa",
         "details": [
-          "Amaloota koorsii fi gatii walbira qabaa",
+          "Amaloota koorsii fi gatii wal bira qabaa",
           "Ibsa koorsii bal'aa dubbisaa",
-          "Seenaa barsiisaa fi madaallii mirkaneessaa"
+          "Seensa barsiisaa fi sadarkaa ilaalaa"
         ]
       },
       "step2": {
-        "title": "Galmee Xumuraa",
-        "desc": "Unka galmee odeeffannoo dhuunfaa keessaniin guutaa",
-        "action": "Amma Galmeeffachuu",
+        "title": "Galmaa'uu Xumuraa",
+        "desc": "Unka galmaa'uu bal'ina dhuunfaa keessaniin guutaa",
+        "action": "Amma Galmaa'aa",
         "details": [
-          "Odeeffannoo dhuunfaa fi sanada kennaa",
-          "Ragaa barbaachisu olkaa'aa",
-          "Karoora kaffaltii filadhu fi kaffaltii jalqabaa godhaa"
+          "Odeeffannoo dhuunfaa fi sanadoota kennaa",
+          "Eenyummaa barbaachisu ol kaasaa",
+          "Karaa kaffaltii filaadhaa fi kaffaltii jalqabaa godhaa"
         ]
       },
       "step3": {
-        "title": "Daree Keessan Sagantaa Qopheessaa",
-        "desc": "Yeroo mijatuu barnoota yaad-rimee fi hojii keessanii hidhaa",
-        "action": "Daree Sagantaa Qopheessuu",
+        "title": "Kutaalee Keessan Saganteessaa",
+        "desc": "Yeroo mijataa barnoota tiiyoorii fi qabatamaatii keessan buusaa",
+        "action": "Kutaalee Saganteessaa",
         "details": [
-          "Bakka jijjiiramaa ganama, waaree ykn galgala keessaa filadhu",
-          "Barsiisa ragaa qabame filattan filadhu",
-          "Hidhaa mirkaneessaa fi affeera kaaleendarii fudhadhaa"
+          "Yeroo ganama, waareeffama ykn galgala jijjiiramuu danda'u keessaa filaadhaa",
+          "Barsiisaa ragaa qaba filattan filaadhaa",
+          "Bakka buusuu mirkaneessaa fi affeera kaalaandarii fudhadhaa"
         ]
       },
       "step4": {
         "title": "Barachuu Jalqabaa",
-        "desc": "Barsiisota ogeeyyii waliin imala barnoota konkolaataa oofuu keessanii jalqabaa",
-        "action": "Koorsii Jalqabuu",
+        "desc": "Barsiisota ogeeyyii waliin imala barumsa konkolaachisuu jalqabaa",
+        "action": "Koorsii Jalqabaa",
         "details": [
-          "Kutaalee yaad-rimee bal'aa argadhaa",
-          "Barsiisota muuxannoo qaban waliin shaakala godhadhaa",
-          "Adeemsa gabatee dijitaalii waliin hordofaa"
+          "Kutaalee tiiyoorii bal'aa ilaalaa",
+          "Barsiisota muuxannoo qaban waliin shaakalaa",
+          "Gabatee dijitaalaa waliin adeemsa hordofaa"
         ]
       }
     },
     "features": {
-      "instant": "Mirkaneessuu tasaa",
-      "digital": "Olkaa'uu sanada dijitaalii",
-      "payment": "Filannoo kaffaltii toora interneetii",
-      "available": "Argamuu 24/7",
-      "guidance": "Qajeelfama dhuunfaa",
-      "answers": "Deebii tasaa",
-      "scheduling": "Sagantaa adda ta'e",
-      "assistance": "Gargaarsa kaffaltii",
-      "tour": "Daawwannaa meeshaalee",
-      "meet": "Barsiisota argaa",
-      "documents": "Gargaarsa sanada",
-      "immediate": "Galmee tasaa"
+      "instant": "Mirkaneessa Hatattamaa",
+      "digital": "Ol kaa'insa Sanadaa Dijitaalaa",
+      "payment": "Filannoo Kaffaltii Toora Interneetii",
+      "available": "Deebi'amuu 24/7",
+      "guidance": "Kallattin Dhuunfaa",
+      "answers": "Deebii Hatattamaa",
+      "scheduling": "Sagantaa Haala Barbaachisu",
+      "assistance": "Gargaarsa Kaffaltii",
+      "tour": "Daawwannaa Meeshaalee",
+      "meet": "Barsiisota Wal Argaa",
+      "documents": "Gargaarsa Sanadaa",
+      "immediate": "Galmaa'uu Hatattamaa"
     }
   },
 
   "about": {
     "title": {
       "main": "Waa'ee Hirtoli",
-      "sub": "Mana Barumsaa Konkolaataa Oofuu"
+      "sub": "Mana Barumsaa Konkolaachisuu"
     },
     "description": {
-      "main": "Bara 2010 irraa eegalee barnoota konkolaataa oofuu keessatti dandeettii duursuu, safuu nageenya industirii keessatti durfamu fi mala barsiisuu haaraa waliin Itoophiyaa naannoo konkolaataaooftota amanamuu fi itti gaafatamummaa qaban bocuu.",
-      "detailed": "Nageenya daandii Itoophiyaa keessatti jijjiiruuf mul'ata qabnu irraa jalqabnee, gatii aadaa mala barsiisuu ammayyaa, teknooloojii yeroo ammaa fi kutattamummaa dandeettii industirii keessatti nu adda taasisu waliin makuun gara mana barumsaa konkolaataa oofuu biyyattii keessatti hundarra amanamaa ta'etti guddannee."
+      "main": "Bara 2010 jalqabee barumsa konkolaachisuu keessatti olaantummaa hoogganuu, sadarkaa nageenya industirii hoogganaan fi mala barsiisaa kalaqaan Itoophiyaa naannoo konkolaatota of amansiisaa fi itti gaafatamtoota bocuu.",
+      "detailed": "Nageenya daandii Itoophiyaa jijjiiruuf mul'ata qabnu jalqabnee, gatii aadaa mala barsiisaa amma ayyaanaa, teeknooloojii haaraa fi kutaan olaantummaa industirii keessatti nu addaan baasu walitti makuun gara mana barumsaa konkolaachisuu biyyattii keessatti amanamaa ta'ee guddate."
     },
     "stats": {
-      "award": "Dhaabbata Badhaasa Argatte",
-      "students": "15,000+ Barattoota Gammachuun",
-      "experience": "13+ Waggaa Dandeettii",
+      "award": "Dhaabbata Badhaasa Injifate",
+      "students": "15,000+ Barattootni Gammachiisan",
+      "experience": "13+ Waggaa Olaantummaa",
       "safety": "100% Galmee Nageenya",
       "branches": "Bakka Ijoo 2"
     },
     "features": {
-      "certified": "Addunyaa Irratti Ragaa Argame",
-      "certified_desc": "Ulaagaalee bulchiinsa qulqulluu ISO 9001:2015",
-      "technology": "Teknooloojii Ammayyaa",
-      "technology_desc": "Meeshaalee fakkeessuu fi barumsaa dijitaalii yeroo ammaa",
+      "certified": "Addunyaa Irratti Ragaa Qaba",
+      "certified_desc": "Sadarkaa bulchiinsa qulqulluu ISO 9001:2015",
+      "technology": "Teeknooloojii Amma Ayyaanaa",
+      "technology_desc": "Meeshaalee fakkeenyaa fi barumsaa dijitaalaa haaraa",
       "multilingual": "Deeggarsa Afaan Hedduu",
-      "multilingual_desc": "Leenjii Afaan Amaaraa, Oromoo fi Ingilizii keessatti argamu"
+      "multilingual_desc": "Leenjii Afaan Amaaraa, Afaan Oromoo fi Afaan Ingilizii argamu"
     }
   },
 
@@ -451,51 +591,51 @@
       "sub": "Qunnamaa"
     },
     "description": {
-      "main": "Imala konkolaataa oofuu keessanii jalqabuuf qophii ta'aa? Deeggarsa dhuunfaa fi qajeelfama ogeeyyii waliin tarkaanfii hundatti isin gargaaruuf asii jirra.",
-      "detailed": "Koorsii keenya irratti gaaffiin yoo qabaattan, barnoota sagantaa qopheessuu yoo barbaachise ykn meeshaalee keenya daawwachuu yoo feetan, gareen keenya afaan hedduu beeku kan deeggarsa dhuunfaa fi gargaarsa kennuuf karaa hedduu irraa argamu qaba."
+      "main": "Imala konkolaachisuu jalqabuuf qophii dhaa? Deeggarsa haala barbaachisu fi qajeelfama ogeeyyii tarkaanfii hundatti gargaaruurraaf as jirra.",
+      "detailed": "Koorsiidhaa keenya irratti gaaffii yoo qabaattan, barnoota saganteessuu barbaachise ykn meeshaalee keenya daawwachuu fedhaan, gorsaa fi deeggarsa dhuunfaa kennuuf karaalee hedduu keessaa deebi'uu danda'u garee afaan hedduu keenya jira."
     },
     "stats": {
-      "phone_support": "24/7 Deeggarsa Bilbila",
-      "email_support": "Deebii Imeelii Ariifataa",
-      "live_chat": "Marii Kallattii Argama",
-      "in_person": "Gorsa Dhuunfaa",
+      "phone_support": "Deeggarsa Bilbilaa 24/7",
+      "email_support": "Deebii Iimeelii Saffisaa",
+      "live_chat": "Haasawa Kallattii Jiru",
+      "in_person": "Gorsitootni Kallattiin",
       "multilingual": "Deeggarsa Afaan Hedduu"
     },
     "features": {
-      "instant": "Deeggarsa Tasaa",
-      "instant_desc": "Karaa hedduu irraa gargaarsa tasaa argadhaa",
-      "expert": "Gorsa Ogeeyyii",
-      "expert_desc": "Ogeeyyii barnoota konkolaataa oofuu ragaa qaban waliin dubbachuu",
+      "instant": "Deeggarsa Hatattamaa",
+      "instant_desc": "Karaalee hedduu keessaa gargaarsa hatattamaa argadhaa",
+      "expert": "Gorsaa Ogeeyyii",
+      "expert_desc": "Ogeeyyii barumsa konkolaachisuu ragaa qaban waliin haasa'aa",
       "flexible": "Qunnamtii Jijjiiramaa",
-      "flexible_desc": "Mala qunnamtii filattan filadhu"
+      "flexible_desc": "Mala qunnamtii filattan filaadhaa"
     },
     "methods": {
       "call": "Nu Bilbilaa",
-      "call_desc": "Garee ogeeyyii keenya waliin kallattiin dubbachuu",
-      "call_details": "Deebii giddugaleessa: Tasaa",
-      "email": "Deeggarsa Imeelii",
-      "email_desc": "Gaaffii bal'aa fi sanada",
-      "email_details": "Deebii giddugaleessa: Sa'aatii 2",
-      "visit": "Waajjira Keenya Daawwachuu",
-      "visit_desc": "Gorsa dhuunfaa fi daawwannaa meeshaalee",
-      "visit_details": "Wii-Sam banamee, Sa'a 8 ganama - Sa'a 6 galgala"
+      "call_desc": "Garee ogeeyyii nu waliin kallattiin haasa'aa",
+      "call_details": "Deebii giddugaleessaa: Hatattamaa",
+      "email": "Deeggarsa Iimeelii",
+      "email_desc": "Gaaffii bal'aa fi sanadoota",
+      "email_details": "Deebii giddugaleessaa: Sa'aatii 2",
+      "visit": "Waajjira Keenya Daawwataa",
+      "visit_desc": "Gorsaa dhuunfaa fi daawwannaa meeshaalee",
+      "visit_details": "Wiixata-Sanbata banaa, Ganama 8 - Galgala 6"
     },
     "response_stats": {
-      "response": "Yeroo Deebii Giddugaleessa",
-      "satisfaction": "Itti Gammachuu Maamilaa",
-      "availability": "Deeggarsa Argama",
+      "response": "Yeroo Deebii Giddugaleessaa",
+      "satisfaction": "Itti Quufinsa Maamilaa",
+      "availability": "Deeggarsi Jiru",
       "locations": "Bakka Waajjira"
     }
   },
 
   "footer": {
-    "rights": "Mirga Hunda Eegameera",
+    "rights": "Mirgi Hundii Eegameera",
     "privacy": "Imaammata Dhuunfaa",
-    "terms": "Ulaagaalee Tajaajila",
-    "quick_links": "Geessituu Ariifataa",
+    "terms": "Haala Tajaajilaa",
+    "quick_links": "Geessituu Saffisaa",
     "contact": "Qunnamtii",
     "address": "Ciroo fi Hararii, Itoophiyaa",
-    "email": "Imeelii: info@hirtoli.com",
+    "email": "Iimeelii: info@hirtoli.com",
     "phone": "Bilbila: +251 911 123 456"
   }
 }
