@@ -66,7 +66,7 @@ const ContactHero: React.FC = () => {
           {[
             { 
               icon: Phone, 
-              text: t('contact.phone_support') || "24/7 Phone Support", 
+              text: t('contact.stats.phone_support') || "24/7 Phone Support", 
               color: "text-blue-300", 
               detail: "Immediate Response", 
               rating: "4.9/5",
@@ -75,7 +75,7 @@ const ContactHero: React.FC = () => {
             },
             { 
               icon: Mail, 
-              text: t('contact.email_support') || "Quick Email Response", 
+              text: t('contact.stats.email_support') || "Quick Email Response", 
               color: "text-yellow-300", 
               detail: "Within 2 Hours", 
               rating: "4.8/5",
@@ -84,7 +84,7 @@ const ContactHero: React.FC = () => {
             },
             { 
               icon: MessageSquare, 
-              text: t('contact.live_chat') || "Live Chat Available", 
+              text: t('contact.stats.live_chat') || "Live Chat Available", 
               color: "text-green-300", 
               detail: "Real-time Help", 
               rating: "4.9/5",
@@ -93,7 +93,7 @@ const ContactHero: React.FC = () => {
             },
             { 
               icon: Users, 
-              text: t('contact.in_person') || "In-Person Consultations", 
+              text: t('contact.stats.in_person') || "In-Person Consultations", 
               color: "text-purple-300", 
               detail: "Expert Guidance", 
               rating: "5.0/5",
@@ -102,7 +102,7 @@ const ContactHero: React.FC = () => {
             },
             { 
               icon: Globe, 
-              text: t('contact.multilingual') || "Multilingual Support", 
+              text: t('contact.stats.multilingual') || "Multilingual Support", 
               color: "text-cyan-300", 
               detail: "3 Languages", 
               rating: "4.7/5",
@@ -162,19 +162,19 @@ const ContactHero: React.FC = () => {
             {[
               {
                 title: t('contact.features.instant') || "Instant Support",
-                description: t('contact.features.instant.desc') || "Get immediate help through multiple channels",
+                description: t('contact.features.instant_desc') || "Get immediate help through multiple channels",
                 icon: <HeadphonesIcon className="w-8 h-8" />,
                 gradient: "from-blue-500/25 to-cyan-500/25"
               },
               {
                 title: t('contact.features.expert') || "Expert Consultation",
-                description: t('contact.features.expert.desc') || "Talk to certified driving education specialists",
+                description: t('contact.features.expert_desc') || "Talk to certified driving education specialists",
                 icon: <Users className="w-8 h-8" />,
                 gradient: "from-green-500/25 to-emerald-500/25"
               },
               {
                 title: t('contact.features.flexible') || "Flexible Communication",
-                description: t('contact.features.flexible.desc') || "Choose your preferred communication method",
+                description: t('contact.features.flexible_desc') || "Choose your preferred communication method",
                 icon: <MessageSquare className="w-8 h-8" />,
                 gradient: "from-purple-500/25 to-violet-500/25"
               }
@@ -202,8 +202,8 @@ const ContactHero: React.FC = () => {
             {
               icon: <Phone className="w-8 h-8" />,
               title: t('contact.methods.call') || "Call Us",
-              description: t('contact.methods.call.desc') || "Speak directly with our expert team",
-              details: t('contact.methods.call.details') || "Average response: Immediate",
+              description: t('contact.methods.call_desc') || "Speak directly with our expert team",
+              details: t('contact.methods.call_details') || "Average response: Immediate",
               phone: "+251 911 123 456",
               gradient: "from-blue-500/25 to-cyan-500/25",
               hoverColor: "group-hover:text-blue-300"
@@ -211,8 +211,8 @@ const ContactHero: React.FC = () => {
             {
               icon: <Mail className="w-8 h-8" />,
               title: t('contact.methods.email') || "Email Support",
-              description: t('contact.methods.email.desc') || "Detailed inquiries and documentation",
-              details: t('contact.methods.email.details') || "Average response: 2 hours",
+              description: t('contact.methods.email_desc') || "Detailed inquiries and documentation",
+              details: t('contact.methods.email_details') || "Average response: 2 hours",
               email: "info@hirtoli.com",
               gradient: "from-purple-500/25 to-pink-500/25",
               hoverColor: "group-hover:text-purple-300"
@@ -220,8 +220,8 @@ const ContactHero: React.FC = () => {
             {
               icon: <MapPin className="w-8 h-8" />,
               title: t('contact.methods.visit') || "Visit Our Offices",
-              description: t('contact.methods.visit.desc') || "Personal consultations and facility tours",
-              details: t('contact.methods.visit.details') || "Open Mon-Sat, 8AM-6PM",
+              description: t('contact.methods.visit_desc') || "Personal consultations and facility tours",
+              details: t('contact.methods.visit_details') || "Open Mon-Sat, 8AM-6PM",
               address: "Chiro & Harar Locations",
               gradient: "from-green-500/25 to-emerald-500/25",
               hoverColor: "group-hover:text-green-300"
@@ -260,10 +260,10 @@ const ContactHero: React.FC = () => {
         {/* Enhanced quick stats with better accessibility */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-4xl mx-auto animate-fade-in" style={{ animationDelay: '0.8s' }} role="region" aria-label="Contact performance statistics">
           {[
-            { number: "<30s", label: t('contact.stats.response') || "Average Response Time", detail: "Phone calls answered quickly" },
-            { number: "99.2%", label: t('contact.stats.satisfaction') || "Customer Satisfaction", detail: "Based on 5,000+ reviews" },
-            { number: "24/7", label: t('contact.stats.availability') || "Support Available", detail: "Round-the-clock assistance" },
-            { number: "3", label: t('contact.stats.locations') || "Office Locations", detail: "Convenient nationwide access" }
+            { number: "<30s", label: t('contact.response_stats.response') || "Average Response Time", detail: "Phone calls answered quickly" },
+            { number: "99.2%", label: t('contact.response_stats.satisfaction') || "Customer Satisfaction", detail: "Based on 5,000+ reviews" },
+            { number: "24/7", label: t('contact.response_stats.availability') || "Support Available", detail: "Round-the-clock assistance" },
+            { number: "3", label: t('contact.response_stats.locations') || "Office Locations", detail: "Convenient nationwide access" }
           ].map((stat, index) => (
             <div 
               key={index} 
