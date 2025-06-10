@@ -1,0 +1,43 @@
+
+{
+  "title": {
+    "main": "Nu qunnamaa",
+    "sub": "Nu waliin"
+  },
+  "description": {
+    "main": "Imala konkolaachisuu keetii jalqabuuf qophaateettaa? Tarkaanfii hunda keessatti gargaarsa dhuunfaa fi qajeelfama ogeeyyiin kennineef nu gargaarra.",
+    "detailed": "Waa'ee koorsiidhaa keenya gaaffiin yoo si qabaate, barumsa beellama qopheessuu yoo barbaadde, ykn meeshaalee keenya daawwachuu yoo barbaadde, gareen keenya ogeeyyii afaanota hedduu dubbatan karaalee adda addaatiin gargaarsa dhuunfaa fi deeggarsa kennuuf qophaawanii jiru."
+  },
+  "stats": {
+    "phone_support": "Deeggarsa bilbilaa 24/7",
+    "email_support": "Deebii email-a ariifataa",
+    "live_chat": "Haasa'a kallatti ni jira",
+    "in_person": "Gorsaan kallatti",
+    "multilingual": "Deeggarsa afaanota hedduu"
+  },
+  "features": {
+    "instant": "Deeggarsa tasaa",
+    "instant_desc": "Karaalee hedduu keessaa gargaarsa tasaa argadhu",
+    "expert": "Gorsa ogeeyyii",
+    "expert_desc": "Ogeeyyii barumsa konkolaachisuu ragaa qaban waliin haasa'aa",
+    "flexible": "Qunnamtii jijjiiramaa",
+    "flexible_desc": "Mala qunnamtii filattan filaadhaa"
+  },
+  "methods": {
+    "call": "Nu bilbilaa",
+    "call_desc": "Garee ogeeyyii keenya waliin kallatti haasa'aa",
+    "call_details": "Giddugaleessa deebii: Tasaa",
+    "email": "Deeggarsa email-a",
+    "email_desc": "Gaaffilee bal'aa fi galmee",
+    "email_details": "Giddugaleessa deebii: sa'aatii 2",
+    "visit": "Waajjira keenya daawwachaa",
+    "visit_desc": "Gorsaa dhuunfaa fi daawwannaa meeshaalee",
+    "visit_details": "Wiixata-Sanbata ganama 8:00-galgala 6:00 banamee jira"
+  },
+  "response_stats": {
+    "response": "Giddugaleessa yeroo deebii",
+    "satisfaction": "Itti quufinsa maamilaa",
+    "availability": "Deeggarsi ni jira",
+    "locations": "Bakka waajjiraa"
+  }
+}

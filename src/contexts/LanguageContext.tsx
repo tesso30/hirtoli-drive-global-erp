@@ -62,10 +62,10 @@ import homeOm from '../locales/om/home.json';
 // Combine all English translations
 const enTranslations = {
   ...commonEn,
-  nav: navigationEn,
+  navigation: navigationEn,
   app: appEn,
-  lang: languageEn,
-  branch: branchesEn,
+  language: languageEn,
+  branches: branchesEn,
   home: homeEn,
   courses: coursesEn,
   services: servicesEn,
@@ -80,10 +80,10 @@ const enTranslations = {
 // Combine all Amharic translations
 const amTranslations = {
   ...commonAm,
-  nav: navigationAm,
+  navigation: navigationAm,
   app: appAm,
-  lang: languageAm,
-  branch: branchesAm,
+  language: languageAm,
+  branches: branchesAm,
   home: homeAm,
   courses: coursesAm,
   services: servicesAm
@@ -92,10 +92,10 @@ const amTranslations = {
 // Combine all Oromo translations
 const omTranslations = {
   ...commonOm,
-  nav: navigationOm,
+  navigation: navigationOm,
   app: appOm,
-  lang: languageOm,
-  branch: branchesOm,
+  language: languageOm,
+  branches: branchesOm,
   home: homeOm
 };
 
