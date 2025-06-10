@@ -1,10 +1,44 @@
-
 import React from 'react';
 import { Phone, Mail, MapPin, Clock, MessageSquare, Users, HeadphonesIcon, Globe } from 'lucide-react';
 import { useLanguage } from '../../contexts/LanguageContext';
 
 const ContactHero: React.FC = () => {
   const { t } = useLanguage();
+
+  const handlePhoneSupport = () => {
+    window.open('tel:+251911123456', '_self');
+  };
+
+  const handleEmailSupport = () => {
+    window.open('mailto:info@hirtoli.com?subject=Support Request&body=Hello, I need assistance with...', '_blank');
+  };
+
+  const handleLiveChat = () => {
+    // Scroll to the live chat component at the bottom of the page
+    const liveChatElement = document.querySelector('[data-testid="live-chat"]');
+    if (liveChatElement) {
+      liveChatElement.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      // Fallback: show alert or open chat widget
+      alert('Live chat is available at the bottom of the page!');
+    }
+  };
+
+  const handleInPersonConsultation = () => {
+    // Navigate to consultation page
+    window.location.href = '/consultation';
+  };
+
+  const handleLanguageSupport = () => {
+    // Scroll to language selector or show language options
+    const languageSelector = document.querySelector('[data-testid="language-selector"]');
+    if (languageSelector) {
+      languageSelector.scrollIntoView({ behavior: 'smooth' });
+    } else {
+      // Show available languages info
+      alert('We support Amharic, English, and Oromo. Use the language selector in the navigation menu.');
+    }
+  };
 
   return (
     <section 
@@ -27,22 +61,69 @@ const ContactHero: React.FC = () => {
       <div className="absolute top-1/2 right-1/3 w-16 h-16 bg-gradient-to-r from-white/15 to-transparent rounded-full blur-md animate-[float_11s_ease-in-out_infinite] will-change-transform" aria-hidden="true"></div>
       
       <div className="container mx-auto px-4 text-center relative z-10">
-        {/* Enhanced contact methods indicators with better accessibility */}
+        {/* Enhanced contact methods indicators with interactive functionality */}
         <div className="flex flex-wrap items-center justify-center gap-6 mb-12 animate-fade-in" role="region" aria-label="Available contact methods and response times">
           {[
-            { icon: Phone, text: t('contact.phone_support') || "24/7 Phone Support", color: "text-blue-300", detail: "Immediate Response", rating: "4.9/5" },
-            { icon: Mail, text: t('contact.email_support') || "Quick Email Response", color: "text-yellow-300", detail: "Within 2 Hours", rating: "4.8/5" },
-            { icon: MessageSquare, text: t('contact.live_chat') || "Live Chat Available", color: "text-green-300", detail: "Real-time Help", rating: "4.9/5" },
-            { icon: Users, text: t('contact.in_person') || "In-Person Consultations", color: "text-purple-300", detail: "Expert Guidance", rating: "5.0/5" },
-            { icon: Globe, text: t('contact.multilingual') || "Multilingual Support", color: "text-cyan-300", detail: "3 Languages", rating: "4.7/5" }
+            { 
+              icon: Phone, 
+              text: t('contact.phone_support') || "24/7 Phone Support", 
+              color: "text-blue-300", 
+              detail: "Immediate Response", 
+              rating: "4.9/5",
+              onClick: handlePhoneSupport,
+              cursor: "cursor-pointer"
+            },
+            { 
+              icon: Mail, 
+              text: t('contact.email_support') || "Quick Email Response", 
+              color: "text-yellow-300", 
+              detail: "Within 2 Hours", 
+              rating: "4.8/5",
+              onClick: handleEmailSupport,
+              cursor: "cursor-pointer"
+            },
+            { 
+              icon: MessageSquare, 
+              text: t('contact.live_chat') || "Live Chat Available", 
+              color: "text-green-300", 
+              detail: "Real-time Help", 
+              rating: "4.9/5",
+              onClick: handleLiveChat,
+              cursor: "cursor-pointer"
+            },
+            { 
+              icon: Users, 
+              text: t('contact.in_person') || "In-Person Consultations", 
+              color: "text-purple-300", 
+              detail: "Expert Guidance", 
+              rating: "5.0/5",
+              onClick: handleInPersonConsultation,
+              cursor: "cursor-pointer"
+            },
+            { 
+              icon: Globe, 
+              text: t('contact.multilingual') || "Multilingual Support", 
+              color: "text-cyan-300", 
+              detail: "3 Languages", 
+              rating: "4.7/5",
+              onClick: handleLanguageSupport,
+              cursor: "cursor-pointer"
+            }
           ].map((item, index) => (
             <div 
               key={index} 
-              className="flex flex-col items-center gap-2 bg-white/15 backdrop-blur-md px-6 py-4 rounded-2xl border border-white/30 hover:bg-white/25 transition-all duration-500 group hover:scale-110 animate-fade-in transform hover:-translate-y-2 shadow-xl hover:shadow-2xl" 
+              className={`flex flex-col items-center gap-2 bg-white/15 backdrop-blur-md px-6 py-4 rounded-2xl border border-white/30 hover:bg-white/25 transition-all duration-500 group hover:scale-110 animate-fade-in transform hover:-translate-y-2 shadow-xl hover:shadow-2xl ${item.cursor}`} 
               style={{ animationDelay: `${index * 0.1}s` }}
-              role="article"
-              aria-label={`${item.text} - ${item.detail} - Rating: ${item.rating}`}
+              role="button"
+              aria-label={`${item.text} - ${item.detail} - Rating: ${item.rating} - Click to access`}
               tabIndex={0}
+              onClick={item.onClick}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                  e.preventDefault();
+                  item.onClick();
+                }
+              }}
             >
               <item.icon 
                 className={`w-6 h-6 ${item.color} group-hover:scale-125 transition-transform duration-300`} 
