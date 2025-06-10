@@ -50,7 +50,7 @@ import branchesAm from '../locales/am/branches.json';
 import homeAm from '../locales/am/home.json';
 import coursesAm from '../locales/am/courses.json';
 import servicesAm from '../locales/am/services.json';
-import aboutAm from '../locales/am/contact.json';
+import aboutAm from '../locales/am/about.json';
 import contactAm from '../locales/am/contact.json';
 
 // Import categorized translation files for Oromo
@@ -60,15 +60,15 @@ import appOm from '../locales/om/app.json';
 import languageOm from '../locales/om/language.json';
 import branchesOm from '../locales/om/branches.json';
 import homeOm from '../locales/om/home.json';
-import aboutOm from '../locales/om/contact.json';
+import aboutOm from '../locales/om/about.json';
 import contactOm from '../locales/om/contact.json';
 
 // Combine all English translations
 const enTranslations = {
   ...commonEn,
-  navigation: navigationEn,
+  nav: navigationEn,
   app: appEn,
-  language: languageEn,
+  lang: languageEn,
   branches: branchesEn,
   home: homeEn,
   courses: coursesEn,
@@ -84,9 +84,9 @@ const enTranslations = {
 // Combine all Amharic translations
 const amTranslations = {
   ...commonAm,
-  navigation: navigationAm,
+  nav: navigationAm,
   app: appAm,
-  language: languageAm,
+  lang: languageAm,
   branches: branchesAm,
   home: homeAm,
   courses: coursesAm,
@@ -98,9 +98,9 @@ const amTranslations = {
 // Combine all Oromo translations
 const omTranslations = {
   ...commonOm,
-  navigation: navigationOm,
+  nav: navigationOm,
   app: appOm,
-  language: languageOm,
+  lang: languageOm,
   branches: branchesOm,
   home: homeOm,
   about: aboutOm,

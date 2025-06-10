@@ -1,0 +1,27 @@
+
+{
+  "title": "ተማሪዎቻችን ምን ይላሉ",
+  "subtitle": "በሂርቶሊ ማሽከርከሪያ ትምህርት ቤት ውስጥ በራስ መተማመን ለማሽከርከር ስኬታማ ከሆኑ ምሩቃን እውነተኛ ታሪኮች። ስኬታቸው ከፍተኛው ውጤታችን ነው።",
+  "view_all": "ሁሉንም ግምገማዎች ይመልከቱ",
+  "write_review": "ግምገማ ይጻፉ",
+  "rating": "አማካኝ ደረጃ",
+  "recommend": "እኛን ይመክራሉ",
+  "satisfaction": "የእርካታ መጠን",
+  "submit_testimonial": "የእርስዎ ምስክርነት ያስገቡ",
+  "featured_title": "ተለይተው የቀረቡ ምስክርነቶች",
+  "featured_subtitle": "ተማሪዎቻችን በሂርቶሊ የመንዳት ልምዳቸውን ምን እንደሚሉ ይመልከቱ",
+  "average_rating": "አማካኝ ደረጃ",
+  "total_reviews": "ጠቅላላ ግምገማዎች",
+  "filter_by": "በ ያጣሩ",
+  "sort_by": "በ ይለዩ",
+  "filter_all": "ሁሉም",
+  "filter_5_stars": "5 ኮከቦች",
+  "filter_4_stars": "4 ኮከቦች",
+  "filter_3_stars": "3 ኮከቦች",
+  "filter_2_stars": "2 ኮከቦች",
+  "filter_1_star": "1 ኮከብ",
+  "sort_newest": "በአዲስነት",
+  "sort_oldest": "በጊዜ ቅደም ተከተል",
+  "sort_highest": "ከፍተኛ ደረጃ",
+  "sort_lowest": "ዝቅተኛ ደረጃ"
+}

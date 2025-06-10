@@ -30,11 +30,11 @@ const AboutHeroSection: React.FC = () => {
         {/* Enhanced trust indicators with better accessibility */}
         <div className="flex flex-wrap items-center justify-center gap-6 mb-12 animate-fade-in" role="region" aria-label="Trust indicators and achievements">
           {[
-            { icon: Award, text: t('about.stats.award') || "Award-Winning Institution", color: "text-yellow-400", rating: "5.0/5.0" },
-            { icon: Users, text: t('about.stats.students') || "15,000+ Happy Students", color: "text-blue-300", rating: "98% Satisfaction" },
-            { icon: Calendar, text: t('about.stats.experience') || "13+ Years Excellence", color: "text-green-300", rating: "Since 2010" },
-            { icon: Shield, text: t('about.stats.safety') || "100% Safety Record", color: "text-purple-300", rating: "Zero Incidents" },
-            { icon: Globe, text: t('about.stats.branches') || "3 Major Locations", color: "text-cyan-300", rating: "Nationwide" }
+            { icon: Award, text: t('about.stats.award'), color: "text-yellow-400", rating: "5.0/5.0" },
+            { icon: Users, text: t('about.stats.students'), color: "text-blue-300", rating: "98% Satisfaction" },
+            { icon: Calendar, text: t('about.stats.experience'), color: "text-green-300", rating: "Since 2010" },
+            { icon: Shield, text: t('about.stats.safety'), color: "text-purple-300", rating: "Zero Incidents" },
+            { icon: Globe, text: t('about.stats.branches'), color: "text-cyan-300", rating: "Nationwide" }
           ].map((item, index) => (
             <div 
               key={index} 
@@ -59,42 +59,42 @@ const AboutHeroSection: React.FC = () => {
         <header>
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 animate-fade-in leading-tight">
             <span className="bg-gradient-to-r from-white via-gray-100 to-white bg-clip-text text-transparent drop-shadow-lg">
-              {t('about.title.main') || 'About Hirtoli'}
+              {t('about.title.main')}
             </span>
             <br />
             <span className="bg-gradient-to-r from-hirtoli-green via-green-300 to-hirtoli-green bg-clip-text text-transparent drop-shadow-lg">
-              {t('about.title.sub') || 'Driving School'}
+              {t('about.title.sub')}
             </span>
           </h1>
         </header>
         
         <div className="max-w-4xl mx-auto">
           <p className="text-xl md:text-2xl mb-6 animate-fade-in opacity-90 leading-relaxed font-medium" style={{ animationDelay: '0.2s' }}>
-            {t('about.description.main') || 'Pioneering excellence in driving education since 2010, shaping confident and responsible drivers across Ethiopia with industry-leading safety standards and innovative teaching methods.'}
+            {t('about.description.main')}
           </p>
           
           <p className="text-lg mb-8 text-gray-200 animate-fade-in leading-relaxed" style={{ animationDelay: '0.3s' }}>
-            {t('about.description.detailed') || 'From our humble beginnings with a vision to transform road safety in Ethiopia, we have grown into the nation\'s most trusted driving school, combining traditional values with modern teaching methods, cutting-edge technology, and a commitment to excellence that sets us apart in the industry.'}
+            {t('about.description.detailed')}
           </p>
 
           {/* Enhanced feature highlights */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12 animate-fade-in" style={{ animationDelay: '0.4s' }}>
             {[
               {
-                title: t('about.features.certified') || "Internationally Certified",
-                description: t('about.features.certified_desc') || "ISO 9001:2015 quality management standards",
+                title: t('about.features.certified'),
+                description: t('about.features.certified_desc'),
                 icon: <CheckCircle className="w-8 h-8" />,
                 gradient: "from-green-500/25 to-emerald-500/25"
               },
               {
-                title: t('about.features.technology') || "Modern Technology",
-                description: t('about.features.technology_desc') || "Latest simulation and digital learning tools",
+                title: t('about.features.technology'),
+                description: t('about.features.technology_desc'),
                 icon: <Target className="w-8 h-8" />,
                 gradient: "from-blue-500/25 to-cyan-500/25"
               },
               {
-                title: t('about.features.multilingual') || "Multilingual Support",
-                description: t('about.features.multilingual_desc') || "Training available in Amharic, Oromo, and English",
+                title: t('about.features.multilingual'),
+                description: t('about.features.multilingual_desc'),
                 icon: <Globe className="w-8 h-8" />,
                 gradient: "from-purple-500/25 to-violet-500/25"
               }

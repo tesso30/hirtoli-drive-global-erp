@@ -117,10 +117,10 @@ const Navbar = () => {
                 </DropdownMenuTrigger>
                 <DropdownMenuContent align="end">
                   <DropdownMenuItem onClick={() => navigate(`/${user.role}-dashboard`)}>
-                    {t('dashboard.overview')}
+                    {t('nav.dashboard')}
                   </DropdownMenuItem>
                   <DropdownMenuItem onClick={handleLogout}>
-                    {t('dashboard.logout')}
+                    {t('nav.logout')}
                   </DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
