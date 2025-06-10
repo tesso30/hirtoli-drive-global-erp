@@ -50,6 +50,8 @@ import branchesAm from '../locales/am/branches.json';
 import homeAm from '../locales/am/home.json';
 import coursesAm from '../locales/am/courses.json';
 import servicesAm from '../locales/am/services.json';
+import aboutAm from '../locales/am/contact.json';
+import contactAm from '../locales/am/contact.json';
 
 // Import categorized translation files for Oromo
 import commonOm from '../locales/om/common.json';
@@ -58,6 +60,8 @@ import appOm from '../locales/om/app.json';
 import languageOm from '../locales/om/language.json';
 import branchesOm from '../locales/om/branches.json';
 import homeOm from '../locales/om/home.json';
+import aboutOm from '../locales/om/contact.json';
+import contactOm from '../locales/om/contact.json';
 
 // Combine all English translations
 const enTranslations = {
@@ -86,7 +90,9 @@ const amTranslations = {
   branches: branchesAm,
   home: homeAm,
   courses: coursesAm,
-  services: servicesAm
+  services: servicesAm,
+  about: aboutAm,
+  contact: contactAm
 };
 
 // Combine all Oromo translations
@@ -96,7 +102,9 @@ const omTranslations = {
   app: appOm,
   language: languageOm,
   branches: branchesOm,
-  home: homeOm
+  home: homeOm,
+  about: aboutOm,
+  contact: contactOm
 };
 
 const translations: Record<Language, Record<string, any>> = {

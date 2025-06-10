@@ -30,11 +30,11 @@ const AboutHeroSection: React.FC = () => {
         {/* Enhanced trust indicators with better accessibility */}
         <div className="flex flex-wrap items-center justify-center gap-6 mb-12 animate-fade-in" role="region" aria-label="Trust indicators and achievements">
           {[
-            { icon: Award, text: t('about.award') || "Award-Winning Institution", color: "text-yellow-400", rating: "5.0/5.0" },
-            { icon: Users, text: t('about.students') || "15,000+ Happy Students", color: "text-blue-300", rating: "98% Satisfaction" },
-            { icon: Calendar, text: t('about.experience') || "13+ Years Excellence", color: "text-green-300", rating: "Since 2010" },
-            { icon: Shield, text: t('about.safety') || "100% Safety Record", color: "text-purple-300", rating: "Zero Incidents" },
-            { icon: Globe, text: t('about.branches') || "3 Major Locations", color: "text-cyan-300", rating: "Nationwide" }
+            { icon: Award, text: t('about.stats.award') || "Award-Winning Institution", color: "text-yellow-400", rating: "5.0/5.0" },
+            { icon: Users, text: t('about.stats.students') || "15,000+ Happy Students", color: "text-blue-300", rating: "98% Satisfaction" },
+            { icon: Calendar, text: t('about.stats.experience') || "13+ Years Excellence", color: "text-green-300", rating: "Since 2010" },
+            { icon: Shield, text: t('about.stats.safety') || "100% Safety Record", color: "text-purple-300", rating: "Zero Incidents" },
+            { icon: Globe, text: t('about.stats.branches') || "3 Major Locations", color: "text-cyan-300", rating: "Nationwide" }
           ].map((item, index) => (
             <div 
               key={index} 
@@ -82,19 +82,19 @@ const AboutHeroSection: React.FC = () => {
             {[
               {
                 title: t('about.features.certified') || "Internationally Certified",
-                description: t('about.features.certified.desc') || "ISO 9001:2015 quality management standards",
+                description: t('about.features.certified_desc') || "ISO 9001:2015 quality management standards",
                 icon: <CheckCircle className="w-8 h-8" />,
                 gradient: "from-green-500/25 to-emerald-500/25"
               },
               {
                 title: t('about.features.technology') || "Modern Technology",
-                description: t('about.features.technology.desc') || "Latest simulation and digital learning tools",
+                description: t('about.features.technology_desc') || "Latest simulation and digital learning tools",
                 icon: <Target className="w-8 h-8" />,
                 gradient: "from-blue-500/25 to-cyan-500/25"
               },
               {
                 title: t('about.features.multilingual') || "Multilingual Support",
-                description: t('about.features.multilingual.desc') || "Training available in Amharic, Oromo, and English",
+                description: t('about.features.multilingual_desc') || "Training available in Amharic, Oromo, and English",
                 icon: <Globe className="w-8 h-8" />,
                 gradient: "from-purple-500/25 to-violet-500/25"
               }
@@ -119,10 +119,10 @@ const AboutHeroSection: React.FC = () => {
         {/* Enhanced achievement grid with better accessibility */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 max-w-6xl mx-auto animate-fade-in" style={{ animationDelay: '0.5s' }} role="region" aria-label="Key statistics and achievements">
           {[
-            { number: "98.5%", label: t('stats.pass_rate') || "Pass Rate", detail: "Industry Leading", gradient: "from-green-500/25 to-emerald-500/25", icon: <Target className="w-5 h-5" /> },
-            { number: "13+", label: t('stats.years') || "Years Excellence", detail: "Since 2010", gradient: "from-blue-500/25 to-cyan-500/25", icon: <Calendar className="w-5 h-5" /> },
-            { number: "52", label: t('stats.instructors') || "Expert Instructors", detail: "Certified Professionals", gradient: "from-purple-500/25 to-violet-500/25", icon: <Users className="w-5 h-5" /> },
-            { number: "3", label: t('stats.branches') || "Branch Locations", detail: "Nationwide Coverage", gradient: "from-orange-500/25 to-red-500/25", icon: <Globe className="w-5 h-5" /> }
+            { number: "98.5%", label: "Pass Rate", detail: "Industry Leading", gradient: "from-green-500/25 to-emerald-500/25", icon: <Target className="w-5 h-5" /> },
+            { number: "13+", label: "Years Excellence", detail: "Since 2010", gradient: "from-blue-500/25 to-cyan-500/25", icon: <Calendar className="w-5 h-5" /> },
+            { number: "52", label: "Expert Instructors", detail: "Certified Professionals", gradient: "from-purple-500/25 to-violet-500/25", icon: <Users className="w-5 h-5" /> },
+            { number: "3", label: "Branch Locations", detail: "Nationwide Coverage", gradient: "from-orange-500/25 to-red-500/25", icon: <Globe className="w-5 h-5" /> }
           ].map((stat, index) => (
             <article 
               key={index} 

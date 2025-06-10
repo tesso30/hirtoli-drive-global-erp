@@ -1,0 +1,26 @@
+
+{
+  "title": {
+    "main": "Waa'ee Hirtoli",
+    "sub": "Mana barumsaa konkolaachisuu"
+  },
+  "description": {
+    "main": "Bara 2010 kaasee barumsa konkolaachisuu keessatti caalmaa ta'uun, Itoophiyaa keessatti haala nageenya industirii fi mala barnoota haaraa waliin ogeessa konkolaachisuu amanamaa fi itti gaafatamummaa qaban uumuun.",
+    "detailed": "Mul'ata nageenya daandii Itoophiyaa jijjiiruudhaan jalqabee ka'umsa xiqqaa irraa, gara mana barumsaa konkolaachisuu biyyatti amanamaa ta'eetti guddachuu, gatii aadaa fi mala barnoota ammayyaa, teeknooloojii ol'aanaa fi kutatamummaa industirii keessatti adda nu baasu makuun."
+  },
+  "stats": {
+    "award": "Dhaabbata badhaasa mo'ate",
+    "students": "15,000+ Barattootaa gammadan",
+    "experience": "Waggaa 13+ Caalmaa",
+    "safety": "Galmee nageenya 100%",
+    "branches": "Bakka 3 ijoo"
+  },
+  "features": {
+    "certified": "Addunyaa mirkaneeffame",
+    "certified_desc": "Ulaagaa bulchiinsa qulqullina ISO 9001:2015",
+    "technology": "Teeknooloojii ammayyaa",
+    "technology_desc": "Meeshaalee fakkeenyaa fi barumsaa dijitaalaa haaraa",
+    "multilingual": "Deeggarsa afaanota hedduu",
+    "multilingual_desc": "Leenjiin Afaan Oromoo, Amaaraa fi Afaan Ingliziin ni jira"
+  }
+}
