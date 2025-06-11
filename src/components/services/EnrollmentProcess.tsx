@@ -26,14 +26,14 @@ const EnrollmentProcess: React.FC = () => {
 
           {/* View mode toggle */}
           <div className="flex items-center justify-center gap-2 mb-8">
-            <span className="text-sm text-gray-600">{t('common.view_mode') || 'View Mode'}</span>
+            <span className="text-sm text-gray-600">{t('services.view_mode') || 'View Mode'}</span>
             <Button
               variant={viewMode === 'grid' ? 'default' : 'outline'}
               size="sm"
               onClick={() => setViewMode('grid')}
               aria-label="Grid view"
             >
-              {t('common.grid_view') || 'Grid'}
+              {t('services.grid_view') || 'Grid'}
             </Button>
             <Button
               variant={viewMode === 'list' ? 'default' : 'outline'}
@@ -41,7 +41,7 @@ const EnrollmentProcess: React.FC = () => {
               onClick={() => setViewMode('list')}
               aria-label="List view"
             >
-              {t('common.list_view') || 'List'}
+              {t('services.list_view') || 'List'}
             </Button>
           </div>
         </div>
@@ -51,7 +51,7 @@ const EnrollmentProcess: React.FC = () => {
 
         {/* Progress indicator for screen readers */}
         <div className="sr-only" role="status" aria-live="polite">
-          {t('common.viewing_status') || 'Viewing in'} {viewMode} {t('common.viewing_mode') || 'mode'}
+          {t('services.viewing_status') || 'Viewing in'} {viewMode} {t('services.viewing_mode') || 'mode'}
         </div>
       </div>
     </section>

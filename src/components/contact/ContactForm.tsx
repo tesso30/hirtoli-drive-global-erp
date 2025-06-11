@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { useToast } from '../../hooks/use-toast';
 import { useBranch } from '../../contexts/BranchContext';
@@ -32,14 +33,14 @@ const ContactForm = () => {
   const validateForm = () => {
     const newErrors: Record<string, string> = {};
     
-    if (!form.name.trim()) newErrors.name = 'Full name is required';
-    if (!form.email.trim()) newErrors.email = 'Email is required';
-    else if (!/\S+@\S+\.\S+/.test(form.email)) newErrors.email = 'Email is invalid';
-    if (!form.phone.trim()) newErrors.phone = 'Phone number is required';
-    else if (!/^\+?[\d\s-()]+$/.test(form.phone)) newErrors.phone = 'Phone number is invalid';
-    if (!form.subject.trim()) newErrors.subject = 'Subject is required';
-    if (!form.message.trim()) newErrors.message = 'Message is required';
-    else if (form.message.length < 10) newErrors.message = 'Message must be at least 10 characters';
+    if (!form.name.trim()) newErrors.name = t('contact.form.name_required') || 'Full name is required';
+    if (!form.email.trim()) newErrors.email = t('contact.form.email_required') || 'Email is required';
+    else if (!/\S+@\S+\.\S+/.test(form.email)) newErrors.email = t('contact.form.email_invalid') || 'Email is invalid';
+    if (!form.phone.trim()) newErrors.phone = t('contact.form.phone_required') || 'Phone number is required';
+    else if (!/^\+?[\d\s-()]+$/.test(form.phone)) newErrors.phone = t('contact.form.phone_invalid') || 'Phone number is invalid';
+    if (!form.subject.trim()) newErrors.subject = t('contact.form.subject_required') || 'Subject is required';
+    if (!form.message.trim()) newErrors.message = t('contact.form.message_required') || 'Message is required';
+    else if (form.message.length < 10) newErrors.message = t('contact.form.message_too_short') || 'Message must be at least 10 characters';
     
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -62,8 +63,8 @@ const ContactForm = () => {
     
     if (!validateForm()) {
       toast({
-        title: "Validation Error",
-        description: "Please fix the errors in the form",
+        title: t('contact.form.validation_error') || "Validation Error",
+        description: t('contact.form.fix_errors') || "Please fix the errors in the form",
         variant: "destructive",
       });
       return;
@@ -76,8 +77,8 @@ const ContactForm = () => {
       console.log('Form submitted:', form);
       
       toast({
-        title: "Message Sent Successfully",
-        description: `Thank you ${form.name}! We'll respond to your ${form.inquiryType} inquiry within ${form.urgency === 'urgent' ? '1 hour' : '24 hours'}.`,
+        title: t('contact.form.success_title') || "Message Sent Successfully",
+        description: t('contact.form.success_message') || `Thank you ${form.name}! We'll respond to your ${form.inquiryType} inquiry within ${form.urgency === 'urgent' ? '1 hour' : '24 hours'}.`,
       });
       
       setForm({
@@ -99,7 +100,7 @@ const ContactForm = () => {
     <div>
       <div className="flex items-center gap-3 mb-6">
         <MessageSquare className="w-8 h-8 text-hirtoli-green" aria-hidden="true" />
-        <h2 className="text-2xl font-bold">Send Us a Message</h2>
+        <h2 className="text-2xl font-bold">{t('contact.form.title') || 'Send Us a Message'}</h2>
       </div>
       
       <Card className="p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -108,18 +109,18 @@ const ContactForm = () => {
           <fieldset className="space-y-4">
             <legend className="text-lg font-semibold text-hirtoli-green mb-4 flex items-center gap-2">
               <User className="w-5 h-5" aria-hidden="true" />
-              Personal Information
+              {t('contact.form.personal_info') || 'Personal Information'}
             </legend>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label htmlFor="name" className="required">
-                  {t('register.name')} *
+                  {t('contact.form.name') || 'Full Name'} *
                 </Label>
                 <Input
                   id="name"
                   name="name"
-                  placeholder="Enter your full name"
+                  placeholder={t('contact.form.name_placeholder') || "Enter your full name"}
                   value={form.name}
                   onChange={handleChange}
                   required
@@ -136,13 +137,13 @@ const ContactForm = () => {
               
               <div className="space-y-2">
                 <Label htmlFor="phone" className="required">
-                  {t('register.phone')} *
+                  {t('contact.form.phone') || 'Phone Number'} *
                 </Label>
                 <Input
                   id="phone"
                   name="phone"
                   type="tel"
-                  placeholder="+251 9XX XXX XXX"
+                  placeholder={t('contact.form.phone_placeholder') || "+251 9XX XXX XXX"}
                   value={form.phone}
                   onChange={handleChange}
                   required
@@ -160,13 +161,13 @@ const ContactForm = () => {
             
             <div className="space-y-2">
               <Label htmlFor="email" className="required">
-                {t('register.email')} *
+                {t('contact.form.email') || 'Email Address'} *
               </Label>
               <Input
                 id="email"
                 name="email"
                 type="email"
-                placeholder="your.email@example.com"
+                placeholder={t('contact.form.email_placeholder') || "your.email@example.com"}
                 value={form.email}
                 onChange={handleChange}
                 required
@@ -186,49 +187,49 @@ const ContactForm = () => {
           <fieldset className="space-y-4">
             <legend className="text-lg font-semibold text-hirtoli-green mb-4 flex items-center gap-2">
               <Phone className="w-5 h-5" aria-hidden="true" />
-              Contact Preferences
+              {t('contact.form.preferences') || 'Contact Preferences'}
             </legend>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               <div className="space-y-2">
                 <Label htmlFor="inquiryType">
-                  Inquiry Type
+                  {t('contact.form.inquiry_type') || 'Inquiry Type'}
                 </Label>
                 <Select
                   value={form.inquiryType}
                   onValueChange={(value) => handleSelectChange('inquiryType', value)}
                 >
                   <SelectTrigger id="inquiryType">
-                    <SelectValue placeholder="Select inquiry type" />
+                    <SelectValue placeholder={t('contact.form.select_inquiry') || "Select inquiry type"} />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="general">General Information</SelectItem>
-                    <SelectItem value="enrollment">Course Enrollment</SelectItem>
-                    <SelectItem value="pricing">Pricing & Payment</SelectItem>
-                    <SelectItem value="schedule">Schedule & Timing</SelectItem>
-                    <SelectItem value="support">Technical Support</SelectItem>
-                    <SelectItem value="complaint">Complaint</SelectItem>
-                    <SelectItem value="partnership">Partnership</SelectItem>
+                    <SelectItem value="general">{t('contact.form.general_info') || 'General Information'}</SelectItem>
+                    <SelectItem value="enrollment">{t('contact.form.course_enrollment') || 'Course Enrollment'}</SelectItem>
+                    <SelectItem value="pricing">{t('contact.form.pricing_payment') || 'Pricing & Payment'}</SelectItem>
+                    <SelectItem value="schedule">{t('contact.form.schedule_timing') || 'Schedule & Timing'}</SelectItem>
+                    <SelectItem value="support">{t('contact.form.tech_support') || 'Technical Support'}</SelectItem>
+                    <SelectItem value="complaint">{t('contact.form.complaint') || 'Complaint'}</SelectItem>
+                    <SelectItem value="partnership">{t('contact.form.partnership') || 'Partnership'}</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
               
               <div className="space-y-2">
                 <Label htmlFor="preferredContact">
-                  Preferred Contact Method
+                  {t('contact.form.preferred_contact') || 'Preferred Contact Method'}
                 </Label>
                 <Select
                   value={form.preferredContact}
                   onValueChange={(value) => handleSelectChange('preferredContact', value)}
                 >
                   <SelectTrigger id="preferredContact">
-                    <SelectValue placeholder="Select contact method" />
+                    <SelectValue placeholder={t('contact.form.select_contact') || "Select contact method"} />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="email">Email</SelectItem>
-                    <SelectItem value="phone">Phone Call</SelectItem>
-                    <SelectItem value="whatsapp">WhatsApp</SelectItem>
-                    <SelectItem value="sms">SMS</SelectItem>
+                    <SelectItem value="email">{t('contact.form.email') || 'Email'}</SelectItem>
+                    <SelectItem value="phone">{t('contact.form.phone_call') || 'Phone Call'}</SelectItem>
+                    <SelectItem value="whatsapp">{t('contact.form.whatsapp') || 'WhatsApp'}</SelectItem>
+                    <SelectItem value="sms">{t('contact.form.sms') || 'SMS'}</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -236,20 +237,20 @@ const ContactForm = () => {
               <div className="space-y-2">
                 <Label htmlFor="urgency" className="flex items-center gap-2">
                   <Clock className="w-4 h-4" aria-hidden="true" />
-                  Urgency Level
+                  {t('contact.form.urgency') || 'Urgency Level'}
                 </Label>
                 <Select
                   value={form.urgency}
                   onValueChange={(value) => handleSelectChange('urgency', value)}
                 >
                   <SelectTrigger id="urgency">
-                    <SelectValue placeholder="Select urgency" />
+                    <SelectValue placeholder={t('contact.form.select_urgency') || "Select urgency"} />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="low">Low (3-5 days)</SelectItem>
-                    <SelectItem value="normal">Normal (24 hours)</SelectItem>
-                    <SelectItem value="high">High (4-6 hours)</SelectItem>
-                    <SelectItem value="urgent">Urgent (1 hour)</SelectItem>
+                    <SelectItem value="low">{t('contact.form.low_urgency') || 'Low (3-5 days)'}</SelectItem>
+                    <SelectItem value="normal">{t('contact.form.normal_urgency') || 'Normal (24 hours)'}</SelectItem>
+                    <SelectItem value="high">{t('contact.form.high_urgency') || 'High (4-6 hours)'}</SelectItem>
+                    <SelectItem value="urgent">{t('contact.form.urgent') || 'Urgent (1 hour)'}</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -257,19 +258,19 @@ const ContactForm = () => {
             
             <div className="space-y-2">
               <Label htmlFor="branch">
-                Preferred Branch
+                {t('contact.form.preferred_branch') || 'Preferred Branch'}
               </Label>
               <Select
                 value={form.selectedBranch}
                 onValueChange={(value) => handleSelectChange('selectedBranch', value)}
               >
                 <SelectTrigger id="branch">
-                  <SelectValue placeholder="Select branch" />
+                  <SelectValue placeholder={t('contact.form.select_branch') || "Select branch"} />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="chiro">Chiro Branch</SelectItem>
-                  <SelectItem value="harar">Harar Branch</SelectItem>
-                  <SelectItem value="any">Any Branch</SelectItem>
+                  <SelectItem value="chiro">{t('contact.form.chiro_branch') || 'Chiro Branch'}</SelectItem>
+                  <SelectItem value="harar">{t('contact.form.harar_branch') || 'Harar Branch'}</SelectItem>
+                  <SelectItem value="any">{t('contact.form.any_branch') || 'Any Branch'}</SelectItem>
                 </SelectContent>
               </Select>
             </div>
@@ -279,17 +280,17 @@ const ContactForm = () => {
           <fieldset className="space-y-4">
             <legend className="text-lg font-semibold text-hirtoli-green mb-4 flex items-center gap-2">
               <Mail className="w-5 h-5" aria-hidden="true" />
-              Your Message
+              {t('contact.form.your_message') || 'Your Message'}
             </legend>
             
             <div className="space-y-2">
               <Label htmlFor="subject" className="required">
-                Subject *
+                {t('contact.form.subject') || 'Subject'} *
               </Label>
               <Input
                 id="subject"
                 name="subject"
-                placeholder="Brief subject of your message"
+                placeholder={t('contact.form.subject_placeholder') || "Brief subject of your message"}
                 value={form.subject}
                 onChange={handleChange}
                 required
@@ -306,12 +307,12 @@ const ContactForm = () => {
             
             <div className="space-y-2">
               <Label htmlFor="message" className="required">
-                Message *
+                {t('contact.form.message') || 'Message'} *
               </Label>
               <Textarea
                 id="message"
                 name="message"
-                placeholder="Please provide details about your inquiry... (minimum 10 characters)"
+                placeholder={t('contact.form.message_placeholder') || "Please provide details about your inquiry... (minimum 10 characters)"}
                 rows={6}
                 value={form.message}
                 onChange={handleChange}
@@ -327,7 +328,7 @@ const ContactForm = () => {
                   </p>
                 ) : (
                   <p id="message-count" className="text-gray-500 text-sm">
-                    {form.message.length} characters (minimum 10)
+                    {form.message.length} {t('contact.form.characters') || 'characters'} ({t('contact.form.minimum_10') || 'minimum 10'})
                   </p>
                 )}
               </div>
@@ -338,15 +339,15 @@ const ContactForm = () => {
           <div className="bg-hirtoli-green/10 border border-hirtoli-green/20 rounded-lg p-4">
             <div className="flex items-center gap-2 text-hirtoli-green">
               <CheckCircle className="w-5 h-5" aria-hidden="true" />
-              <span className="font-medium">Expected Response Time</span>
+              <span className="font-medium">{t('contact.form.expected_response') || 'Expected Response Time'}</span>
             </div>
             <p className="text-sm text-gray-600 mt-1">
-              {form.urgency === 'urgent' ? 'Within 1 hour' : 
-               form.urgency === 'high' ? 'Within 4-6 hours' :
-               form.urgency === 'normal' ? 'Within 24 hours' : 'Within 3-5 days'}
-              {form.preferredContact === 'phone' ? ' via phone call' : 
-               form.preferredContact === 'whatsapp' ? ' via WhatsApp' :
-               form.preferredContact === 'sms' ? ' via SMS' : ' via email'}
+              {form.urgency === 'urgent' ? t('contact.form.within_1_hour') || 'Within 1 hour' : 
+               form.urgency === 'high' ? t('contact.form.within_4_6_hours') || 'Within 4-6 hours' :
+               form.urgency === 'normal' ? t('contact.form.within_24_hours') || 'Within 24 hours' : t('contact.form.within_3_5_days') || 'Within 3-5 days'}
+              {form.preferredContact === 'phone' ? ` ${t('contact.form.via_phone') || 'via phone call'}` : 
+               form.preferredContact === 'whatsapp' ? ` ${t('contact.form.via_whatsapp') || 'via WhatsApp'}` :
+               form.preferredContact === 'sms' ? ` ${t('contact.form.via_sms') || 'via SMS'}` : ` ${t('contact.form.via_email') || 'via email'}`}
             </p>
           </div>
           
@@ -359,19 +360,19 @@ const ContactForm = () => {
             {isSubmitting ? (
               <div className="flex items-center gap-2">
                 <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" aria-hidden="true"></div>
-                <span>Sending Message...</span>
+                <span>{t('contact.form.sending') || 'Sending Message...'}</span>
               </div>
             ) : (
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4" aria-hidden="true" />
-                <span>Send Message</span>
+                <span>{t('contact.form.send_message') || 'Send Message'}</span>
               </div>
             )}
           </Button>
           
           {isSubmitting && (
             <p id="submit-status" className="text-center text-sm text-gray-600" role="status" aria-live="polite">
-              Please wait while we send your message...
+              {t('contact.form.please_wait') || 'Please wait while we send your message...'}
             </p>
           )}
         </form>

@@ -60,6 +60,7 @@ import appOm from '../locales/om/app.json';
 import languageOm from '../locales/om/language.json';
 import branchesOm from '../locales/om/branches.json';
 import homeOm from '../locales/om/home.json';
+import servicesOm from '../locales/om/services.json';
 import aboutOm from '../locales/om/about.json';
 import contactOm from '../locales/om/contact.json';
 
@@ -103,6 +104,7 @@ const omTranslations = {
   lang: languageOm,
   branches: branchesOm,
   home: homeOm,
+  services: servicesOm,
   about: aboutOm,
   contact: contactOm
 };
