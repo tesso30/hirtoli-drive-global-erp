@@ -4,12 +4,12 @@ import { useToast } from '../../hooks/use-toast';
 import { useBranch } from '../../contexts/BranchContext';
 import { useLanguage } from '../../contexts/LanguageContext';
 import { Button } from '../ui/button';
-import { Input } from '../ui/input';
-import { Textarea } from '../ui/textarea';
 import { Card } from '../ui/card';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../ui/select';
-import { Label } from '../ui/label';
-import { Mail, Phone, User, MessageSquare, Clock, CheckCircle } from 'lucide-react';
+import { MessageSquare, Mail } from 'lucide-react';
+import PersonalInfoSection from './form-sections/PersonalInfoSection';
+import ContactPreferencesSection from './form-sections/ContactPreferencesSection';
+import MessageSection from './form-sections/MessageSection';
+import ResponseTimeIndicator from './form-sections/ResponseTimeIndicator';
 
 const ContactForm = () => {
   const { branch } = useBranch();
@@ -105,251 +105,32 @@ const ContactForm = () => {
       
       <Card className="p-6 shadow-lg hover:shadow-xl transition-shadow duration-300">
         <form onSubmit={handleSubmit} className="space-y-6" noValidate>
-          {/* Personal Information Section */}
-          <fieldset className="space-y-4">
-            <legend className="text-lg font-semibold text-hirtoli-green mb-4 flex items-center gap-2">
-              <User className="w-5 h-5" aria-hidden="true" />
-              {t('contact.form.personal_info') || 'Personal Information'}
-            </legend>
-            
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="space-y-2">
-                <Label htmlFor="name" className="required">
-                  {t('contact.form.name') || 'Full Name'} *
-                </Label>
-                <Input
-                  id="name"
-                  name="name"
-                  placeholder={t('contact.form.name_placeholder') || "Enter your full name"}
-                  value={form.name}
-                  onChange={handleChange}
-                  required
-                  aria-invalid={!!errors.name}
-                  aria-describedby={errors.name ? "name-error" : undefined}
-                  className={errors.name ? "border-red-500" : ""}
-                />
-                {errors.name && (
-                  <p id="name-error" className="text-red-500 text-sm" role="alert">
-                    {errors.name}
-                  </p>
-                )}
-              </div>
-              
-              <div className="space-y-2">
-                <Label htmlFor="phone" className="required">
-                  {t('contact.form.phone') || 'Phone Number'} *
-                </Label>
-                <Input
-                  id="phone"
-                  name="phone"
-                  type="tel"
-                  placeholder={t('contact.form.phone_placeholder') || "+251 9XX XXX XXX"}
-                  value={form.phone}
-                  onChange={handleChange}
-                  required
-                  aria-invalid={!!errors.phone}
-                  aria-describedby={errors.phone ? "phone-error" : undefined}
-                  className={errors.phone ? "border-red-500" : ""}
-                />
-                {errors.phone && (
-                  <p id="phone-error" className="text-red-500 text-sm" role="alert">
-                    {errors.phone}
-                  </p>
-                )}
-              </div>
-            </div>
-            
-            <div className="space-y-2">
-              <Label htmlFor="email" className="required">
-                {t('contact.form.email') || 'Email Address'} *
-              </Label>
-              <Input
-                id="email"
-                name="email"
-                type="email"
-                placeholder={t('contact.form.email_placeholder') || "your.email@example.com"}
-                value={form.email}
-                onChange={handleChange}
-                required
-                aria-invalid={!!errors.email}
-                aria-describedby={errors.email ? "email-error" : undefined}
-                className={errors.email ? "border-red-500" : ""}
-              />
-              {errors.email && (
-                <p id="email-error" className="text-red-500 text-sm" role="alert">
-                  {errors.email}
-                </p>
-              )}
-            </div>
-          </fieldset>
+          <PersonalInfoSection
+            form={{ name: form.name, email: form.email, phone: form.phone }}
+            errors={errors}
+            onChange={handleChange}
+          />
 
-          {/* Contact Preferences Section */}
-          <fieldset className="space-y-4">
-            <legend className="text-lg font-semibold text-hirtoli-green mb-4 flex items-center gap-2">
-              <Phone className="w-5 h-5" aria-hidden="true" />
-              {t('contact.form.preferences') || 'Contact Preferences'}
-            </legend>
-            
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="space-y-2">
-                <Label htmlFor="inquiryType">
-                  {t('contact.form.inquiry_type') || 'Inquiry Type'}
-                </Label>
-                <Select
-                  value={form.inquiryType}
-                  onValueChange={(value) => handleSelectChange('inquiryType', value)}
-                >
-                  <SelectTrigger id="inquiryType">
-                    <SelectValue placeholder={t('contact.form.select_inquiry') || "Select inquiry type"} />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="general">{t('contact.form.general_info') || 'General Information'}</SelectItem>
-                    <SelectItem value="enrollment">{t('contact.form.course_enrollment') || 'Course Enrollment'}</SelectItem>
-                    <SelectItem value="pricing">{t('contact.form.pricing_payment') || 'Pricing & Payment'}</SelectItem>
-                    <SelectItem value="schedule">{t('contact.form.schedule_timing') || 'Schedule & Timing'}</SelectItem>
-                    <SelectItem value="support">{t('contact.form.tech_support') || 'Technical Support'}</SelectItem>
-                    <SelectItem value="complaint">{t('contact.form.complaint') || 'Complaint'}</SelectItem>
-                    <SelectItem value="partnership">{t('contact.form.partnership') || 'Partnership'}</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-              
-              <div className="space-y-2">
-                <Label htmlFor="preferredContact">
-                  {t('contact.form.preferred_contact') || 'Preferred Contact Method'}
-                </Label>
-                <Select
-                  value={form.preferredContact}
-                  onValueChange={(value) => handleSelectChange('preferredContact', value)}
-                >
-                  <SelectTrigger id="preferredContact">
-                    <SelectValue placeholder={t('contact.form.select_contact') || "Select contact method"} />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="email">{t('contact.form.email') || 'Email'}</SelectItem>
-                    <SelectItem value="phone">{t('contact.form.phone_call') || 'Phone Call'}</SelectItem>
-                    <SelectItem value="whatsapp">{t('contact.form.whatsapp') || 'WhatsApp'}</SelectItem>
-                    <SelectItem value="sms">{t('contact.form.sms') || 'SMS'}</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-              
-              <div className="space-y-2">
-                <Label htmlFor="urgency" className="flex items-center gap-2">
-                  <Clock className="w-4 h-4" aria-hidden="true" />
-                  {t('contact.form.urgency') || 'Urgency Level'}
-                </Label>
-                <Select
-                  value={form.urgency}
-                  onValueChange={(value) => handleSelectChange('urgency', value)}
-                >
-                  <SelectTrigger id="urgency">
-                    <SelectValue placeholder={t('contact.form.select_urgency') || "Select urgency"} />
-                  </SelectTrigger>
-                  <SelectContent>
-                    <SelectItem value="low">{t('contact.form.low_urgency') || 'Low (3-5 days)'}</SelectItem>
-                    <SelectItem value="normal">{t('contact.form.normal_urgency') || 'Normal (24 hours)'}</SelectItem>
-                    <SelectItem value="high">{t('contact.form.high_urgency') || 'High (4-6 hours)'}</SelectItem>
-                    <SelectItem value="urgent">{t('contact.form.urgent') || 'Urgent (1 hour)'}</SelectItem>
-                  </SelectContent>
-                </Select>
-              </div>
-            </div>
-            
-            <div className="space-y-2">
-              <Label htmlFor="branch">
-                {t('contact.form.preferred_branch') || 'Preferred Branch'}
-              </Label>
-              <Select
-                value={form.selectedBranch}
-                onValueChange={(value) => handleSelectChange('selectedBranch', value)}
-              >
-                <SelectTrigger id="branch">
-                  <SelectValue placeholder={t('contact.form.select_branch') || "Select branch"} />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="chiro">{t('contact.form.chiro_branch') || 'Chiro Branch'}</SelectItem>
-                  <SelectItem value="harar">{t('contact.form.harar_branch') || 'Harar Branch'}</SelectItem>
-                  <SelectItem value="any">{t('contact.form.any_branch') || 'Any Branch'}</SelectItem>
-                </SelectContent>
-              </Select>
-            </div>
-          </fieldset>
+          <ContactPreferencesSection
+            form={{
+              inquiryType: form.inquiryType,
+              preferredContact: form.preferredContact,
+              urgency: form.urgency,
+              selectedBranch: form.selectedBranch
+            }}
+            onSelectChange={handleSelectChange}
+          />
 
-          {/* Message Section */}
-          <fieldset className="space-y-4">
-            <legend className="text-lg font-semibold text-hirtoli-green mb-4 flex items-center gap-2">
-              <Mail className="w-5 h-5" aria-hidden="true" />
-              {t('contact.form.your_message') || 'Your Message'}
-            </legend>
-            
-            <div className="space-y-2">
-              <Label htmlFor="subject" className="required">
-                {t('contact.form.subject') || 'Subject'} *
-              </Label>
-              <Input
-                id="subject"
-                name="subject"
-                placeholder={t('contact.form.subject_placeholder') || "Brief subject of your message"}
-                value={form.subject}
-                onChange={handleChange}
-                required
-                aria-invalid={!!errors.subject}
-                aria-describedby={errors.subject ? "subject-error" : undefined}
-                className={errors.subject ? "border-red-500" : ""}
-              />
-              {errors.subject && (
-                <p id="subject-error" className="text-red-500 text-sm" role="alert">
-                  {errors.subject}
-                </p>
-              )}
-            </div>
-            
-            <div className="space-y-2">
-              <Label htmlFor="message" className="required">
-                {t('contact.form.message') || 'Message'} *
-              </Label>
-              <Textarea
-                id="message"
-                name="message"
-                placeholder={t('contact.form.message_placeholder') || "Please provide details about your inquiry... (minimum 10 characters)"}
-                rows={6}
-                value={form.message}
-                onChange={handleChange}
-                required
-                aria-invalid={!!errors.message}
-                aria-describedby={errors.message ? "message-error" : `message-count`}
-                className={errors.message ? "border-red-500" : ""}
-              />
-              <div className="flex justify-between items-center">
-                {errors.message ? (
-                  <p id="message-error" className="text-red-500 text-sm" role="alert">
-                    {errors.message}
-                  </p>
-                ) : (
-                  <p id="message-count" className="text-gray-500 text-sm">
-                    {form.message.length} {t('contact.form.characters') || 'characters'} ({t('contact.form.minimum_10') || 'minimum 10'})
-                  </p>
-                )}
-              </div>
-            </div>
-          </fieldset>
+          <MessageSection
+            form={{ subject: form.subject, message: form.message }}
+            errors={errors}
+            onChange={handleChange}
+          />
           
-          {/* Response Time Indicator */}
-          <div className="bg-hirtoli-green/10 border border-hirtoli-green/20 rounded-lg p-4">
-            <div className="flex items-center gap-2 text-hirtoli-green">
-              <CheckCircle className="w-5 h-5" aria-hidden="true" />
-              <span className="font-medium">{t('contact.form.expected_response') || 'Expected Response Time'}</span>
-            </div>
-            <p className="text-sm text-gray-600 mt-1">
-              {form.urgency === 'urgent' ? t('contact.form.within_1_hour') || 'Within 1 hour' : 
-               form.urgency === 'high' ? t('contact.form.within_4_6_hours') || 'Within 4-6 hours' :
-               form.urgency === 'normal' ? t('contact.form.within_24_hours') || 'Within 24 hours' : t('contact.form.within_3_5_days') || 'Within 3-5 days'}
-              {form.preferredContact === 'phone' ? ` ${t('contact.form.via_phone') || 'via phone call'}` : 
-               form.preferredContact === 'whatsapp' ? ` ${t('contact.form.via_whatsapp') || 'via WhatsApp'}` :
-               form.preferredContact === 'sms' ? ` ${t('contact.form.via_sms') || 'via SMS'}` : ` ${t('contact.form.via_email') || 'via email'}`}
-            </p>
-          </div>
+          <ResponseTimeIndicator
+            urgency={form.urgency}
+            preferredContact={form.preferredContact}
+          />
           
           <Button 
             type="submit" 
