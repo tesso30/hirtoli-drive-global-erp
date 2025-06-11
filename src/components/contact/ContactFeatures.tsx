@@ -8,20 +8,20 @@ const ContactFeatures: React.FC = () => {
 
   const features = [
     {
-      title: t('contact.features.instant') || "Instant Support",
-      description: t('contact.features.instant_desc') || "Get immediate help through multiple channels",
+      title: t('contact.features.instant'),
+      description: t('contact.features.instant_desc'),
       icon: <HeadphonesIcon className="w-8 h-8" />,
       gradient: "from-blue-500/25 to-cyan-500/25"
     },
     {
-      title: t('contact.features.expert') || "Expert Consultation",
-      description: t('contact.features.expert_desc') || "Talk to certified driving education specialists",
+      title: t('contact.features.expert'),
+      description: t('contact.features.expert_desc'),
       icon: <Users className="w-8 h-8" />,
       gradient: "from-green-500/25 to-emerald-500/25"
     },
     {
-      title: t('contact.features.flexible') || "Flexible Communication",
-      description: t('contact.features.flexible_desc') || "Choose your preferred communication method",
+      title: t('contact.features.flexible'),
+      description: t('contact.features.flexible_desc'),
       icon: <MessageSquare className="w-8 h-8" />,
       gradient: "from-purple-500/25 to-violet-500/25"
     }

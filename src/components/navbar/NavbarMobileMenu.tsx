@@ -57,13 +57,6 @@ const NavbarMobileMenu: React.FC<NavbarMobileMenuProps> = ({
               {t('nav.services')}
             </Link>
             <Link 
-              to="/blog" 
-              className="text-gray-700 hover:text-hirtoli-green transition px-4 py-2"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              Blog
-            </Link>
-            <Link 
               to="/contact" 
               className="text-gray-700 hover:text-hirtoli-green transition px-4 py-2"
               onClick={() => setMobileMenuOpen(false)}

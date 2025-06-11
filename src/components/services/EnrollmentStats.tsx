@@ -7,10 +7,10 @@ const EnrollmentStats: React.FC = () => {
   const { t } = useLanguage();
 
   const stats = [
-    { icon: <Clock className="w-5 h-5" />, value: "~30min", label: t('enrollment.stats.total_time') },
-    { icon: <Users className="w-5 h-5" />, value: "98%", label: t('enrollment.stats.success_rate') },
-    { icon: <Star className="w-5 h-5" />, value: "4.9★", label: t('enrollment.stats.rating') },
-    { icon: <Target className="w-5 h-5" />, value: "3", label: t('enrollment.stats.steps') }
+    { icon: <Clock className="w-5 h-5" />, value: "~30min", label: t('services.total_time') || 'Total Time' },
+    { icon: <Users className="w-5 h-5" />, value: "98%", label: t('services.success_rate') || 'Success Rate' },
+    { icon: <Star className="w-5 h-5" />, value: "4.9★", label: t('services.rating') || 'Rating' },
+    { icon: <Target className="w-5 h-5" />, value: "3", label: t('services.steps') || 'Steps' }
   ];
 
   return (

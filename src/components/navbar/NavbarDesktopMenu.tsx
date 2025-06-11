@@ -17,9 +17,6 @@ const NavbarDesktopMenu = () => {
       <Link to="/services" className="text-gray-700 hover:text-hirtoli-green transition">
         {t('nav.services')}
       </Link>
-      <Link to="/blog" className="text-gray-700 hover:text-hirtoli-green transition">
-        Blog
-      </Link>
       <Link to="/contact" className="text-gray-700 hover:text-hirtoli-green transition">
         {t('nav.contact')}
       </Link>
