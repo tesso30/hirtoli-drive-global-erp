@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
 // Define available languages
@@ -40,6 +39,7 @@ import enrollmentEn from '../locales/en/enrollment.json';
 import aboutEn from '../locales/en/about.json';
 import contactEn from '../locales/en/contact.json';
 import footerEn from '../locales/en/footer.json';
+import loginEn from '../locales/en/login.json';
 
 // Import categorized translation files for Amharic
 import commonAm from '../locales/am/common.json';
@@ -52,6 +52,7 @@ import coursesAm from '../locales/am/courses.json';
 import servicesAm from '../locales/am/services.json';
 import aboutAm from '../locales/am/about.json';
 import contactAm from '../locales/am/contact.json';
+import loginAm from '../locales/am/login.json';
 
 // Import categorized translation files for Oromo
 import commonOm from '../locales/om/common.json';
@@ -63,6 +64,7 @@ import homeOm from '../locales/om/home.json';
 import servicesOm from '../locales/om/services.json';
 import aboutOm from '../locales/om/about.json';
 import contactOm from '../locales/om/contact.json';
+import loginOm from '../locales/om/login.json';
 
 // Combine all English translations
 const enTranslations = {
@@ -79,7 +81,8 @@ const enTranslations = {
   enrollment: enrollmentEn,
   about: aboutEn,
   contact: contactEn,
-  footer: footerEn
+  footer: footerEn,
+  login: loginEn
 };
 
 // Combine all Amharic translations
@@ -93,7 +96,8 @@ const amTranslations = {
   courses: coursesAm,
   services: servicesAm,
   about: aboutAm,
-  contact: contactAm
+  contact: contactAm,
+  login: loginAm
 };
 
 // Combine all Oromo translations
@@ -106,9 +110,11 @@ const omTranslations = {
   home: homeOm,
   services: servicesOm,
   about: aboutOm,
-  contact: contactOm
+  contact: contactOm,
+  login: loginOm
 };
 
+// Combine all translations
 const translations: Record<Language, Record<string, any>> = {
   en: enTranslations,
   am: amTranslations,
