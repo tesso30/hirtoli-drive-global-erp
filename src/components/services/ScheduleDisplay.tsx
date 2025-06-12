@@ -6,6 +6,7 @@ import { Badge } from '../ui/badge';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../ui/tabs';
 import { Clock, User, MapPin, Calendar } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import { useLanguage } from '../../contexts/LanguageContext';
 
 interface ScheduleSlot {
   time: string;
@@ -23,6 +24,7 @@ interface DaySchedule {
 
 const ScheduleDisplay: React.FC = () => {
   const navigate = useNavigate();
+  const { t } = useLanguage();
   const [selectedSlot, setSelectedSlot] = useState<{ day: string; time: string } | null>(null);
 
   const weeklySchedule: DaySchedule[] = [
@@ -97,17 +99,16 @@ const ScheduleDisplay: React.FC = () => {
     <section className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-4">Class Schedules & Instructors</h2>
+          <h2 className="text-3xl font-bold mb-4">{t('services.schedule_title')}</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Choose from flexible scheduling options and learn from our experienced instructors.
-            Book your preferred time slots that fit your schedule.
+            {t('services.schedule_subtitle')}
           </p>
         </div>
 
         <Tabs defaultValue="schedule" className="w-full">
           <TabsList className="grid w-full grid-cols-2 mb-8">
-            <TabsTrigger value="schedule">Weekly Schedule</TabsTrigger>
-            <TabsTrigger value="instructors">Our Instructors</TabsTrigger>
+            <TabsTrigger value="schedule">{t('services.weekly_schedule')}</TabsTrigger>
+            <TabsTrigger value="instructors">{t('services.our_instructors')}</TabsTrigger>
           </TabsList>
 
           <TabsContent value="schedule">
@@ -141,7 +142,7 @@ const ScheduleDisplay: React.FC = () => {
                               <span className="font-medium">{slot.time}</span>
                             </div>
                             <Badge variant={slot.type === 'theory' ? 'secondary' : 'outline'}>
-                              {slot.type}
+                              {t(`services.${slot.type}`)}
                             </Badge>
                           </div>
                           <div className="text-sm text-gray-600 space-y-1">
@@ -155,7 +156,7 @@ const ScheduleDisplay: React.FC = () => {
                             </div>
                           </div>
                           {!slot.available && (
-                            <p className="text-xs text-red-500 mt-1">Fully Booked</p>
+                            <p className="text-xs text-red-500 mt-1">{t('services.fully_booked')}</p>
                           )}
                         </div>
                       ))}
@@ -167,12 +168,12 @@ const ScheduleDisplay: React.FC = () => {
             
             {selectedSlot && (
               <div className="mt-8 p-6 bg-hirtoli-green bg-opacity-10 rounded-lg text-center">
-                <h3 className="text-lg font-semibold mb-2">Selected Time Slot</h3>
+                <h3 className="text-lg font-semibold mb-2">{t('services.selected_time_slot')}</h3>
                 <p className="text-gray-600 mb-4">
                   {selectedSlot.day} at {selectedSlot.time}
                 </p>
                 <Button onClick={() => navigate('/register')} className="bg-hirtoli-red hover:bg-hirtoli-red/90">
-                  Book This Slot
+                  {t('services.book_this_slot')}
                 </Button>
               </div>
             )}
@@ -193,7 +194,7 @@ const ScheduleDisplay: React.FC = () => {
                         <h3 className="text-lg font-semibold mb-1">{instructor.name}</h3>
                         <p className="text-hirtoli-red font-medium mb-2">{instructor.speciality}</p>
                         <div className="flex items-center gap-4 text-sm text-gray-600">
-                          <span>{instructor.experience} experience</span>
+                          <span>{instructor.experience} {t('services.experience')}</span>
                           <div className="flex items-center gap-1">
                             <span className="text-yellow-500">★</span>
                             <span>{instructor.rating}</span>
@@ -208,7 +209,7 @@ const ScheduleDisplay: React.FC = () => {
             
             <div className="text-center mt-8">
               <Button onClick={() => navigate('/register')} size="lg">
-                Request Specific Instructor
+                {t('services.request_specific_instructor')}
               </Button>
             </div>
           </TabsContent>
