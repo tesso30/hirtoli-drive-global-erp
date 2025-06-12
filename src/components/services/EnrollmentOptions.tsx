@@ -12,40 +12,40 @@ const EnrollmentOptions: React.FC = () => {
 
   const enrollmentOptions = [
     {
-      title: t('services.online_enrollment') || 'Online Enrollment',
-      description: t('services.online_enrollment_desc') || 'Quick and convenient online registration',
+      title: t('services.online_enrollment'),
+      description: t('services.online_enrollment_desc'),
       icon: <MessageSquare className="w-12 h-12 text-hirtoli-green" />,
       features: [
-        t('services.instant_confirmation') || 'Instant confirmation',
-        t('services.digital_documents') || 'Digital documents',
-        t('services.online_payment') || 'Online payment',
-        t('services.24_7_available') || '24/7 available'
+        t('services.instant_confirmation'),
+        t('services.digital_documents'),
+        t('services.online_payment'),
+        t('services.24_7_available')
       ],
       rating: '4.9/5',
       estimatedTime: '10 minutes'
     },
     {
-      title: t('services.phone_enrollment') || 'Phone Enrollment',
-      description: t('services.phone_enrollment_desc') || 'Personal assistance over the phone',
+      title: t('services.phone_enrollment'),
+      description: t('services.phone_enrollment_desc'),
       icon: <Phone className="w-12 h-12 text-hirtoli-red" />,
       features: [
-        t('services.personal_guidance') || 'Personal guidance',
-        t('services.instant_answers') || 'Instant answers',
-        t('services.flexible_scheduling') || 'Flexible scheduling',
-        t('services.language_assistance') || 'Language assistance'
+        t('services.personal_guidance'),
+        t('services.instant_answers'),
+        t('services.flexible_scheduling'),
+        t('services.language_assistance')
       ],
       rating: '4.8/5',
       estimatedTime: '15 minutes'
     },
     {
-      title: t('services.visit_enrollment') || 'Visit Our Office',
-      description: t('services.visit_enrollment_desc') || 'Complete your enrollment in person',
+      title: t('services.visit_enrollment'),
+      description: t('services.visit_enrollment_desc'),
       icon: <FileText className="w-12 h-12 text-hirtoli-black" />,
       features: [
-        t('services.facility_tour') || 'Facility tour',
-        t('services.meet_instructors') || 'Meet instructors',
-        t('services.complete_documents') || 'Complete documents',
-        t('services.immediate_start') || 'Immediate start'
+        t('services.facility_tour'),
+        t('services.meet_instructors'),
+        t('services.complete_documents'),
+        t('services.immediate_start')
       ],
       rating: '5.0/5',
       estimatedTime: '30 minutes'
@@ -56,10 +56,10 @@ const EnrollmentOptions: React.FC = () => {
     <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
       <div className="text-center mb-8">
         <h3 className="text-2xl md:text-3xl font-bold mb-4">
-          {t('services.ready_to_enroll') || 'Ready to Enroll?'}
+          {t('services.ready_to_enroll')}
         </h3>
         <p className="text-gray-600 mb-6 text-lg">
-          {t('services.choose_enrollment_method') || 'Choose your preferred enrollment method'}
+          {t('services.choose_enrollment_method')}
         </p>
       </div>
       
@@ -116,8 +116,8 @@ const EnrollmentOptions: React.FC = () => {
                 index === 0 ? 'bg-hirtoli-green hover:bg-hirtoli-green/90' : 'bg-hirtoli-red hover:bg-hirtoli-red/90'
               } text-white`}
             >
-              {index === 0 ? (t('common.register_online') || 'Register Online') : 
-               index === 1 ? (t('common.call_now') || 'Call Now') : (t('common.find_location') || 'Find Location')}
+              {index === 0 ? t('services.register_online') : 
+               index === 1 ? t('services.call_now') : t('services.find_location')}
             </Button>
           </Card>
         ))}
