@@ -24,7 +24,7 @@ const CallToActionSection: React.FC = () => {
           <Button 
             size="lg" 
             variant="outline" 
-            className="border-white text-white hover:bg-white hover:text-hirtoli-black"
+            className="border-2 border-hirtoli-green text-hirtoli-green hover:bg-hirtoli-green hover:text-white transition-all duration-300 transform hover:scale-105"
             onClick={() => navigate('/contact')}
           >
             {t('home.cta.contact')}
