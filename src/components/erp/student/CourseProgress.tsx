@@ -3,7 +3,7 @@ import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '../../ui/card';
 import { Progress } from '../../ui/progress';
 import { Badge } from '../../ui/badge';
-import { BookOpen, Users, Clock } from 'lucide-react';
+import { BookOpen, Users, Clock, GraduationCap } from 'lucide-react';
 
 const CourseProgress = () => {
   const courses = [
@@ -46,48 +46,50 @@ const CourseProgress = () => {
   ];
 
   const getGradeColor = (grade: string) => {
-    if (grade.startsWith('A')) return 'bg-green-100 text-green-800';
-    if (grade.startsWith('B')) return 'bg-blue-100 text-blue-800';
-    if (grade.startsWith('C')) return 'bg-yellow-100 text-yellow-800';
-    return 'bg-gray-100 text-gray-800';
+    if (grade.startsWith('A')) return 'bg-gradient-to-r from-green-100 to-green-200 text-green-800 border-green-300';
+    if (grade.startsWith('B')) return 'bg-gradient-to-r from-blue-100 to-blue-200 text-blue-800 border-blue-300';
+    if (grade.startsWith('C')) return 'bg-gradient-to-r from-yellow-100 to-yellow-200 text-yellow-800 border-yellow-300';
+    return 'bg-gradient-to-r from-gray-100 to-gray-200 text-gray-800 border-gray-300';
   };
 
   return (
-    <Card>
-      <CardHeader>
-        <CardTitle className="text-lg font-semibold flex items-center gap-2">
-          <BookOpen className="text-hirtoli-green" size={20} />
+    <Card className="bg-white/70 backdrop-blur-sm border-2 border-gray-200/50 shadow-xl">
+      <CardHeader className="pb-4">
+        <CardTitle className="text-xl font-bold flex items-center gap-2">
+          <GraduationCap className="text-hirtoli-green" size={24} />
           Course Progress
         </CardTitle>
       </CardHeader>
       <CardContent>
-        <div className="space-y-4">
+        <div className="space-y-6">
           {courses.map((course, index) => (
-            <div key={index} className="border rounded-lg p-4 hover:bg-gray-50 transition-colors">
-              <div className="flex items-start justify-between mb-3">
+            <div key={index} className="border-2 border-gray-200/50 rounded-xl p-6 bg-gradient-to-r from-white/80 to-gray-50/80 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+              <div className="flex items-start justify-between mb-4">
                 <div>
-                  <h4 className="font-semibold text-gray-900">{course.name}</h4>
-                  <p className="text-sm text-gray-600">{course.code}</p>
+                  <h4 className="font-bold text-lg text-gray-900">{course.name}</h4>
+                  <p className="text-sm text-gray-600 font-medium">{course.code}</p>
                 </div>
-                <Badge className={getGradeColor(course.grade)}>{course.grade}</Badge>
+                <Badge className={`${getGradeColor(course.grade)} border font-bold text-lg px-3 py-1`}>
+                  {course.grade}
+                </Badge>
               </div>
               
-              <div className="mb-3">
-                <div className="flex justify-between text-sm mb-1">
-                  <span>Progress</span>
-                  <span>{course.progress}%</span>
+              <div className="mb-4">
+                <div className="flex justify-between text-sm mb-2">
+                  <span className="font-semibold text-gray-700">Progress</span>
+                  <span className="font-bold text-hirtoli-green text-lg">{course.progress}%</span>
                 </div>
-                <Progress value={course.progress} className="h-2" />
+                <Progress value={course.progress} className="h-3 rounded-full" />
               </div>
               
-              <div className="grid grid-cols-2 gap-4 text-sm text-gray-600">
-                <div className="flex items-center gap-2">
-                  <Users size={14} />
-                  {course.instructor}
+              <div className="grid grid-cols-2 gap-6 text-sm">
+                <div className="flex items-center gap-2 text-gray-700">
+                  <Users size={16} className="text-hirtoli-green" />
+                  <span className="font-medium">{course.instructor}</span>
                 </div>
-                <div className="flex items-center gap-2">
-                  <Clock size={14} />
-                  {course.nextClass}
+                <div className="flex items-center gap-2 text-gray-700">
+                  <Clock size={16} className="text-hirtoli-green" />
+                  <span className="font-medium">{course.nextClass}</span>
                 </div>
               </div>
             </div>

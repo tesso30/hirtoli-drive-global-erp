@@ -13,30 +13,34 @@ const StudentErpDashboard = () => {
   const { user } = useAuth();
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-gray-100">
       <DashboardHeader />
       
-      <div className="container mx-auto px-4 py-6">
+      <div className="container mx-auto px-4 py-8">
         {/* Academic Overview Stats */}
-        <AcademicOverview />
+        <div className="animate-fade-in">
+          <AcademicOverview />
+        </div>
         
         {/* Main Dashboard Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-6">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-8">
           {/* Left Column - Course Progress & Assignments */}
-          <div className="lg:col-span-2 space-y-6">
+          <div className="lg:col-span-2 space-y-8 animate-fade-in" style={{animationDelay: '0.1s'}}>
             <CourseProgress />
             <AssignmentTracker />
           </div>
           
           {/* Right Column - Quick Actions & Schedule */}
-          <div className="space-y-6">
+          <div className="space-y-8 animate-fade-in" style={{animationDelay: '0.2s'}}>
             <QuickActions />
             <UpcomingSchedule />
           </div>
         </div>
         
         {/* Recent Activity */}
-        <RecentActivity />
+        <div className="animate-fade-in" style={{animationDelay: '0.3s'}}>
+          <RecentActivity />
+        </div>
       </div>
     </div>
   );
