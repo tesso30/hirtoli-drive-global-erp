@@ -1,5 +1,7 @@
+
 {
   "title": "Sign In",
+  "description": "Enter your credentials to access your account",
   "email": "Email Address",
   "password": "Password",
   "forgot": "Forgot password?",
