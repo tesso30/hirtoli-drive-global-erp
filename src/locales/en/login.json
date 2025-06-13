@@ -1,10 +1,9 @@
 {
-  "title": "Login to Your Account",
-  "description": "Enter your credentials to access your account",
+  "title": "Sign In",
   "email": "Email Address",
   "password": "Password",
   "forgot": "Forgot password?",
-  "submit": "Login",
+  "submit": "Sign In",
   "noAccount": "Don't have an account?",
-  "register": "Register"
-} 
+  "register": "Sign up here"
+}

@@ -33,12 +33,7 @@
   "success": "Success",
   "warning": "Warning",
   "info": "Information",
-  "login.title": "Login to Your Account",
-  "login.description": "Enter your credentials to access your account",
-  "login.email": "Email Address",
-  "login.password": "Password",
-  "login.forgot": "Forgot password?",
-  "login.submit": "Login",
-  "login.noAccount": "Don't have an account?",
-  "login.register": "Register"
+  "choose_this_package": "Choose This Package",
+  "most_popular": "Most Popular",
+  "recommended": "Recommended"
 }

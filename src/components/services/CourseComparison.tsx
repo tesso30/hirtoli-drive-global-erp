@@ -16,18 +16,18 @@ const CourseComparison: React.FC = () => {
       description: t('services.course_comparison.beginner_desc'),
       courses: [
         {
-          name: t('courses.detailed.beginner.title'),
-          duration: t('courses.detailed.beginner.duration'),
-          price: t('courses.detailed.beginner.price'),
-          level: t('courses.detailed.beginner.level'),
-          classSize: t('courses.detailed.beginner.class_size'),
-          highlights: [t('enrollment.features.instant'), t('enrollment.features.digital'), t('enrollment.features.payment')]
+          name: t('services.beginner_course_title'),
+          duration: t('services.beginner_duration'),
+          price: t('services.beginner_price'),
+          level: t('services.beginner_level'),
+          classSize: t('services.beginner_class_size'),
+          highlights: [t('services.beginner_highlight1'), t('services.beginner_highlight2'), t('services.beginner_highlight3')]
         },
         {
           name: t('services.quick_start_title'),
           duration: t('services.quick_start_duration'),
           price: t('services.quick_start_price'),
-          level: t('courses.detailed.beginner.level'),
+          level: t('services.beginner_level'),
           classSize: t('services.quick_start_class_size'),
           highlights: [t('services.quick_start_highlight1'), t('services.quick_start_highlight2'), t('services.quick_start_highlight3')]
         }
@@ -62,19 +62,19 @@ const CourseComparison: React.FC = () => {
       description: t('services.course_comparison.advanced_desc'),
       courses: [
         {
-          name: t('courses.detailed.commercial.title'),
-          duration: t('courses.detailed.commercial.duration'),
-          price: t('courses.detailed.commercial.price'),
-          level: t('courses.detailed.commercial.level'),
-          classSize: t('courses.detailed.commercial.class_size'),
+          name: t('services.commercial_course_title'),
+          duration: t('services.commercial_duration'),
+          price: t('services.commercial_price'),
+          level: t('services.advanced_level'),
+          classSize: t('services.commercial_class_size'),
           highlights: [t('services.commercial_highlight1'), t('services.commercial_highlight2'), t('services.commercial_highlight3')]
         },
         {
-          name: t('courses.detailed.advanced.title'),
-          duration: t('courses.detailed.advanced.duration'),
-          price: t('courses.detailed.advanced.price'),
-          level: t('courses.detailed.advanced.level'),
-          classSize: t('courses.detailed.advanced.class_size'),
+          name: t('services.defensive_course_title'),
+          duration: t('services.defensive_duration'),
+          price: t('services.defensive_price'),
+          level: t('services.advanced_level'),
+          classSize: t('services.defensive_class_size'),
           highlights: [t('services.defensive_highlight1'), t('services.defensive_highlight2'), t('services.defensive_highlight3')]
         }
       ]
