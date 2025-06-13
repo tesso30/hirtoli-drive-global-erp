@@ -65,7 +65,7 @@ export default {
 				},
         hirtoli: {
           red: '#FF0000',
-          green: '#00A651',
+          green: '#00FF00',
           black: '#000000',
           white: '#FFFFFF',
         }
