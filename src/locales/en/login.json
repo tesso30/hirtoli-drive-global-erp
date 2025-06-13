@@ -1,0 +1,10 @@
+{
+  "title": "Login to Your Account",
+  "description": "Enter your credentials to access your account",
+  "email": "Email Address",
+  "password": "Password",
+  "forgot": "Forgot password?",
+  "submit": "Login",
+  "noAccount": "Don't have an account?",
+  "register": "Register"
+} 

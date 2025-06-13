@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -71,7 +70,7 @@ const Login = () => {
         <CardHeader className="space-y-1">
           <CardTitle className="text-2xl font-bold text-center">{t('login.title')}</CardTitle>
           <CardDescription className="text-center">
-            Enter your credentials to access your account
+            {t('login.description') || 'Enter your credentials to access your account'}
           </CardDescription>
         </CardHeader>
 
@@ -108,11 +107,11 @@ const Login = () => {
               />
             </div>
 
-            <Button type="submit" className="w-full" disabled={isLoading}>
+            <Button type="submit" className="w-full bg-hirtoli-red hover:bg-hirtoli-red/90 text-white font-semibold py-2 rounded transition-colors duration-300">
               {isLoading ? (
                 <span className="flex items-center">
                   <span className="mr-2 h-4 w-4 animate-spin rounded-full border-2 border-b-transparent"></span>
-                  Loading...
+                  {t('loading') || 'Loading...'}
                 </span>
               ) : (
                 t('login.submit')

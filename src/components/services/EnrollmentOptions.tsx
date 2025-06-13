@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Card } from '../ui/card';
 import { Button } from '../ui/button';
@@ -116,8 +115,8 @@ const EnrollmentOptions: React.FC = () => {
                 index === 0 ? 'bg-hirtoli-green hover:bg-hirtoli-green/90' : 'bg-hirtoli-red hover:bg-hirtoli-red/90'
               } text-white`}
             >
-              {index === 0 ? (t('common.register_online') || 'Register Online') : 
-               index === 1 ? (t('common.call_now') || 'Call Now') : (t('common.find_location') || 'Find Location')}
+              {index === 0 ? (t('register_online') || 'Register Online') : 
+               index === 1 ? (t('call_now') || 'Call Now') : (t('find_location') || 'Find Location')}
             </Button>
           </Card>
         ))}

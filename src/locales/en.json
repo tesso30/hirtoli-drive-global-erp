@@ -1,4 +1,3 @@
-
 {
   "app.title": "Hirtoli Driving School",
   "app.tagline": "Professional Driving Education",
@@ -385,13 +384,14 @@
   "footer.email": "Email: info@hirtoli.com",
   "footer.phone": "Phone: +251 911 123 456",
   
-  "login.title": "Sign In to Your Account",
-  "login.email": "Email",
+  "login.title": "Login to Your Account",
+  "login.description": "Enter your credentials to access your account",
+  "login.email": "Email Address",
   "login.password": "Password",
-  "login.submit": "Sign In",
-  "login.forgot": "Forgot Password?",
+  "login.forgot": "Forgot password?",
+  "login.submit": "Login",
   "login.noAccount": "Don't have an account?",
-  "login.register": "Register Now",
+  "login.register": "Register",
   
   "register.title": "Create Account",
   "register.name": "Full Name",

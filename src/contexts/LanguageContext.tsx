@@ -1,4 +1,3 @@
-
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
 // Define available languages
@@ -40,6 +39,7 @@ import enrollmentEn from '../locales/en/enrollment.json';
 import aboutEn from '../locales/en/about.json';
 import contactEn from '../locales/en/contact.json';
 import footerEn from '../locales/en/footer.json';
+import loginEn from '../locales/en/login.json';
 
 // Import categorized translation files for Amharic
 import commonAm from '../locales/am/common.json';
@@ -79,7 +79,8 @@ const enTranslations = {
   enrollment: enrollmentEn,
   about: aboutEn,
   contact: contactEn,
-  footer: footerEn
+  footer: footerEn,
+  login: loginEn
 };
 
 // Combine all Amharic translations

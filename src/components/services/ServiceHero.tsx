@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useLanguage } from '../../contexts/LanguageContext';
 import { Car, Users, Award, Clock, Shield, Star, CheckCircle, Target, BookOpen, Globe } from 'lucide-react';
@@ -30,11 +29,11 @@ const ServiceHero: React.FC = () => {
         {/* Enhanced service features indicators with better accessibility */}
         <div className="flex flex-wrap items-center justify-center gap-6 mb-12 animate-fade-in" role="region" aria-label="Service features and capabilities">
           {[
-            { icon: Car, text: t('services.vehicles') || "200+ Modern Vehicles", color: "text-blue-300", detail: "Latest Models", rating: "5★" },
-            { icon: Users, text: t('services.instructors') || "50+ Expert Instructors", color: "text-green-300", detail: "Certified Professionals", rating: "4.9★" },
-            { icon: Award, text: t('services.certified') || "Certified Training Programs", color: "text-yellow-300", detail: "International Standards", rating: "5★" },
-            { icon: Shield, text: t('services.safety') || "100% Safety Guaranteed", color: "text-purple-300", detail: "Zero Incident Record", rating: "5★" },
-            { icon: Globe, text: t('services.languages') || "3 Language Support", color: "text-cyan-300", detail: "Multilingual Training", rating: "4.8★" }
+            { icon: Car, text: t('services.stats.vehicles') || "200+ Modern Vehicles", color: "text-blue-300", detail: "Latest Models", rating: "5★" },
+            { icon: Users, text: t('services.stats.instructors') || "50+ Expert Instructors", color: "text-green-300", detail: "Certified Professionals", rating: "4.9★" },
+            { icon: Award, text: t('services.stats.certified') || "Certified Training Programs", color: "text-yellow-300", detail: "International Standards", rating: "5★" },
+            { icon: Shield, text: t('services.stats.safety') || "100% Safety Guaranteed", color: "text-purple-300", detail: "Zero Incident Record", rating: "5★" },
+            { icon: Globe, text: t('services.stats.languages') || "3 Language Support", color: "text-cyan-300", detail: "Multilingual Training", rating: "4.8★" }
           ].map((item, index) => (
             <div 
               key={index} 
@@ -83,28 +82,28 @@ const ServiceHero: React.FC = () => {
             {[
               {
                 title: t('services.categories.beginner') || "Beginner Training",
-                description: t('services.categories.beginner.desc') || "Complete foundation courses for new drivers",
+                description: t('services.categories.beginner_desc') || "Complete foundation courses for new drivers",
                 icon: <BookOpen className="w-8 h-8" />,
                 gradient: "from-green-500/25 to-emerald-500/25",
                 courses: "5 Courses Available"
               },
               {
                 title: t('services.categories.advanced') || "Advanced Skills",
-                description: t('services.categories.advanced.desc') || "Enhancement programs for experienced drivers",
+                description: t('services.categories.advanced_desc') || "Enhancement programs for experienced drivers",
                 icon: <Target className="w-8 h-8" />,
                 gradient: "from-blue-500/25 to-cyan-500/25",
                 courses: "3 Courses Available"
               },
               {
                 title: t('services.categories.commercial') || "Commercial Training",
-                description: t('services.categories.commercial.desc') || "Professional licensing for commercial vehicles",
+                description: t('services.categories.commercial_desc') || "Professional licensing for commercial vehicles",
                 icon: <Award className="w-8 h-8" />,
                 gradient: "from-purple-500/25 to-violet-500/25",
                 courses: "4 Courses Available"
               },
               {
                 title: t('services.categories.specialized') || "Specialized Programs",
-                description: t('services.categories.specialized.desc') || "Custom training for specific needs",
+                description: t('services.categories.specialized_desc') || "Custom training for specific needs",
                 icon: <Star className="w-8 h-8" />,
                 gradient: "from-orange-500/25 to-red-500/25",
                 courses: "6 Programs Available"
@@ -117,7 +116,7 @@ const ServiceHero: React.FC = () => {
                 tabIndex={0}
                 aria-label={`${category.title}: ${category.description} - ${category.courses}`}
               >
-                <div className="mb-4 text-hirtoli-green group-hover:scale-110 transition-transform duration-300 flex justify-center">
+                <div className="mb-4 text-hirtoli-green group-hover:scale-110 transition-transform duration-300">
                   {category.icon}
                 </div>
                 <h3 className="font-semibold mb-2 text-lg group-hover:text-hirtoli-green transition-colors duration-300">{category.title}</h3>
@@ -132,28 +131,28 @@ const ServiceHero: React.FC = () => {
             {[
               { 
                 number: "98.5%", 
-                label: t('stats.pass_rate') || "Pass Rate", 
+                label: t('services.stats.pass_rate') || "Pass Rate", 
                 icon: <Target className="w-6 h-6" />,
                 gradient: "from-green-500/25 to-emerald-500/25",
                 detail: "Industry Leading"
               },
               { 
                 number: "52", 
-                label: t('stats.instructors') || "Expert Instructors", 
+                label: t('services.stats.instructors') || "Expert Instructors", 
                 icon: <Users className="w-6 h-6" />,
                 gradient: "from-blue-500/25 to-cyan-500/25",
                 detail: "Certified Professionals"
               },
               { 
                 number: "18", 
-                label: t('stats.courses') || "Course Options", 
+                label: t('services.stats.courses') || "Course Options", 
                 icon: <CheckCircle className="w-6 h-6" />,
                 gradient: "from-purple-500/25 to-violet-500/25",
                 detail: "Comprehensive Programs"
               },
               { 
                 number: "13+", 
-                label: t('stats.years') || "Years Excellence", 
+                label: t('services.stats.years') || "Years Excellence", 
                 icon: <Star className="w-6 h-6" />,
                 gradient: "from-orange-500/25 to-red-500/25",
                 detail: "Proven Track Record"
@@ -181,21 +180,21 @@ const ServiceHero: React.FC = () => {
             {[
               {
                 title: t('services.highlights.flexible') || "Flexible Scheduling",
-                description: t('services.highlights.flexible.desc') || "Learn at your own pace with convenient time slots and personalized scheduling options",
+                description: t('services.highlights.flexible_desc') || "Learn at your own pace with convenient time slots and personalized scheduling options",
                 icon: <Clock className="w-8 h-8" />,
                 gradient: "from-blue-500/25 to-indigo-500/25",
                 features: ["Weekend Classes", "Evening Sessions", "Custom Timing"]
               },
               {
                 title: t('services.highlights.modern') || "Modern Fleet",
-                description: t('services.highlights.modern.desc') || "Practice with the latest vehicles equipped with modern safety features and technology",
+                description: t('services.highlights.modern_desc') || "Practice with the latest vehicles equipped with modern safety features and technology",
                 icon: <Car className="w-8 h-8" />,
                 gradient: "from-green-500/25 to-teal-500/25",
                 features: ["2023 Model Vehicles", "Safety Features", "GPS Tracking"]
               },
               {
                 title: t('services.highlights.certified') || "Certified Excellence",
-                description: t('services.highlights.certified.desc') || "Internationally recognized training standards with continuous quality improvement",
+                description: t('services.highlights.certified_desc') || "Internationally recognized training standards with continuous quality improvement",
                 icon: <Award className="w-8 h-8" />,
                 gradient: "from-yellow-500/25 to-orange-500/25",
                 features: ["ISO Certified", "Expert Instructors", "Quality Assurance"]

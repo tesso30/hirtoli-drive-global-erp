@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs';
 import ContactHero from '../components/contact/ContactHero';
@@ -8,8 +7,11 @@ import ContactLocations from '../components/contact/ContactLocations';
 import ContactFAQ from '../components/contact/ContactFAQ';
 import ContactSupport from '../components/contact/ContactSupport';
 import LiveChat from '../components/contact/LiveChat';
+import { useLanguage } from '../contexts/LanguageContext';
 
 const Contact = () => {
+  const { t } = useLanguage();
+
   return (
     <div className="min-h-screen">
       <ContactHero />
@@ -19,7 +21,7 @@ const Contact = () => {
         <div className="container mx-auto px-4">
           <Tabs defaultValue="contact" className="w-full">
             <TabsList className="grid w-full grid-cols-4">
-              <TabsTrigger value="contact">Contact Form</TabsTrigger>
+              <TabsTrigger value="contact">{t('contact.form.title')}</TabsTrigger>
               <TabsTrigger value="locations">Our Locations</TabsTrigger>
               <TabsTrigger value="faq">FAQ</TabsTrigger>
               <TabsTrigger value="support">Support</TabsTrigger>

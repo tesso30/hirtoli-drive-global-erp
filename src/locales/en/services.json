@@ -1,4 +1,3 @@
-
 {
   "title": {
     "main": "Our Premium",
@@ -13,7 +12,10 @@
     "instructors": "50+ Expert Instructors",
     "certified": "Certified Training Programs",
     "safety": "100% Safety Record",
-    "languages": "Support in 3 Languages"
+    "languages": "Support in 3 Languages",
+    "pass_rate": "Pass Rate",
+    "courses": "Course Options",
+    "years": "Years of Excellence"
   },
   "categories": {
     "beginner": "Beginner Training",
