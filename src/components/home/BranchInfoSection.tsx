@@ -16,7 +16,7 @@ const BranchInfoSection: React.FC = () => {
         </h2>
         
         <div className="max-w-4xl mx-auto">
-          <p className="mb-8 text-lg">{t('company.description')}</p>
+          <p className="mb-8 text-lg">{t('branches.company.description')}</p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
             {/* Chiro Branch */}
