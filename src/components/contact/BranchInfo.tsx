@@ -1,14 +1,12 @@
 
 import React from 'react';
-import { useBranch } from '../../contexts/BranchContext';
 import { Card, CardContent, CardHeader, CardTitle } from '../ui/card';
-import { MapPin, Clock } from 'lucide-react';
+import { MapPin, Clock, User, Car, GraduationCap } from 'lucide-react';
 
 const BranchInfo = () => {
-  const { branch } = useBranch();
-
-  const branchInfo = {
+  const branchesInfo = {
     'chiro': {
+      title: 'Chiro Branch',
       address: 'Chiro, Oromia Region, Ethiopia',
       phone: '+251 911 123 456',
       email: 'chiro@hirtoli.com',
@@ -19,6 +17,7 @@ const BranchInfo = () => {
       specialties: ['Basic Driving Courses', 'Commercial Licenses', 'Motorcycle Training'],
     },
     'harar': {
+      title: 'Harar Branch',
       address: 'Harar, Harari Region, Ethiopia',
       phone: '+251 922 123 456',
       email: 'harar@hirtoli.com',
@@ -30,50 +29,63 @@ const BranchInfo = () => {
     }
   };
 
-  const currentBranchInfo = branchInfo[branch as keyof typeof branchInfo];
-
   return (
     <div>
-      <h2 className="text-2xl font-bold mb-6">Quick Information</h2>
+      <h2 className="text-2xl font-bold mb-6">Branch Information</h2>
       
-      <Card className="p-6 mb-6">
-        <CardHeader className="px-0 pt-0">
-          <CardTitle className="flex items-center">
-            <MapPin className="mr-2 text-hirtoli-red" />
-            {branch === 'chiro' ? 'Chiro' : 'Harar'} Branch
-          </CardTitle>
-        </CardHeader>
-        <CardContent className="px-0">
-          <div className="space-y-4">
-            <div>
-              <h4 className="font-semibold mb-1">Branch Manager</h4>
-              <p className="text-gray-600">{currentBranchInfo.manager}</p>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-1">Facilities</h4>
-              <ul className="text-gray-600 space-y-1">
-                {currentBranchInfo.facilities.map((facility, index) => (
-                  <li key={index}>• {facility}</li>
-                ))}
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-semibold mb-1">Specialties</h4>
-              <ul className="text-gray-600 space-y-1">
-                {currentBranchInfo.specialties.map((specialty, index) => (
-                  <li key={index}>• {specialty}</li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
+      {/* Both Branches Info */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+        {Object.entries(branchesInfo).map(([key, branch]) => (
+          <Card key={key} className="p-6">
+            <CardHeader className="px-0 pt-0">
+              <CardTitle className="flex items-center">
+                <MapPin className="mr-2 text-hirtoli-red" />
+                {branch.title}
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="px-0">
+              <div className="space-y-4">
+                <div>
+                  <h4 className="font-semibold mb-1 flex items-center">
+                    <User className="mr-1 w-4 h-4" />
+                    Branch Manager
+                  </h4>
+                  <p className="text-gray-600">{branch.manager}</p>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-1 flex items-center">
+                    <Car className="mr-1 w-4 h-4" />
+                    Facilities
+                  </h4>
+                  <ul className="text-gray-600 space-y-1">
+                    {branch.facilities.map((facility, index) => (
+                      <li key={index}>• {facility}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h4 className="font-semibold mb-1 flex items-center">
+                    <GraduationCap className="mr-1 w-4 h-4" />
+                    Specialties
+                  </h4>
+                  <ul className="text-gray-600 space-y-1">
+                    {branch.specialties.map((specialty, index) => (
+                      <li key={index}>• {specialty}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
 
+      {/* Business Hours - Same for both branches */}
       <Card className="p-6">
         <CardHeader className="px-0 pt-0">
           <CardTitle className="flex items-center">
             <Clock className="mr-2 text-hirtoli-green" />
-            Business Hours
+            Business Hours (Both Branches)
           </CardTitle>
         </CardHeader>
         <CardContent className="px-0">
