@@ -3,7 +3,6 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../../contexts/LanguageContext';
 import { useBranch } from '../../contexts/BranchContext';
-import { useAuth } from '../../contexts/AuthContext';
 import { Button } from '../ui/button';
 import {
   DropdownMenu,
@@ -16,28 +15,7 @@ import { Globe, MapPin } from 'lucide-react';
 const NavbarControls = () => {
   const { t, language, setLanguage } = useLanguage();
   const { branch, setBranch } = useBranch();
-  const { user, logout } = useAuth();
   const navigate = useNavigate();
-
-  const handleLogout = () => {
-    logout();
-    navigate('/');
-  };
-
-  const getDashboardRoute = () => {
-    if (!user) return '/';
-    
-    switch (user.role) {
-      case 'student':
-        return '/student-dashboard';
-      case 'instructor':
-        return '/instructor-dashboard';
-      case 'admin':
-        return '/admin-dashboard';
-      default:
-        return '/';
-    }
-  };
 
   return (
     <div className="flex items-center space-x-4">
@@ -88,33 +66,12 @@ const NavbarControls = () => {
         </DropdownMenuContent>
       </DropdownMenu>
 
-      {/* Auth buttons */}
-      {user ? (
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <Button variant="outline">
-              {user.name}
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align="end">
-            <DropdownMenuItem onClick={() => navigate(getDashboardRoute())}>
-              {t('nav.dashboard')}
-            </DropdownMenuItem>
-            <DropdownMenuItem onClick={handleLogout}>
-              {t('nav.logout')}
-            </DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
-      ) : (
-        <div className="hidden md:flex items-center space-x-2">
-          <Button variant="outline" onClick={() => navigate('/login')}>
-            {t('nav.login')}
-          </Button>
-          <Button onClick={() => navigate('/register')}>
-            {t('nav.register')}
-          </Button>
-        </div>
-      )}
+      {/* Contact Us Button */}
+      <div className="hidden md:flex items-center space-x-2">
+        <Button onClick={() => navigate('/contact')}>
+          {t('nav.contact')}
+        </Button>
+      </div>
     </div>
   );
 };
