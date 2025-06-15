@@ -1,4 +1,5 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+
+import * as React from 'react';
 
 // Define available languages
 export type Language = 'en' | 'am' | 'om';
@@ -12,7 +13,7 @@ type LanguageContextType = {
 };
 
 // Create context with default values
-const LanguageContext = createContext<LanguageContextType>({
+const LanguageContext = React.createContext<LanguageContextType>({
   language: 'en',
   setLanguage: () => {},
   t: (key) => key,
@@ -129,7 +130,7 @@ const getNestedValue = (obj: any, path: string): any => {
 // Language provider component
 export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) => {
   // Try to get language from localStorage, default to 'en'
-  const [language, setLanguage] = useState<Language>(() => {
+  const [language, setLanguage] = React.useState<Language>(() => {
     if (typeof window !== 'undefined') {
       const savedLang = localStorage.getItem('hirtoli-language') as Language;
       if (savedLang && ['en', 'am', 'om'].includes(savedLang)) {
@@ -146,11 +147,11 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
   });
 
   // Update localStorage when language changes
-  useEffect(() => {
+  React.useEffect(() => {
     localStorage.setItem('hirtoli-language', language);
     // Update document language for accessibility
     document.documentElement.lang = language;
-    
+
     // Add appropriate font class to body
     if (language === 'am' || language === 'om') {
       document.body.classList.add(language === 'am' ? 'amharic' : 'oromo');
@@ -179,4 +180,5 @@ export const LanguageProvider: React.FC<LanguageProviderProps> = ({ children }) 
 };
 
 // Custom hook for using the language context
-export const useLanguage = () => useContext(LanguageContext);
+export const useLanguage = () => React.useContext(LanguageContext);
+
