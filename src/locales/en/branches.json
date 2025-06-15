@@ -2,6 +2,9 @@
 {
   "title": "Our Branches",
   "select": "Select Branch",
+  "company": {
+    "description": "Hirtoli Driving School has been providing quality driving education across Ethiopia since 2010, with modern facilities and experienced instructors dedicated to road safety."
+  },
   "chiro": {
     "title": "Chiro Branch",
     "description": "Our Chiro branch offers comprehensive driving courses with modern facilities and expert instructors.",

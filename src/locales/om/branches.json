@@ -2,6 +2,9 @@
 {
   "title": "Dameewwan keenya",
   "select": "Damee filaadhaa",
+  "company": {
+    "description": "Mana barumsaa konkolaachisuu Hirtoli bara 2010 irraa eegalee Itoophiyaa keessatti qabeenya ammayyaa fi barsiisota ogummaa qaban waliin barumsa konkolaachisuu kennuu fi nageenya karaa mirkaneessuuf hojjechaa jira."
+  },
   "chiro": {
     "title": "Damee Ciroo",
     "description": "Dameewwan Ciroo koorsii konkolaachisuu bal'aa qabeenya ammayyaa fi barsiisota ogummaa qaban waliin ni kenna.",
