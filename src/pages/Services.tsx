@@ -2,7 +2,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useLanguage } from '../contexts/LanguageContext';
-import { useBranch } from '../contexts/BranchContext';
 import { Button } from '../components/ui/button';
 import { GraduationCap, Clock, Users, Car, Shield } from 'lucide-react';
 import ServiceHero from '../components/services/ServiceHero';
@@ -13,7 +12,6 @@ import ScheduleDisplay from '../components/services/ScheduleDisplay';
 
 const Services = () => {
   const { t } = useLanguage();
-  const { branch } = useBranch();
   const navigate = useNavigate();
 
   return (
@@ -24,96 +22,67 @@ const Services = () => {
       <EnrollmentProcess />
       <ScheduleDisplay />
 
-      {/* Branch-specific services */}
+      {/* Our Services */}
       <section className="bg-gray-50 py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">
-            {t(`services.${branch}_branch_services_title`)}
+            {t('services.our_services_title')}
           </h2>
           
-          {branch === 'chiro' && (
-            <div className="max-w-3xl mx-auto">
-              <p className="mb-6">
-                {t('services.chiro_intro')}
-              </p>
-              <div className="bg-white p-6 rounded-lg shadow-sm mb-8">
-                <h3 className="text-xl font-semibold mb-4">{t('services.chiro_premium_title')}</h3>
+          <div className="max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold mb-4">{t('services.comprehensive_courses')}</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start">
                     <div className="bg-hirtoli-red bg-opacity-10 p-2 rounded-full mr-4 mt-1">
                       <GraduationCap className="w-5 h-5 text-hirtoli-red" />
                     </div>
                     <div>
-                      <h4 className="font-medium">{t('services.chiro_vip_title')}</h4>
-                      <p className="text-gray-600">{t('services.chiro_vip_desc')}</p>
+                      <h4 className="font-medium">{t('services.basic_driving')}</h4>
+                      <p className="text-gray-600">{t('services.basic_driving_desc')}</p>
                     </div>
                   </li>
                   <li className="flex items-start">
                     <div className="bg-hirtoli-green bg-opacity-10 p-2 rounded-full mr-4 mt-1">
-                      <Clock className="w-5 h-5 text-hirtoli-green" />
+                      <Car className="w-5 h-5 text-hirtoli-green" />
                     </div>
                     <div>
-                      <h4 className="font-medium">{t('services.chiro_evening_title')}</h4>
-                      <p className="text-gray-600">{t('services.chiro_evening_desc')}</p>
+                      <h4 className="font-medium">{t('services.commercial_license')}</h4>
+                      <p className="text-gray-600">{t('services.commercial_license_desc')}</p>
                     </div>
                   </li>
                   <li className="flex items-start">
                     <div className="bg-hirtoli-black bg-opacity-10 p-2 rounded-full mr-4 mt-1">
-                      <Users className="w-5 h-5 text-hirtoli-black" />
+                      <Shield className="w-5 h-5 text-hirtoli-black" />
                     </div>
                     <div>
-                      <h4 className="font-medium">{t('services.chiro_commercial_title')}</h4>
-                      <p className="text-gray-600">{t('services.chiro_commercial_desc')}</p>
-                    </div>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="bg-hirtoli-red bg-opacity-10 p-2 rounded-full mr-4 mt-1">
-                      <Shield className="w-5 h-5 text-hirtoli-red" />
-                    </div>
-                    <div>
-                      <h4 className="font-medium">{t('services.chiro_corporate_title')}</h4>
-                      <p className="text-gray-600">{t('services.chiro_corporate_desc')}</p>
+                      <h4 className="font-medium">{t('services.defensive_driving')}</h4>
+                      <p className="text-gray-600">{t('services.defensive_driving_desc')}</p>
                     </div>
                   </li>
                 </ul>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-sm mb-8">
-                <h3 className="text-xl font-semibold mb-4">{t('services.chiro_facilities_title')}</h3>
-                <p className="mb-4">{t('services.chiro_facilities_intro')}</p>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>{t('services.chiro_facility_1')}</li>
-                  <li>{t('services.chiro_facility_2')}</li>
-                  <li>{t('services.chiro_facility_3')}</li>
-                  <li>{t('services.chiro_facility_4')}</li>
-                </ul>
-              </div>
-            </div>
-          )}
-          
-          {branch === 'harar' && (
-            <div className="max-w-3xl mx-auto">
-              <p className="mb-6">
-                {t('services.harar_intro')}
-              </p>
-              <div className="bg-white p-6 rounded-lg shadow-sm mb-8">
-                <h3 className="text-xl font-semibold mb-4">{t('services.harar_specialized_title')}</h3>
+
+              <div className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-xl font-semibold mb-4">{t('services.specialized_training')}</h3>
                 <ul className="space-y-4">
                   <li className="flex items-start">
                     <div className="bg-hirtoli-red bg-opacity-10 p-2 rounded-full mr-4 mt-1">
-                      <Car className="w-5 h-5 text-hirtoli-red" />
+                      <Clock className="w-5 h-5 text-hirtoli-red" />
                     </div>
                     <div>
-                      <h4 className="font-medium">{t('services.harar_tourism_title')}</h4>
-                      <p className="text-gray-600">{t('services.harar_tourism_desc')}</p>
+                      <h4 className="font-medium">{t('services.flexible_schedule')}</h4>
+                      <p className="text-gray-600">{t('services.flexible_schedule_desc')}</p>
                     </div>
                   </li>
                   <li className="flex items-start">
                     <div className="bg-hirtoli-green bg-opacity-10 p-2 rounded-full mr-4 mt-1">
-                      <Shield className="w-5 h-5 text-hirtoli-green" />
+                      <Users className="w-5 h-5 text-hirtoli-green" />
                     </div>
                     <div>
-                      <h4 className="font-medium">{t('services.harar_heritage_title')}</h4>
-                      <p className="text-gray-600">{t('services.harar_heritage_desc')}</p>
+                      <h4 className="font-medium">{t('services.experienced_instructors')}</h4>
+                      <p className="text-gray-600">{t('services.experienced_instructors_desc')}</p>
                     </div>
                   </li>
                   <li className="flex items-start">
@@ -121,33 +90,31 @@ const Services = () => {
                       <Car className="w-5 h-5 text-hirtoli-black" />
                     </div>
                     <div>
-                      <h4 className="font-medium">{t('services.harar_regional_title')}</h4>
-                      <p className="text-gray-600">{t('services.harar_regional_desc')}</p>
+                      <h4 className="font-medium">{t('services.modern_vehicles')}</h4>
+                      <p className="text-gray-600">{t('services.modern_vehicles_desc')}</p>
                     </div>
                   </li>
-                  <li className="flex items-start">
-                    <div className="bg-hirtoli-red bg-opacity-10 p-2 rounded-full mr-4 mt-1">
-                      <Users className="w-5 h-5 text-hirtoli-red" />
-                    </div>
-                    <div>
-                      <h4 className="font-medium">{t('services.harar_multilang_title')}</h4>
-                      <p className="text-gray-600">{t('services.harar_multilang_desc')}</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-              <div className="bg-white p-6 rounded-lg shadow-sm mb-8">
-                <h3 className="text-xl font-semibold mb-4">{t('services.harar_specialization_title')}</h3>
-                <p className="mb-4">{t('services.harar_specialization_intro')}</p>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>{t('services.harar_specialization_1')}</li>
-                  <li>{t('services.harar_specialization_2')}</li>
-                  <li>{t('services.harar_specialization_3')}</li>
-                  <li>{t('services.harar_specialization_4')}</li>
                 </ul>
               </div>
             </div>
-          )}
+
+            <div className="bg-white p-6 rounded-lg shadow-sm mb-8">
+              <h3 className="text-xl font-semibold mb-4">{t('services.facilities_title')}</h3>
+              <p className="mb-4">{t('services.facilities_intro')}</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <ul className="list-disc pl-6 space-y-2">
+                  <li>{t('services.facility_classrooms')}</li>
+                  <li>{t('services.facility_vehicles')}</li>
+                  <li>{t('services.facility_practice_area')}</li>
+                </ul>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li>{t('services.facility_simulator')}</li>
+                  <li>{t('services.facility_testing_center')}</li>
+                  <li>{t('services.facility_student_lounge')}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
           
           <div className="text-center mt-8">
             <Button onClick={() => navigate('/contact')}>{t('services.contact_for_details')}</Button>
@@ -166,9 +133,9 @@ const Services = () => {
             <Button 
               size="lg" 
               className="bg-hirtoli-red hover:bg-opacity-90"
-              onClick={() => navigate('/register')}
+              onClick={() => navigate('/consultation')}
             >
-              {t('services.cta_register')}
+              {t('services.get_consultation')}
             </Button>
             <Button 
               size="lg" 
