@@ -63,10 +63,10 @@ const Footer = () => {
 
           {/* Branch offices */}
           <div className="col-span-1">
-            <h3 className="text-lg font-semibold mb-4">{t('branch.title')}</h3>
+            <h3 className="text-lg font-semibold mb-4">{t('branches.title')}</h3>
             <ul className="text-gray-300 space-y-2">
-              <li>Chiro Branch</li>
-              <li>Harar Branch</li>
+              <li>{t('branches.chiro.title')}</li>
+              <li>{t('branches.harar.title')}</li>
             </ul>
           </div>
         </div>
