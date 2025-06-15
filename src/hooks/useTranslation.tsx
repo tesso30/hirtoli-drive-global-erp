@@ -56,7 +56,7 @@ export const useTranslation = () => {
     }
   }, [translationCache]);
 
-  const t = useCallback(async (key: string, fallbackToGoogle = false): Promise<string> => {
+  const t = useCallback((key: string): string => {
     // First try the existing manual translation
     const manualTranslation = originalT(key);
     
@@ -65,21 +65,8 @@ export const useTranslation = () => {
       return manualTranslation;
     }
 
-    // If fallbackToGoogle is enabled and we don't have a manual translation
-    if (fallbackToGoogle && language !== 'en') {
-      try {
-        // Get English version as source
-        const englishText = originalT(key); // This might still be the key if no English translation exists
-        if (englishText !== key) {
-          return await translateWithGoogle(englishText, language);
-        }
-      } catch (error) {
-        console.error('Google translation fallback failed:', error);
-      }
-    }
-
     return manualTranslation; // Return whatever we have (key or manual translation)
-  }, [originalT, language, translateWithGoogle, fallbackToGoogle]);
+  }, [originalT]);
 
   return {
     t,
