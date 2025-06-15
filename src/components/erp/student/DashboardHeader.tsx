@@ -1,20 +1,17 @@
 
 import React from 'react';
-import { useAuth } from '../../../contexts/AuthContext';
 import { Button } from '../../ui/button';
 import { Card } from '../../ui/card';
 import { Bell, Search, Settings, User, Calendar } from 'lucide-react';
 
 const DashboardHeader = () => {
-  const { user } = useAuth();
-
   return (
     <div className="bg-white/80 backdrop-blur-md shadow-lg border-b border-gray-200/50 sticky top-0 z-50">
       <div className="container mx-auto px-4 py-6">
         <div className="flex items-center justify-between">
           <div className="space-y-1">
             <h1 className="text-3xl font-bold bg-gradient-to-r from-gray-900 via-gray-700 to-hirtoli-green bg-clip-text text-transparent">
-              Welcome back, {user?.name || 'Student'}!
+              Welcome back, Student!
             </h1>
             <div className="flex items-center gap-2 text-gray-600">
               <Calendar size={16} />

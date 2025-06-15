@@ -1,8 +1,7 @@
 
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useLanguage } from '../../contexts/LanguageContext';
-import { useAuth } from '../../contexts/AuthContext';
 import { Button } from '../ui/button';
 import { Menu } from 'lucide-react';
 
@@ -16,8 +15,6 @@ const NavbarMobileMenu: React.FC<NavbarMobileMenuProps> = ({
   setMobileMenuOpen 
 }) => {
   const { t } = useLanguage();
-  const { user } = useAuth();
-  const navigate = useNavigate();
 
   return (
     <>
@@ -63,22 +60,6 @@ const NavbarMobileMenu: React.FC<NavbarMobileMenuProps> = ({
             >
               {t('nav.contact')}
             </Link>
-            {!user && (
-              <div className="flex flex-col space-y-2 px-4 py-2">
-                <Button variant="outline" onClick={() => {
-                  navigate('/login');
-                  setMobileMenuOpen(false);
-                }}>
-                  {t('nav.login')}
-                </Button>
-                <Button onClick={() => {
-                  navigate('/register');
-                  setMobileMenuOpen(false);
-                }}>
-                  {t('nav.register')}
-                </Button>
-              </div>
-            )}
           </div>
         </div>
       )}
