@@ -24,6 +24,21 @@ const NavbarControls = () => {
     navigate('/');
   };
 
+  const getDashboardRoute = () => {
+    if (!user) return '/';
+    
+    switch (user.role) {
+      case 'student':
+        return '/student-dashboard';
+      case 'instructor':
+        return '/instructor-dashboard';
+      case 'admin':
+        return '/admin-dashboard';
+      default:
+        return '/';
+    }
+  };
+
   return (
     <div className="flex items-center space-x-4">
       {/* Language selector */}
@@ -82,7 +97,7 @@ const NavbarControls = () => {
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
-            <DropdownMenuItem onClick={() => navigate(`/${user.role}-dashboard`)}>
+            <DropdownMenuItem onClick={() => navigate(getDashboardRoute())}>
               {t('nav.dashboard')}
             </DropdownMenuItem>
             <DropdownMenuItem onClick={handleLogout}>

@@ -1,5 +1,6 @@
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 // Define user roles
 export type Role = 'student' | 'instructor' | 'admin';
@@ -100,6 +101,10 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     const { password: _, ...safeUser } = foundUser;
     setUser(safeUser);
     localStorage.setItem('hirtoli-user', JSON.stringify(safeUser));
+
+    // Redirect based on user role
+    const dashboardRoute = getDashboardRoute(safeUser.role);
+    window.location.href = dashboardRoute;
   };
 
   // Register function - mock implementation for demo
@@ -128,12 +133,30 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
 
     setUser(newUser);
     localStorage.setItem('hirtoli-user', JSON.stringify(newUser));
+
+    // Redirect based on user role
+    const dashboardRoute = getDashboardRoute(newUser.role);
+    window.location.href = dashboardRoute;
   };
 
   // Logout function
   const logout = () => {
     setUser(null);
     localStorage.removeItem('hirtoli-user');
+  };
+
+  // Helper function to get dashboard route based on role
+  const getDashboardRoute = (role: Role): string => {
+    switch (role) {
+      case 'student':
+        return '/student-dashboard';
+      case 'instructor':
+        return '/instructor-dashboard';
+      case 'admin':
+        return '/admin-dashboard';
+      default:
+        return '/';
+    }
   };
 
   return (

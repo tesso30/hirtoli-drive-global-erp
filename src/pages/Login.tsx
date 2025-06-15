@@ -41,7 +41,9 @@ const Login = () => {
         title: 'Success',
         description: 'You have successfully logged in',
       });
-      navigate('/');
+      
+      // The navigation will be handled by the useEffect in App.tsx or by checking user role here
+      // We'll let the auth context handle the redirect
     } catch (error) {
       toast({
         title: 'Error',
