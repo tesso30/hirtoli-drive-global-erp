@@ -9,12 +9,16 @@ import {
   DropdownMenuTrigger,
 } from '../ui/dropdown-menu';
 import { Globe } from 'lucide-react';
+import GoogleTranslateToggle from '../translation/GoogleTranslateToggle';
 
 const NavbarControls = () => {
   const { t, language, setLanguage } = useLanguage();
 
   return (
     <div className="flex items-center space-x-4">
+      {/* Google Translate Toggle */}
+      <GoogleTranslateToggle />
+      
       {/* Language selector */}
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
