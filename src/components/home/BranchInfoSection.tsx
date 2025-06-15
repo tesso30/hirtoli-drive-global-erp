@@ -63,7 +63,7 @@ const BranchInfoSection: React.FC = () => {
           </div>
 
           <div className="bg-gray-50 p-6 rounded-lg mb-8">
-            <h3 className="text-xl font-semibold mb-4">{t('branches.operating_hours')}</h3>
+            <h3 className="text-xl font-semibold mb-4">{t('branches.chiro.hours')}</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <h4 className="font-medium mb-2">Chiro Branch</h4>
