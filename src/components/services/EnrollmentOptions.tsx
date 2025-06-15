@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card } from '../ui/card';
 import { Button } from '../ui/button';
@@ -104,13 +105,7 @@ const EnrollmentOptions: React.FC = () => {
             </div>
             
             <Button 
-              onClick={() => {
-                if (index === 0) {
-                  navigate('/register');
-                } else {
-                  navigate('/contact');
-                }
-              }} 
+              onClick={() => navigate('/contact')} 
               className={`w-full ${
                 index === 0 ? 'bg-hirtoli-green hover:bg-hirtoli-green/90' : 'bg-hirtoli-red hover:bg-hirtoli-red/90'
               } text-white`}

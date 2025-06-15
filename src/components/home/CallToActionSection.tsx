@@ -17,7 +17,7 @@ const CallToActionSection: React.FC = () => {
           <Button 
             size="lg" 
             className="bg-hirtoli-red hover:bg-opacity-90"
-            onClick={() => navigate('/register')}
+            onClick={() => navigate('/contact')}
           >
             {t('home.cta.register')}
           </Button>

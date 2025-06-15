@@ -163,7 +163,7 @@ const PricingTable: React.FC = () => {
                       ? 'bg-gradient-to-r from-hirtoli-red to-red-600 hover:from-red-600 hover:to-hirtoli-red shadow-lg' 
                       : 'bg-gradient-to-r from-hirtoli-green to-green-600 hover:from-green-600 hover:to-hirtoli-green'
                   } text-white border-0 shadow-lg hover:shadow-xl`}
-                  onClick={() => navigate('/register')}
+                  onClick={() => navigate('/contact')}
                 >
                   {t('services.pricing.choose_package')}
                 </Button>

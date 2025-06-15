@@ -54,7 +54,7 @@ const CoursesSection: React.FC = () => {
             <div key={index} className="animate-fade-in" style={{ animationDelay: `${index * 0.2}s` }}>
               <CourseDetailCard 
                 {...course}
-                onEnroll={() => navigate('/register')}
+                onEnroll={() => navigate('/contact')}
               />
             </div>
           ))}

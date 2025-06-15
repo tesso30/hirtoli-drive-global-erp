@@ -55,7 +55,7 @@ const HeroSection: React.FC = () => {
           <Button 
             size="lg" 
             className="bg-gradient-to-r from-hirtoli-green to-green-600 hover:from-green-600 hover:to-hirtoli-green text-lg px-10 py-6 rounded-full shadow-2xl hover:shadow-green-500/25 transition-all duration-300 transform hover:scale-105 group"
-            onClick={() => navigate('/register')}
+            onClick={() => navigate('/contact')}
           >
             {t('home.hero.cta')}
             <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" />

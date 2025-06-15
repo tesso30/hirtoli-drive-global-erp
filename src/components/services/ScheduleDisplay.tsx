@@ -172,7 +172,7 @@ const ScheduleDisplay: React.FC = () => {
                 <p className="text-gray-600 mb-4">
                   {selectedSlot.day} at {selectedSlot.time}
                 </p>
-                <Button onClick={() => navigate('/register')} className="bg-hirtoli-red hover:bg-hirtoli-red/90">
+                <Button onClick={() => navigate('/contact')} className="bg-hirtoli-red hover:bg-hirtoli-red/90">
                   {t('services.book_this_slot')}
                 </Button>
               </div>
@@ -208,7 +208,7 @@ const ScheduleDisplay: React.FC = () => {
             </div>
             
             <div className="text-center mt-8">
-              <Button onClick={() => navigate('/register')} size="lg">
+              <Button onClick={() => navigate('/contact')} size="lg">
                 {t('services.request_specific_instructor')}
               </Button>
             </div>
