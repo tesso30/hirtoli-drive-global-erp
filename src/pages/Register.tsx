@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
@@ -37,6 +38,15 @@ const Register = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
+    if (formData.password !== formData.confirmPassword) {
+      toast({
+        title: "Password Mismatch",
+        description: "Passwords do not match. Please try again.",
+        variant: "destructive",
+      });
+      return;
+    }
+
     try {
       await register({
         name: formData.name,
@@ -52,11 +62,11 @@ const Register = () => {
         description: "Welcome to Hirtoli Driving School!",
       });
       
-      navigate('/student-dashboard');
+      // The AuthContext will handle the redirect automatically
     } catch (error) {
       toast({
         title: "Registration Failed",
-        description: "Please check your information and try again.",
+        description: error instanceof Error ? error.message : "Please check your information and try again.",
         variant: "destructive",
       });
     }

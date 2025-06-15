@@ -1,6 +1,5 @@
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 
 // Define user roles
 export type Role = 'student' | 'instructor' | 'admin';
@@ -28,6 +27,7 @@ type AuthContextType = {
     branch: string;
   }) => Promise<void>;
   logout: () => void;
+  requireAuth: () => void;
 };
 
 // Create context with default values
@@ -37,6 +37,7 @@ const AuthContext = createContext<AuthContextType>({
   login: async () => {},
   register: async () => {},
   logout: () => {},
+  requireAuth: () => {},
 });
 
 // Auth provider props type
@@ -145,6 +146,13 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
     localStorage.removeItem('hirtoli-user');
   };
 
+  // Function to check if user is authenticated and redirect if not
+  const requireAuth = () => {
+    if (!user && !loading) {
+      window.location.href = '/login';
+    }
+  };
+
   // Helper function to get dashboard route based on role
   const getDashboardRoute = (role: Role): string => {
     switch (role) {
@@ -167,6 +175,7 @@ export const AuthProvider: React.FC<AuthProviderProps> = ({ children }) => {
         login,
         register,
         logout,
+        requireAuth,
       }}
     >
       {children}
