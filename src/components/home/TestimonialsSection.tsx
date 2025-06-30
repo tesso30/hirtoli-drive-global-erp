@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useLanguage } from '../../contexts/LanguageContext';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../ui/card';
@@ -146,11 +145,6 @@ const TestimonialsSection: React.FC = () => {
               
               <CardHeader className="pb-4">
                 <div className="flex items-center gap-4">
-                  <img 
-                    src={testimonial.image} 
-                    alt={testimonial.name}
-                    className="w-16 h-16 rounded-full object-cover border-2 border-hirtoli-green group-hover:scale-110 transition-transform duration-300" 
-                  />
                   <div>
                     <CardTitle className="text-lg">{testimonial.name}</CardTitle>
                     <CardDescription>{testimonial.role}</CardDescription>

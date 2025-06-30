@@ -1,4 +1,3 @@
-
 {
   "view_all": "ሁሉንም ይመልከቱ",
   "learn_more": "የበለጠ ለመማር",
@@ -33,5 +32,11 @@
   "error": "ስህተት",
   "success": "ተሳክቷል",
   "warning": "ማስጠንቀቂያ",
-  "info": "መረጃ"
+  "info": "መረጃ",
+  "page_not_found": "ገጹ አልተገኘም",
+  "page_not_found_description": "ይቅርታ፣ የሚፈልጉት ገጽ አልተገኘም ወይም ተዛውሯል።",
+  "go_home": "ወደ ቤት ይሂዱ",
+  "go_back": "ተመለስ",
+  "need_help": "እርዳታ ይያስፈልግዎታል?",
+  "contact_support": "ድጋፍ ያግኙ"
 }

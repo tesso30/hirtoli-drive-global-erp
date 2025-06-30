@@ -1,4 +1,3 @@
-
 {
   "view_all": "Hunda ilaali",
   "learn_more": "Caalu barachuu",
@@ -33,5 +32,11 @@
   "error": "Dogoggora",
   "success": "Milkaa'ina",
   "warning": "Akeekkachiisa",
-  "info": "Odeeffannoo"
+  "info": "Odeeffannoo",
+  "page_not_found": "Fuula hin argamne",
+  "page_not_found_description": "Dhiifama, fuula barbaachisaa jirtan hin jiru ykn gara biraa darbite.",
+  "go_home": "Manaatti deemi",
+  "go_back": "Deebi'i",
+  "need_help": "Gargaarsa barbaachisaa?",
+  "contact_support": "Gargaarsa argaadhaa"
 }

@@ -35,5 +35,11 @@
   "info": "Information",
   "choose_this_package": "Choose This Package",
   "most_popular": "Most Popular",
-  "recommended": "Recommended"
+  "recommended": "Recommended",
+  "page_not_found": "Page Not Found",
+  "page_not_found_description": "Sorry, the page you are looking for does not exist or has been moved.",
+  "go_home": "Go Home",
+  "go_back": "Go Back",
+  "need_help": "Need help?",
+  "contact_support": "Contact Support"
 }

@@ -9,7 +9,7 @@ const ContactStats: React.FC = () => {
     { number: "<30s", label: t('contact.response_stats.response') || "Average Response Time", detail: "Phone calls answered quickly" },
     { number: "99.2%", label: t('contact.response_stats.satisfaction') || "Customer Satisfaction", detail: "Based on 5,000+ reviews" },
     { number: "24/7", label: t('contact.response_stats.availability') || "Support Available", detail: "Round-the-clock assistance" },
-    { number: "3", label: t('contact.response_stats.locations') || "Office Locations", detail: "Convenient nationwide access" }
+    { number: "2", label: t('contact.response_stats.locations') || "Office Locations", detail: "Convenient nationwide access" }
   ];
 
   return (
