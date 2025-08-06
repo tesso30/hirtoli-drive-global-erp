@@ -47,7 +47,7 @@ const CourseDetailCard: React.FC<CourseDetailCardProps> = ({
       </CardHeader>
       
       <CardContent className="flex-grow">
-        <div className="grid grid-cols-3 gap-4 mb-4 text-center">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-4 text-center">
           <div className="flex flex-col items-center">
             <Clock className="w-5 h-5 text-hirtoli-green mb-1" />
             <span className="text-sm font-semibold">{duration}</span>
